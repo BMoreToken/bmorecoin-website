@@ -158,7 +158,7 @@
       <nav class="container pt-4 mt-lg-3" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item">
-            <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+            <a href="index.php"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">About</li>
         </ol>
@@ -170,7 +170,7 @@
         <div class="row pt-lg-4 pb-lg-3 pb-xl-5">
           <div class="col-md-6">
             <h4 class="text-primary pb-1 mb-2">about</h4>
-            <h1 class="display-1">BMoreCoin - Multipurpose Cryptocurrency</h1>
+            <h1 class="display-1">Multipurpose Cryptocurrency</h1>
           </div>
           <div class="col-md-6 col-xl-5">
             <p class="fs-xl mb-1 mb-md-3">We are a dedicated team of passionate product managers, full stack developers, UX/UI designers, QA engineers and marketing experts helping businesses of every size — from new startups to public companies — launch their projects using our software .</p>
