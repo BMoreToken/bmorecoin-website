@@ -151,7 +151,7 @@
 
 
       <!-- Navbar -->
-     <?PHP include_once('menu.php'); ?>
+     <?PHP include_once('navbar.php'); ?>
 
       <!-- Breadcrumb -->
       <nav class="container mt-lg-4 pt-5" aria-label="breadcrumb">
