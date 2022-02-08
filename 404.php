@@ -167,7 +167,7 @@
             <div class="col-md-5 offset-xl-1 order-md-1">
               <h1 class="display-1 mb-sm-4 mt-n4 mt-sm-n5">Error 404</h1>
               <p class="mb-md-5 mb-4 mx-md-0 mx-auto pb-2 lead">The page you are looking for was moved, removed or might never existed.</p>
-              <a href="index.html" class="btn btn-lg btn-primary shadow-primary w-sm-auto w-100">
+              <a href="index.php" class="btn btn-lg btn-primary shadow-primary w-sm-auto w-100">
                 <i class="bx bx-home-alt me-2 ms-n1 lead"></i>
                 Go to homepage
               </a>
@@ -184,7 +184,7 @@
         <div class="col-xl-11 offset-xl-1">
           <p class="fs-sm text-center text-md-start mb-0">
             &copy; All rights reserved. Made by 
-            <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a>
+            <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">BMoreCoin</a>
           </p>
         </div>
       </div>
