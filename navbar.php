@@ -20,6 +20,11 @@
                 </li>
                     
                 <li class="nav-item">
+                  <a href="tokenomics.php" class="nav-link">Tokenomics</a>
+                </li>
+                    
+                    
+                <li class="nav-item">
                   <a href="about.php" class="nav-link">About</a>
                 </li>
 
