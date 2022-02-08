@@ -23,6 +23,17 @@
                   <a href="tokenomics.php" class="nav-link">Tokenomics</a>
                 </li>
                     
+                <li class="nav-item">
+                  <a href="explorer.php" class="nav-link">Block Explorer</a>
+                </li>    
+             
+                <li class="nav-item">
+                  <a href="https://t.me/joinchat/GrZyx823mpMWzeqk" class="nav-link">Telegram</a>
+                </li>  
+                
+                <li class="nav-item">
+                  <a href="https://discord.gg/pJNGdG6UZx" class="nav-link">Discord</a>
+                </li>  
                     
                 <li class="nav-item">
                   <a href="about.php" class="nav-link">About</a>
@@ -30,7 +41,7 @@
 
                 
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Pages</a>
+                  <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Pages to Choose From</a>
                   <div class="dropdown-menu">
                     <div class="d-lg-flex pt-lg-3">
                       <div class="mega-dropdown-column">
@@ -84,7 +95,7 @@
             <div class="offcanvas-footer border-top">
               <a href="#" class="btn btn-primary w-100">
                 <i class="bx bx-cart fs-4 lh-1 me-1"></i>
-                &nbsp;Buy now
+                &nbsp;Download now
               </a>
             </div>      
           </div>
@@ -98,7 +109,7 @@
           </button>
           <a href="#" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex">
             <i class="bx bx-cart fs-5 lh-1 me-1"></i>
-            &nbsp;Buy now
+            &nbsp;Download now
           </a>
         </div>
       </header>
