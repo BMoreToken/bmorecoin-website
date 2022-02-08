@@ -201,7 +201,7 @@
                         <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We provide the wide range of high quality cryptocurrency services and best practices solutions to our customers making their life better.</p>
                       </div>
                       <div class="scale-up delay-1">
-                        <a href="#" onclick="download()" class="btn btn-primary shadow-primary btn-lg">Get your wallet now</a>
+                        <a href="#" onclick="getWallet()" class="btn btn-primary shadow-primary btn-lg">Get your wallet now</a>
                       </div>
 
                     </div>
