@@ -260,8 +260,8 @@
       <section class="container pt-5 mt-2 mt-md-4 mt-lg-5">
         <div class="row pt-xl-3">
           <div class="col-md-5 text-center text-md-start pb-5">
-            <h1 class="mb-4">Award-Winning Software Company</h1>
-            <p class="fs-lg pb-lg-3 mb-4">We create diverse, complex, web and mobile solutions for any business need. With us you get quality software and perfect service every time.</p>
+            <h1 class="mb-4">Award-Winning Software</h1>
+            <p class="fs-lg pb-lg-3 mb-4">We create diverse, complex, web3 and mobile solutions for any business need. With us you get quality software integrated with our network and perfect service every time.</p>
             <a href="about-v2.html" class="btn btn-primary shadow-primary btn-lg">More about us</a>
             <div class="mt-3 mt-sm-0 pt-4 pt-sm-5 mt-xl-4">
               <h2 class="h6 mb-4">Some of our awards:</h2>
