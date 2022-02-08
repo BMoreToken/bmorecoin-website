@@ -5,11 +5,23 @@ on:
         - master
 jobs:
 
-  build:
-    name: Deploy
+  upgrade:
+    name: Upgrade
     runs-on: ubuntu-latest
     steps:
-    - name: executing remote docker build over ssh using password
+    - name: Upgrade Packages on the Websever
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        script: upgrade.sh
+  update:
+    name: Update
+    runs-on: ubuntu-latest
+    steps:
+    - name: Update the Websever Source Code
       uses: appleboy/ssh-action@master
       with:
         host: ${{ secrets.HOST }}
