@@ -2,7 +2,7 @@ name: Deploy to Webserver
 on: 
   push:
       branches:
-        - master
+        - main
 jobs:
 
   upgrade:
