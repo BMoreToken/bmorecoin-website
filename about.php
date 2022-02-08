@@ -160,7 +160,7 @@
           <li class="breadcrumb-item">
             <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">About v.1</li>
+          <li class="breadcrumb-item active" aria-current="page">About BMoreCoin</li>
         </ol>
       </nav>
 
