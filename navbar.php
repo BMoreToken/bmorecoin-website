@@ -64,8 +64,8 @@
                       <div class="mega-dropdown-column">
                         <h6 class="px-3 mb-2">E-Mail</h6>
                         <ul class="list-unstyled mb-3">
-                          <li><a href="contacts-v1.html" class="dropdown-item py-1">E-Mail Us</a></li>
-                          <li><a href="contacts-v2.html" class="dropdown-item py-1">Mailing List</a></li>
+                          <li><a href="https://us14.list-manage.com/contact-form?u=daff4232598a1a5d3f812b4a7&form_id=c206758d11ddc0b49bdec83f2aa68a80" class="dropdown-item py-1">E-Mail Us</a></li>
+                          <li><a href="http://eepurl.com/hUeQVD" class="dropdown-item py-1">Mailing List Signup</a></li>
                         </ul>
                         <h6 class="px-3 mb-2">How to Help</h6>
                         <ul class="list-unstyled">
