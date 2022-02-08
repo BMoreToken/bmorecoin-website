@@ -4,7 +4,7 @@
     <meta charset="utf-8">
     <title>BMoreCoin | Landing</title>
     <!-- Custom Scripts -->
-    <script src="bmorecoin.js"></script>
+    <script type="text/javascript" src="bmorecoin.js"></script>
 
     
     <!-- SEO Meta Tags -->
