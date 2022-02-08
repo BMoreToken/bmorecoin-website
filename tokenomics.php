@@ -158,7 +158,7 @@
       <nav class="container mt-lg-4 pt-5" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0 pt-5">
           <li class="breadcrumb-item">
-            <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+            <a href="index.php"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
           </li>
           <li class="breadcrumb-item active" aria-current="page">Tokenomics</li>
         </ol>
@@ -171,7 +171,7 @@
         <!-- Page title + Layout switcher + Search form -->
         <div class="row align-items-end gy-3 mb-4 pb-lg-3 pb-1">
           <div class="col-lg-5 col-md-4">
-            <h1 class="mb-2 mb-md-0">Blog Grid</h1>
+            <h1 class="mb-2 mb-md-0">Tokenomics</h1>
           </div>
           <div class="col-lg-7 col-md-8">
             <form class="row gy-2">
