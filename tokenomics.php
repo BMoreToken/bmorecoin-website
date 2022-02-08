@@ -160,7 +160,7 @@
           <li class="breadcrumb-item">
             <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Blog Grid no Sidebar</li>
+          <li class="breadcrumb-item active" aria-current="page">Tokenomics</li>
         </ol>
       </nav>
 
