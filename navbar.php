@@ -62,10 +62,10 @@
                           <li><a href="blog-single.html" class="dropdown-item py-1">Single Post</a></li>
                           <li><a href="blog-podcast.html" class="dropdown-item py-1">Podcast</a></li>
                         </ul>
-                        <h6 class="px-3 mb-2">Services</h6>
+                        <h6 class="px-3 mb-2">Mining</h6>
                         <ul class="list-unstyled mb-3">
-                          <li><a href="services.html" class="dropdown-item py-1">Services Page</a></li>
-                          <li><a href="services-single.html" class="dropdown-item py-1">Service Details</a></li>
+                          <li><a href="services.html" class="dropdown-item py-1">Solo Mining</a></li>
+                          <li><a href="services-single.html" class="dropdown-item py-1">Pool Mining</a></li>
                         </ul>
                       </div>
                       <div class="mega-dropdown-column">
@@ -74,10 +74,10 @@
                           <li><a href="contacts-v1.html" class="dropdown-item py-1">Contacts v.1</a></li>
                           <li><a href="contacts-v2.html" class="dropdown-item py-1">Contacts v.2</a></li>
                         </ul>
-                        <h6 class="px-3 mb-2">Specialty</h6>
+                        <h6 class="px-3 mb-2">How to Help</h6>
                         <ul class="list-unstyled">
-                          <li><a href="404-v1.html" class="dropdown-item py-1">404 Error v.1</a></li>
-                          <li><a href="404-v2.html" class="dropdown-item py-1">404 Error v.2</a></li>
+                          <li><a href="404-v1.html" class="dropdown-item py-1">Spread The Word</a></li>
+                          <li><a href="404-v2.html" class="dropdown-item py-1">Contribute Code</a></li>
                         </ul>
                       </div>
                     </div>
