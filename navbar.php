@@ -82,7 +82,7 @@
               </ul>
             </div>
             <div class="offcanvas-footer border-top">
-              <a href="#" onclick="download()" class="btn btn-primary w-100">
+              <a href="#" onclick="getWallet()" class="btn btn-primary w-100">
                 <i class="bx bx-cart fs-4 lh-1 me-1"></i>
                 &nbsp;Download now
               </a>
@@ -96,7 +96,7 @@
           <button type="button" class="navbar-toggler" data-bs-toggle="offcanvas" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
-          <a href="#" onclick="download()" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex">
+          <a href="#" onclick="getWallet()" class="btn btn-primary btn-sm fs-sm rounded d-none d-lg-inline-flex">
             <i class="bx bx-cart fs-5 lh-1 me-1"></i>
             &nbsp;Download now
           </a>
