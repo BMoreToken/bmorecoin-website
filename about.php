@@ -2,7 +2,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>BMoreCoin - About</title>
+    <title>About BMoreCoin</title>
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="BMoreCoin - Multipurpose Cryptocurrenty">
