@@ -2,12 +2,12 @@
 <html lang="en">
   <head>
     <meta charset="utf-8">
-    <title>Silicon | About v.1</title>
+    <title>BMoreCoin - About</title>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
+    <meta name="description" content="BMoreCoin - Multipurpose Cryptocurrenty">
     <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="Createx Studio">
+    <meta name="author" content="BMoreCoin">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -157,8 +157,8 @@
       <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky">
         <div class="container px-3">
           <a href="index.html" class="navbar-brand pe-3">
-            <img src="assets/img/logo.svg" width="47" alt="Silicon">
-            Silicon
+            <img src="assets/img/logo.svg" width="47" alt="BMoreCoin">
+            BMoreCoin
           </a>
           <div id="navbarNav" class="offcanvas offcanvas-end">
             <div class="offcanvas-header border-bottom">
@@ -167,33 +167,8 @@
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Landings</a>
-                  <div class="dropdown-menu p-0">
-                    <div class="d-lg-flex">
-                      <div class="mega-dropdown-column bg-position-center bg-repeat-0 bg-size-cover rounded-3 rounded-end-0" style="background-image: url(assets/img/landings.jpg); margin: -1px;"></div>
-                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
-                        <ul class="list-unstyled mb-0">
-                          <li><a href="index.html" class="dropdown-item">Template Intro Page</a></li>
-                          <li><a href="landing-mobile-app-showcase.html" class="dropdown-item">Mobile App Showcase</a></li>
-                          <li><a href="landing-saas-v1.html" class="dropdown-item">SaaS v.1</a></li>
-                          <li><a href="landing-saas-v2.html" class="dropdown-item">SaaS v.2</a></li>
-                          <li><a href="landing-financial.html" class="dropdown-item">Financial Consulting</a></li>
-                          <li><a href="landing-online-courses.html" class="dropdown-item">Online Courses</a></li>
-                          <li><a href="landing-medical.html" class="dropdown-item">Medical</a></li>
-                          <li><a href="landing-software-company.html" class="dropdown-item">IT (Software) Company</a></li>
-                        </ul>
-                      </div>
-                      <div class="mega-dropdown-column pt-lg-3 pb-lg-4">
-                        <ul class="list-unstyled mb-0">
-                          <li><a href="landing-conference.html" class="dropdown-item">Conference</a></li>
-                          <li><a href="landing-digital-agency.html" class="dropdown-item">Digital Agency</a></li>
-                          <li><a href="landing-blog.html" class="dropdown-item">Blog Homepage</a></li>
-                        </ul>
-                      </div>
-                    </div>
-                  </div>
-                </li>
+                
+                
                 <li class="nav-item dropdown">
                   <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Pages</a>
                   <div class="dropdown-menu">
@@ -261,10 +236,10 @@
                   </ul>
                 </li>
                 <li class="nav-item">
-                  <a href="components/typography.html" class="nav-link">UI Kit</a>
+                  <a href="index.php" class="nav-link">Home</a>
                 </li>
                 <li class="nav-item">
-                  <a href="docs/getting-started.html" class="nav-link">Docs</a>
+                  <a href="about.php" class="nav-link">About</a>
                 </li>
               </ul>
             </div>
