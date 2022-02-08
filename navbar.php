@@ -24,43 +24,38 @@
                 </li>
                     
                 <li class="nav-item">
-                  <a href="explorer.php" class="nav-link">Block Explorer</a>
+                  <a href="explorer.php" class="nav-link">Explorer</a>
                 </li>    
              
-                <li class="nav-item">
-                  <a href="https://t.me/joinchat/GrZyx823mpMWzeqk" class="nav-link">Telegram</a>
-                </li>  
-                
-                <li class="nav-item">
-                  <a href="https://discord.gg/pJNGdG6UZx" class="nav-link">Discord</a>
-                </li>  
-                    
+               
                 <li class="nav-item">
                   <a href="about.php" class="nav-link">About</a>
                 </li>
 
                 
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Pages to Choose From</a>
+                  <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Connect</a>
                   <div class="dropdown-menu">
                     <div class="d-lg-flex pt-lg-3">
                       <div class="mega-dropdown-column">
                         
-                        <h6 class="px-3 mb-2">Portfolio</h6>
+                        <h6 class="px-3 mb-2">Social Media</h6>
                         <ul class="list-unstyled mb-3">
-                          <li><a href="portfolio-grid.html" class="dropdown-item py-1">Grid View</a></li>
-                          <li><a href="portfolio-list.html" class="dropdown-item py-1">List View</a></li>
-                          <li><a href="portfolio-slider.html" class="dropdown-item py-1">Slider View</a></li>
-                          <li><a href="portfolio-courses.html" class="dropdown-item py-1">Courses</a></li>
-                          <li><a href="portfolio-single-project.html" class="dropdown-item py-1">Single Project</a></li>
-                          <li><a href="portfolio-single-course.html" class="dropdown-item py-1">Single Course</a></li>
+                          <li><a href="portfolio-grid.html" class="dropdown-item py-1">Facebook</a></li>
+                          <li><a href="portfolio-list.html" class="dropdown-item py-1">Youtube</a></li>
+                          <li><a href="portfolio-slider.html" class="dropdown-item py-1">Twitter</a></li>
+                          <li><a href="portfolio-courses.html" class="dropdown-item py-1">Medium</a></li>
+                          <li><a href="portfolio-single-project.html" class="dropdown-item py-1">Reddit</a></li>
+                          <li><a href="portfolio-single-course.html" class="dropdown-item py-1">Instagram</a></li>
                         </ul>
                       </div>
                       <div class="mega-dropdown-column">
-                        <h6 class="px-3 mb-2">Blog</h6>
+                        <h6 class="px-3 mb-2">Chat</h6>
                         <ul class="list-unstyled mb-3">
-                          <li><a href="blog-list-with-sidebar.html" class="dropdown-item py-1">List View with Sidebar</a></li>
-                          <li><a href="blog-grid-with-sidebar.html" class="dropdown-item py-1">Grid View with Sidebar</a></li>
+                           <li><a href="https://discord.gg/pJNGdG6UZx" class="dropdown-item py-1">Discord</a></li>
+                          <li><a href="https://t.me/joinchat/GrZyx823mpMWzeqk" class="dropdown-item py-1">Telegram</a></li>    
+                          <li><a href="blog-list-with-sidebar.html" class="dropdown-item py-1">x</a></li>
+                          <li><a href="blog-grid-with-sidebar.html" class="dropdown-item py-1">x</a></li>
                           <li><a href="blog-list-no-sidebar.html" class="dropdown-item py-1">List View no Sidebar</a></li>
                           <li><a href="blog-grid-no-sidebar.html" class="dropdown-item py-1">Grid View no Sidebar</a></li>
                           <li><a href="blog-simple-feed.html" class="dropdown-item py-1">Simple Feed</a></li>
