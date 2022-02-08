@@ -14,17 +14,22 @@
             <div class="offcanvas-body">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                 
+                        
+                <li class="nav-item">
+                  <a href="index.php" class="nav-link">Home</a>
+                </li>
+                    
+                <li class="nav-item">
+                  <a href="about.php" class="nav-link">About</a>
+                </li>
+
                 
                 <li class="nav-item dropdown">
                   <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Pages</a>
                   <div class="dropdown-menu">
                     <div class="d-lg-flex pt-lg-3">
                       <div class="mega-dropdown-column">
-                        <h6 class="px-3 mb-2">About</h6>
-                        <ul class="list-unstyled mb-3">
-                          <li><a href="about-v1.html" class="dropdown-item py-1">About v.1</a></li>
-                          <li><a href="about-v2.html" class="dropdown-item py-1">About v.2</a></li>
-                        </ul>
+                        
                         <h6 class="px-3 mb-2">Portfolio</h6>
                         <ul class="list-unstyled mb-3">
                           <li><a href="portfolio-grid.html" class="dropdown-item py-1">Grid View</a></li>
@@ -67,26 +72,8 @@
                     </div>
                   </div>
                 </li>
-                <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle" data-bs-toggle="dropdown">Account</a>
-                  <ul class="dropdown-menu">
-                    <li><a href="account-details.html" class="dropdown-item">Account Details</a></li>
-                    <li><a href="account-security.html" class="dropdown-item">Security</a></li>
-                    <li><a href="account-notifications.html" class="dropdown-item">Notifications</a></li>
-                    <li><a href="account-messages.html" class="dropdown-item">Messages</a></li>
-                    <li><a href="account-saved-items.html" class="dropdown-item">Saved Items</a></li>
-                    <li><a href="account-collections.html" class="dropdown-item">My Collections</a></li>
-                    <li><a href="account-payment.html" class="dropdown-item">Payment Details</a></li>
-                    <li><a href="account-signin.html" class="dropdown-item">Sign In</a></li>
-                    <li><a href="account-signup.html" class="dropdown-item">Sign Up</a></li>
-                  </ul>
-                </li>
-                <li class="nav-item">
-                  <a href="index.php" class="nav-link">Home</a>
-                </li>
-                <li class="nav-item">
-                  <a href="about.php" class="nav-link">About</a>
-                </li>
+                
+                
               </ul>
             </div>
             <div class="offcanvas-footer border-top">
