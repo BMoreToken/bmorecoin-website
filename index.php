@@ -193,12 +193,12 @@
 
                     <!-- Item -->
                     <div class="swiper-slide">
-                      <h2 class="display-2 from-start mb-lg-4">The Best IT Solutions for Your Business</h2>
+                      <h2 class="display-2 from-start mb-lg-4">The Best Crypto for Your Wallet</h2>
                       <div class="from-end">
-                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We provide the wide range of high quality IT services and best practices solutions to our customers making their business better.</p>
+                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We provide the wide range of high quality cryptocurrency services and best practices solutions to our customers making their life better.</p>
                       </div>
                       <div class="scale-up delay-1">
-                        <a href="#" class="btn btn-primary shadow-primary btn-lg">Start your project</a>
+                        <a href="#" class="btn btn-primary shadow-primary btn-lg">Get your wallet now</a>
                       </div>
 
                     </div>
@@ -207,21 +207,21 @@
                     <div class="swiper-slide">
                       <h2 class="display-2 from-start mb-lg-4">Award-Winning Software Development</h2>
                       <div class="from-end">
-                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We build complex web, desktop and mobile applications. With us you get quality software and perfect service every time.</p>
+                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We build complex web3, desktop and mobile applications. With us you get quality software and perfect service every time.</p>
                       </div>
                       <div class="scale-up delay-1">
-                        <a href="#" class="btn btn-primary shadow-primary btn-lg">View case studies</a>
+                        <a href="#" class="btn btn-primary shadow-primary btn-lg">View Reviews</a>
                       </div>
                     </div>
 
                     <!-- Item -->
                     <div class="swiper-slide">
-                      <h2 class="display-2 from-start mb-lg-4">24/7 Tech &amp; Business Support</h2>
+                      <h2 class="display-2 from-start mb-lg-4">24/7 Community Support</h2>
                       <div class="from-end">
-                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We ensure lifetime support of all applications we've built. Our support department is a team of professionals who will assist you 24/7.</p>
+                        <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We ensure our applications are supported. Our support is provided by a team of professionals who will assist you 24/7.</p>
                       </div>
                       <div class="scale-up delay-1">
-                        <a href="#" class="btn btn-primary shadow-primary btn-lg">Work with us</a>
+                        <a href="#" class="btn btn-primary shadow-primary btn-lg">Common Questions</a>
                       </div>
                     </div>
                   </div>
