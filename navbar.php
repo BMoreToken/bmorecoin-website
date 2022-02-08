@@ -41,12 +41,13 @@
                         
                         <h6 class="px-3 mb-2">Social Media</h6>
                         <ul class="list-unstyled mb-3">
-                          <li><a href="portfolio-grid.html" class="dropdown-item py-1">Facebook</a></li>
-                          <li><a href="portfolio-list.html" class="dropdown-item py-1">Youtube</a></li>
-                          <li><a href="portfolio-slider.html" class="dropdown-item py-1">Twitter</a></li>
-                          <li><a href="portfolio-courses.html" class="dropdown-item py-1">Medium</a></li>
-                          <li><a href="portfolio-single-project.html" class="dropdown-item py-1">Reddit</a></li>
-                          <li><a href="portfolio-single-course.html" class="dropdown-item py-1">Instagram</a></li>
+                          <li><a href="https://www.facebook.com/groups/bmoretoken" class="dropdown-item py-1">Facebook</a></li>
+                          <li><a href="https://www.youtube.com/channel/UCqCVh7yCV34dDWF-TfFKc_Q" class="dropdown-item py-1">Youtube</a></li>
+                          <li><a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=BMoreToken" class="dropdown-item py-1">BMoreToken Twitter</a></li>
+                          <li><a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=BMoreCoin" class="dropdown-item py-1">BMoreCoin Twitter</a></li>
+                          <li><a href="https://medium.com/bmoretoken" class="dropdown-item py-1">Medium</a></li>
+                          <li><a href="https://www.reddit.com/r/BMoreToken/" class="dropdown-item py-1">Reddit</a></li>
+                          <li><a href="https://www.instagram.com/bmoretoken/" class="dropdown-item py-1">Instagram</a></li>
                         </ul>
                       </div>
                       <div class="mega-dropdown-column">
