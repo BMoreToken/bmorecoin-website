@@ -54,13 +54,6 @@
                         <ul class="list-unstyled mb-3">
                            <li><a href="https://discord.gg/pJNGdG6UZx" class="dropdown-item py-1">Discord</a></li>
                           <li><a href="https://t.me/joinchat/GrZyx823mpMWzeqk" class="dropdown-item py-1">Telegram</a></li>    
-                          <li><a href="blog-list-with-sidebar.html" class="dropdown-item py-1">x</a></li>
-                          <li><a href="blog-grid-with-sidebar.html" class="dropdown-item py-1">x</a></li>
-                          <li><a href="blog-list-no-sidebar.html" class="dropdown-item py-1">List View no Sidebar</a></li>
-                          <li><a href="blog-grid-no-sidebar.html" class="dropdown-item py-1">Grid View no Sidebar</a></li>
-                          <li><a href="blog-simple-feed.html" class="dropdown-item py-1">Simple Feed</a></li>
-                          <li><a href="blog-single.html" class="dropdown-item py-1">Single Post</a></li>
-                          <li><a href="blog-podcast.html" class="dropdown-item py-1">Podcast</a></li>
                         </ul>
                         <h6 class="px-3 mb-2">Mining</h6>
                         <ul class="list-unstyled mb-3">
@@ -69,15 +62,15 @@
                         </ul>
                       </div>
                       <div class="mega-dropdown-column">
-                        <h6 class="px-3 mb-2">Contacts</h6>
+                        <h6 class="px-3 mb-2">E-Mail</h6>
                         <ul class="list-unstyled mb-3">
-                          <li><a href="contacts-v1.html" class="dropdown-item py-1">Contacts v.1</a></li>
-                          <li><a href="contacts-v2.html" class="dropdown-item py-1">Contacts v.2</a></li>
+                          <li><a href="contacts-v1.html" class="dropdown-item py-1">E-Mail Us</a></li>
+                          <li><a href="contacts-v2.html" class="dropdown-item py-1">Mailing List</a></li>
                         </ul>
                         <h6 class="px-3 mb-2">How to Help</h6>
                         <ul class="list-unstyled">
                           <li><a href="404-v1.html" class="dropdown-item py-1">Spread The Word</a></li>
-                          <li><a href="404-v2.html" class="dropdown-item py-1">Contribute Code</a></li>
+                          <li><a href="https://github.com/BMoreToken" class="dropdown-item py-1">Contribute Code</a></li>
                         </ul>
                       </div>
                     </div>
