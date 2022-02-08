@@ -201,7 +201,7 @@
                         <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We provide the wide range of high quality cryptocurrency services and best practices solutions to our customers making their life better.</p>
                       </div>
                       <div class="scale-up delay-1">
-                        <a href="#" class="btn btn-primary shadow-primary btn-lg">Get your wallet now</a>
+                        <a href="#" onclick="download()" class="btn btn-primary shadow-primary btn-lg">Get your wallet now</a>
                       </div>
 
                     </div>
@@ -974,23 +974,23 @@
                 </h6>
                 <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                    <li class="nav-item"><a href="https://www.facebook.com/BMoreToken" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
+                    <li class="nav-item"><a href="https://www.linkedin.com/company/bmoretoken" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
+                    <li class="nav-item"><a href="https://twitter.com/bmorecoin" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
+                    <li class="nav-item"><a href="https://www.instagram.com/bmoretoken/" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
                   </ul>
                 </div>
               </div>
               <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
                 <h6 class="mb-2">Contact Us</h6>
-                <a href="mailto:email@example.com" class="fw-medium">email@example.com</a>
+                <a href="mailto:email@example.com" class="fw-medium">project@bmoretoken.com</a>
               </div>
             </div>
           </div>
         </div>
         <p class="fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
           <span class="text-light opacity-50">&copy; All rights reserved. Made by </span>
-          <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a>
+          <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">BMoreCoin</a>
         </p>
       </div>
     </footer>
