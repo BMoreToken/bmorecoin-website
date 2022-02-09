@@ -161,12 +161,12 @@
       <nav class="container py-4 mb-lg-2 mt-lg-3" aria-label="breadcrumb">
         <ol class="breadcrumb mb-0">
           <li class="breadcrumb-item">
-            <a href="index.html"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
+            <a href="index.php"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
           </li>
           <li class="breadcrumb-item">
-            <a href="portfolio-grid.html">Portfolio</a>
+            <a href="case_studies.php">Case Studies</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Single Project</li>
+          <li class="breadcrumb-item active" aria-current="page">Case Study</li>
         </ol>
       </nav>
 
