@@ -251,7 +251,7 @@
               <i class="bx bxl-youtube"></i>
             </a>
           </div>
-          <a href="#" class="nav-link px-0">
+          <a href="#" onClick="case_studies()" class="nav-link px-0">
             Our case studies
             <i class="bx bx-right-arrow-circle fs-4 ms-2"></i>
           </a>
@@ -402,7 +402,7 @@
               <p class="fs-lg text-muted mb-md-0">We bring real solutions to each client’s problems through a deep understanding of their market, solution, and vision.</p>
             </div>
             <div class="col-md-4 col-lg-5 col-xl-6 d-flex justify-content-center justify-content-md-end">
-              <a href="#" class="btn btn-outline-primary btn-lg">See all case studies</a>
+              <a href="#" onClick="case_studies()" class="btn btn-outline-primary btn-lg">See all case studies</a>
             </div>
           </div>
         </div>
