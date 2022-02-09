@@ -3,6 +3,10 @@
   <head>
     <meta charset="utf-8">
     <title>BMoreCoin | Block Explorer</title>
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="bmorecoin.js"></script>
+    
+
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="Silicon - Multipurpose Technology Bootstrap Template">
