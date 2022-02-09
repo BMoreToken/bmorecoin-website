@@ -956,11 +956,11 @@
                 </h6>
                 <div id="useful-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column pb-lg-1 mb-lg-3">
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Services</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Case Studies</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">About Us</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">News &amp; Insights</a></li>
+                    <li class="nav-item"><a href="/" class="nav-link d-inline-block px-0 pt-1 pb-2">Home</a></li>
+                    <li class="nav-item"><a href="tokenomics.php" class="nav-link d-inline-block px-0 pt-1 pb-2">Tokenomics</a></li>
+                    <li class="nav-item"><a href="case_studies.php" class="nav-link d-inline-block px-0 pt-1 pb-2">Case Studies</a></li>
+                    <li class="nav-item"><a href="about.php" class="nav-link d-inline-block px-0 pt-1 pb-2">About Us</a></li>
+                    <li class="nav-item"><a href="news.php" class="nav-link d-inline-block px-0 pt-1 pb-2">News &amp; Insights</a></li>
                   </ul>
                   <ul class="nav flex-column mb-2 mb-lg-0">
                     <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Terms &amp; Conditions</a></li>
@@ -983,14 +983,14 @@
               </div>
               <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
                 <h6 class="mb-2">Contact Us</h6>
-                <a href="mailto:email@example.com" class="fw-medium">project@bmoretoken.com</a>
+                <a href="mailto:project@bmoretoken.com" class="fw-medium">project@bmoretoken.com</a>
               </div>
             </div>
           </div>
         </div>
         <p class="fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
-          <span class="text-light opacity-50">&copy; All rights reserved. Made by </span>
-          <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">BMoreCoin</a>
+          <span class="text-light opacity-50">&copy; 2021 - <?PHP echo date('Y'); ?> All rights reserved. Made by </span>
+          <a class="nav-link d-inline-block p-0" href="https://www.bmorecoin.com/" target="_blank" rel="noopener">BMoreCoin</a>
         </p>
       </div>
     </footer>
