@@ -3,6 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>BMoreCoin | Block List</title>
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="bmorecoin.js"></script>
+    
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="BMoreCoin - Multipurpose Cryptocurrency">
