@@ -1,0 +1,19 @@
+name: Upgrade
+on: 
+  push:
+      branches:
+        - main
+jobs:
+
+  upgrade:
+    name: Upgrade
+    runs-on: ubuntu-latest
+    steps:
+    - name: Upgrade Packages on the Websever
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        script: /root/upgrade.sh
