@@ -208,7 +208,7 @@
               </div>
               <div class="card-body">
                 <h2 class="h4 mb-2">
-                  <a href="portfolio-single-project.html" class="stretched-link">Astronaut &amp; Flashing Neon Lights</a>
+                  <a href="case_study.php" class="stretched-link">Astronaut &amp; Flashing Neon Lights</a>
                 </h2>
                 <div class="card-portfolio-meta">
                   <span class="text-muted">3D Render / Graphic Design / Motion Design</span>
@@ -225,7 +225,7 @@
               </div>
               <div class="card-body">
                 <h2 class="h4 mb-2">
-                  <a href="portfolio-single-project.html" class="stretched-link">Scene of Sunglasses &amp; Headphone on Human Head</a>
+                  <a href="case_study.php" class="stretched-link">Scene of Sunglasses &amp; Headphone on Human Head</a>
                 </h2>
                 <div class="card-portfolio-meta pb-1">
                   <span class="text-muted">NFT / Graphic Design / Art / Identity / Motion Design</span>
@@ -242,7 +242,7 @@
               </div>
               <div class="card-body">
                 <h2 class="h4 mb-2">
-                  <a href="portfolio-single-project.html" class="stretched-link">Plaster Antique Sculpture in a Pop Art Style</a>
+                  <a href="case_study.php" class="stretched-link">Plaster Antique Sculpture in a Pop Art Style</a>
                 </h2>
                 <div class="card-portfolio-meta">
                   <span class="text-muted">NFT / Graphic Design / Art / 3D</span>
@@ -259,7 +259,7 @@
               </div>
               <div class="card-body">
                 <h2 class="h4 mb-2">
-                  <a href="portfolio-single-project.html" class="stretched-link">Big Blue Whale Shape</a>
+                  <a href="case_study.php" class="stretched-link">Big Blue Whale Shape</a>
                 </h2>
                 <div class="card-portfolio-meta">
                   <span class="text-muted">3D Pollygonal Shape / Graphic Design / Art</span>
@@ -276,7 +276,7 @@
               </div>
               <div class="card-body">
                 <h2 class="h4 mb-2">
-                  <a href="portfolio-single-project.html" class="stretched-link">3D Shape Illustration</a>
+                  <a href="case_study.php" class="stretched-link">3D Shape Illustration</a>
                 </h2>
                 <div class="card-portfolio-meta">
                   <span class="text-muted">3D Design / Illustration / Art</span>
@@ -293,7 +293,7 @@
               </div>
               <div class="card-body">
                 <h2 class="h4 mb-2">
-                  <a href="portfolio-single-project.html" class="stretched-link">Mannequin Hands Holding Phone</a>
+                  <a href="case_study.php" class="stretched-link">Mannequin Hands Holding Phone</a>
                 </h2>
                 <div class="card-portfolio-meta">
                   <span class="text-muted">NFT / Graphic Design / Art / 3D</span>
@@ -415,8 +415,8 @@
           </div>
         </div>
         <p class="fs-xs text-center text-md-start pb-2 pb-lg-0 mb-0">
-          &copy; All rights reserved. Made by 
-          <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">Createx Studio</a>
+          &copy; 2021 - <?PHP echo date('Y');?> All rights reserved. Made by 
+          <a class="nav-link d-inline-block p-0" href="https://www.bmorecoin.com/" target="_blank" rel="noopener">BMoreCoin</a>
         </p>
       </div>
     </footer>
