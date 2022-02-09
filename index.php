@@ -937,7 +937,7 @@
               <img src="assets/img/logo.svg" width="47" alt="BMoreCoin">
               BMoreCoin
             </div>
-            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
+            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">On June 7th 2021 at 8:16:24 PM UTC the <a target="_Blank" href="https://etherscan.io/tx/0xa2ee423223507166dfee2895e3341b48f3bd8ea4d657881ab1ed58b6ec22e955">TX for BMoreToken was confirmed</a> on the Ethereum Blockchain. On July 19th Jul 2021 2:34:21 AM EST the <a target="_Blank" href="https://www.bmorecoin.com/blockchain_explorer.php?block=ebe509d6ccf39f9b25112ea94daedca66f46547fedd7228ef9a42ad166948ae2">first block of the BMoreCoin Blockchain</a> was mined.</p>
             <form class="needs-validation" novalidate>
               <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
               <div class="input-group">
