@@ -3,7 +3,9 @@
   <head>
     <meta charset="utf-8">
     <title>BMoreCoin | 404 Not Found</title>
-
+    <!-- Custom Scripts -->
+    <script type="text/javascript" src="bmorecoin.js"></script>
+    
     <!-- SEO Meta Tags -->
     <meta name="description" content="BMoreCoin - Multipurpose Cryptocurrency">
     <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
