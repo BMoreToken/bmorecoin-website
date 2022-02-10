@@ -499,7 +499,7 @@
                   
                   <script type="text/javascript">
                   var qrcode = new QRCode(document.getElementById("qrcode"), {
-                    text: getCookie('address'),
+                    text: getCookie('email'),
                     width: 250,
                     height: 250,
                     colorDark : "#000000",
