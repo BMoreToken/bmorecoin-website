@@ -12,7 +12,9 @@
         timeout: 120000
       });
     </script>
-<script src="https://apis.google.com/js/platform.js" async defer></script>
+  <!-- jQuery 3.6.0 -->
+  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+  <script src="https://apis.google.com/js/platform.js" async defer></script>
   <meta name="google-signin-client_id" content="303524778206-pbcvlggrgim3e58is51qnskgl411caro.apps.googleusercontent.com">
   <script>
    function hide_show(element) {
