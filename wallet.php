@@ -439,10 +439,9 @@
                 </h3>
               </div>
               <div class="card-footer py-4">
-                <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-                  <img src="assets/img/avatar/01.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-                  Jerome Bell
-                </a>
+                  <div id="login_google" name="login_box" style="display:block;">
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                  </div>
               </div>
             </article>
           </div>
@@ -466,9 +465,7 @@
                   <div id='wallet'></div>
                   <div id='tx_result' style='text-align:right;background-color:yellow;'></div>
                   <div id='tx_log' style='text-align:right;background-color:lightgreen;'></div>
-                  <div id="login_google" name="login_box" style="display:block;">
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                  </div>
+                  
                  
           
                 </h3>
