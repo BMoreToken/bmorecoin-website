@@ -8,8 +8,10 @@
     <script type="text/javascript" src="bmorecoin.js"></script>
   <!-- jQuery 3.6.0 -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+    <!-- QR Generator -->
     <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
-
+    <!-- QR Reader -->
+<script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
     <script>
       $.ajaxSetup({
         url: "https://www.bmorecoin.com/google_wallet_api.php",
@@ -495,7 +497,7 @@
                   <span class="fs-sm text-muted">Sep 16, 2021</span>
                 </div>
                 <h3 class="h5 mb-0">
-                  Above is the QR Code for your Public Address
+                  Above is the QR Code for your Public Address ( right now it's just your email )
                   
                   <script type="text/javascript">
                   var qrcode = new QRCode(document.getElementById("qrcode"), {
@@ -518,6 +520,107 @@
               </div>
             </article>
           </div>
+          
+          
+            <!-- Item -->
+          <div class="col pb-3">
+            <article class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                  <i class="bx bx-bookmark"></i>
+                </a>
+                <a id="btn-scan-qr">
+                  <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg">
+                <a/>
+              </div>
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">QR Code Reader</a>
+                  <span class="fs-sm text-muted">Sep 16, 2021</span>
+                </div>
+                <h3 class="h5 mb-0">
+                  
+                  
+                   <canvas hidden="" id="qr-canvas"></canvas>
+
+                  <div id="qr-result" hidden="">
+                    <b>Data:</b> <span id="outputData"></span>
+                  </div>
+                  <script>
+                    
+                    const qrcode = window.qrcode;
+
+                    const video = document.createElement("video");
+                    const canvasElement = document.getElementById("qr-canvas");
+                    const canvas = canvasElement.getContext("2d");
+
+                    const qrResult = document.getElementById("qr-result");
+                    const outputData = document.getElementById("outputData");
+                    const btnScanQR = document.getElementById("btn-scan-qr");
+
+                    let scanning = false;
+
+                    qrcode.callback = res => {
+                      if (res) {
+                        outputData.innerText = res;
+                        scanning = false;
+
+                        video.srcObject.getTracks().forEach(track => {
+                          track.stop();
+                        });
+
+                        qrResult.hidden = false;
+                        canvasElement.hidden = true;
+                        btnScanQR.hidden = false;
+                      }
+                    };
+
+                    btnScanQR.onclick = () => {
+                      navigator.mediaDevices
+                        .getUserMedia({ video: { facingMode: "environment" } })
+                        .then(function(stream) {
+                          scanning = true;
+                          qrResult.hidden = true;
+                          btnScanQR.hidden = true;
+                          canvasElement.hidden = false;
+                          video.setAttribute("playsinline", true); // required to tell iOS safari we don't want fullscreen
+                          video.srcObject = stream;
+                          video.play();
+                          tick();
+                          scan();
+                        });
+                    };
+
+                    function tick() {
+                      canvasElement.height = video.videoHeight;
+                      canvasElement.width = video.videoWidth;
+                      canvas.drawImage(video, 0, 0, canvasElement.width, canvasElement.height);
+
+                      scanning && requestAnimationFrame(tick);
+                    }
+
+                    function scan() {
+                      try {
+                        qrcode.decode();
+                      } catch (e) {
+                        setTimeout(scan, 300);
+                      }
+                    }
+
+                    
+                    </script>
+          
+                </h3>
+              </div>
+              <div class="card-footer py-4">
+                  <div id="login_google" name="login_box" style="display:block;">
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                  </div>
+              </div>
+            </article>
+          </div>
+          
           
           
         </nav>
