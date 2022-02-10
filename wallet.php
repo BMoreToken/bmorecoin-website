@@ -489,7 +489,7 @@
                 <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
                   <i class="bx bx-bookmark"></i>
                 </a>
-                <div id="qrcode"></div>
+                <div id="qrcode_gen"></div>
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
@@ -500,7 +500,7 @@
                   Above is the QR Code for your Public Address ( right now it's just your email )
                   
                   <script type="text/javascript">
-                  var qrcode = new QRCode(document.getElementById("qrcode"), {
+                  var qrcode_gen = new QRCode(document.getElementById("qrcode_gen"), {
                     text: getCookie('email'),
                     width: 250,
                     height: 250,
