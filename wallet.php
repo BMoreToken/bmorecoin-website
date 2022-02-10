@@ -416,19 +416,21 @@
               <form action='https://www.bmorecoin.com/google_wallet_api.php' id='transfer_form' name='transfer_form' class="d-flex">
                 <div class="mb-3">
                   <span class="input-group-text" id="basic-addon3">Address Sending To</span>
-                  <input type="text" class="form-control" id="tx_to" name="tx_to" aria-describedby="basic-addon3">
+                  <input type="text" class="form-control" id="tx_to" name="tx_to" aria-label="tx_to">
                 </div>
+                
                 <div class="mb-3">
                   <span class="input-group-text">BALTx</span>
-                  <input type="text" class="form-control" id='tx_amount' name='tx_amount' aria-label="Amount">
+                  <input type="text" class="form-control" id='tx_amount' name='tx_amount' aria-label="tx_amount">
                 </div>
+                
                 <div class="mb-3">
                   <span class="input-group-text">MixIn</span>
-                  <input type="text" class="form-control" id='tx_mixin' name='tx_mixin' aria-label="Amount" value="2">
+                  <input type="text" class="form-control" id='tx_mixin' name='tx_mixin' aria-label="tx_mixin" value="2">
                 </div>
-                <div class="mb-3">
-                  <button class="btn btn-outline-success">Send</button>
-                </div>
+               
+                <button class="btn btn-outline-success">Send</button>
+               
                 </form>
                   
                   
