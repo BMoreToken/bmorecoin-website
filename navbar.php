@@ -27,6 +27,9 @@
                   <a href="explorer.php" class="nav-link">Explorer</a>
                 </li>    
              
+                <li class="nav-item">
+                  <a href="wallet.php" class="nav-link">Web Wallet</a>
+                </li>
                
                 <li class="nav-item">
                   <a href="about.php" class="nav-link">About</a>
