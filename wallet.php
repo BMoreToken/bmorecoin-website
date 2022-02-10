@@ -394,6 +394,59 @@
         <!-- Blog grid -->
         <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-md-4 gy-2">
 
+          
+           <!-- Item -->
+          <div class="col pb-3">
+            <article class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                  <i class="bx bx-bookmark"></i>
+                </a>
+                <img src="https://www.bmorecoin.com/wallet.png" class="card-img-top" alt="Send BALTx">
+              </div>
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Send BALTx</a>
+                  <span class="fs-sm text-muted">May 19, 2021</span>
+                </div>
+                <h3 class="h5 mb-0">
+                  
+                  
+             <form action='https://www.bmorecoin.com/google_wallet_api.php' id='transfer_form' name='transfer_form' class="d-flex">
+            <div class="input-group col-sm-7">
+              <span class="input-group-text" id="basic-addon3">Address Sending To</span>
+              <input type="text" class="form-control" id="tx_to" name="tx_to" aria-describedby="basic-addon3">
+            </div>
+
+            <div class="input-group col-sm">
+              <span class="input-group-text">BALTx</span>
+              <input type="text" class="form-control" id='tx_amount' name='tx_amount' aria-label="Amount">
+              <span class="input-group-text">MixIn</span>
+              <input type="text" class="form-control" id='tx_mixin' name='tx_mixin' aria-label="Amount" value="2">
+
+            </div>
+
+            <div class="input-group col-sm">
+              <button class="btn btn-outline-success">Send</button>
+            </div>  
+
+          </form>
+                  
+                  
+                  
+                  
+                </h3>
+              </div>
+              <div class="card-footer py-4">
+                  <div id="login_google" name="login_box" style="display:block;">
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                  </div>
+              </div>
+            </article>
+          </div>
+          
+          
           <!-- Item -->
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
@@ -544,7 +597,7 @@
                    <canvas hidden="" id="qr-canvas"></canvas>
 
                   <div id="qr-result" hidden="">
-                    <b>Data:</b> <span id="outputData"></span>
+                    <b>Address Detected and Entered:</b> <span id="outputData"></span>
                   </div>
                   <script>
                     
@@ -556,6 +609,10 @@
 
                     const qrResult = document.getElementById("qr-result");
                     const outputData = document.getElementById("outputData");
+                    
+                    let element01 = document.getElementById("tx_to");
+                    element01.innerHTML = outputData;
+                    
                     const btnScanQR = document.getElementById("btn-scan-qr");
 
                     let scanning = false;
