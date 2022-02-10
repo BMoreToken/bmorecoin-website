@@ -548,7 +548,7 @@
                   </div>
                   <script>
                     
-                    const qrcode = window.qrcode;
+                    var qrcode = window.qrcode;
 
                     const video = document.createElement("video");
                     const canvasElement = document.getElementById("qr-canvas");
