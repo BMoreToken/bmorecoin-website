@@ -413,25 +413,15 @@
                 <h3 class="h5 mb-0">
                   
                   
-             <form action='https://www.bmorecoin.com/google_wallet_api.php' id='transfer_form' name='transfer_form' class="d-flex">
-            <div class="input-group col-sm-7">
+              <form action='https://www.bmorecoin.com/google_wallet_api.php' id='transfer_form' name='transfer_form' class="d-flex">
               <span class="input-group-text" id="basic-addon3">Address Sending To</span>
               <input type="text" class="form-control" id="tx_to" name="tx_to" aria-describedby="basic-addon3">
-            </div>
-
-            <div class="input-group col-sm">
               <span class="input-group-text">BALTx</span>
               <input type="text" class="form-control" id='tx_amount' name='tx_amount' aria-label="Amount">
               <span class="input-group-text">MixIn</span>
               <input type="text" class="form-control" id='tx_mixin' name='tx_mixin' aria-label="Amount" value="2">
-
-            </div>
-
-            <div class="input-group col-sm">
               <button class="btn btn-outline-success">Send</button>
-            </div>  
-
-          </form>
+              </form>
                   
                   
                   
@@ -610,8 +600,7 @@
                     const qrResult = document.getElementById("qr-result");
                     const outputData = document.getElementById("outputData");
                     
-                    let element01 = document.getElementById("tx_to");
-                    element01.innerHTML = outputData;
+                    document.getElementById("tx_to").value = outputData;
                     
                     const btnScanQR = document.getElementById("btn-scan-qr");
 
