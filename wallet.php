@@ -62,7 +62,7 @@
        let element01 = document.getElementById("wallet");
          element01.innerHTML = "Connecting to wallet....";
          $.post(
-          "google_wallet_api.php", 
+          "https://www.bmorecoin.com/google_wallet_api.php", 
           {
             action: "new_wallet",
             email: getCookie('email')
@@ -83,7 +83,7 @@
          let element02 = document.getElementById("balance");
          element02.innerHTML = "Loading Balance....";
          $.post(
-          "google_wallet_api.php", 
+          "https://www.bmorecoin.com/google_wallet_api.php", 
           {
             action: "get_balance",
             email: getCookie('email')
@@ -105,7 +105,7 @@
          element01.innerHTML = "Loading Transfers....";
          console.log('Get Transfers: Start');
          $.post(
-          "google_wallet_api.php", 
+          "https://www.bmorecoin.com/google_wallet_api.php", 
           {
             action: "get_transfers",
             email: getCookie('email')
