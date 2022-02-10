@@ -11,7 +11,7 @@
     
     <script>
       $.ajaxSetup({
-        url: "google_wallet_api.php",
+        url: "https://www.bmorecoin.com/google_wallet_api.php",
         timeout: 120000
       });
     </script>
