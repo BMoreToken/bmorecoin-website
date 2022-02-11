@@ -8,9 +8,9 @@
     <?PHP include_once('content.php'); ?>
 
     <!-- SEO Meta Tags -->
-    <meta name="description" content="BMoreCoin - Multipurpose Cryptocurrency">
-    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="BMoreCoin">
+    <meta name="description" content="<?PHP echo $SEO_description;?>">
+    <meta name="keywords" content="<?PHP echo $SEO_keywords;?>">
+    <meta name="author" content="<?PHP echo $SEO_author;?>">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
