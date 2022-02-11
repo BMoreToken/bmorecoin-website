@@ -5,12 +5,12 @@
     <title>BMoreCoin | Landing</title>
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
+    <?PHP include_once('content.php'); ?>
 
-    
     <!-- SEO Meta Tags -->
-    <meta name="description" content="BMoreCoin - Multipurpose Cryptocurrency">
-    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="BMoreCoin">
+    <meta name="description" content="<?PHP echo $SEO_description;?>">
+    <meta name="keywords" content="<?PHP echo $SEO_keywords;?>">
+    <meta name="author" content="<?PHP echo $SEO_author;?>">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -304,7 +304,7 @@
                     Custom Software Development
                     <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
                   </h2>
-                  <p class="fs-sm text-body mb-0">Nisi, dis sed cursus eget pellentesque mattis. Odio eu proin aliquam a. Semper bibendum tellus non tellus, facilisi dignissim in quam massa. Aliquam, feugiat ut cum tellus, sit. Quis consectetur gravida ac ac lectus cursus egestas.</p>
+                  <p class="fs-sm text-body mb-0"><?PHP echo $custom_software_development;?></p>
                 </div>
               </a>
             </div>
@@ -320,7 +320,7 @@
                     Software Integration
                     <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
                   </h2>
-                  <p class="fs-sm text-body mb-0">Id eget blandit sapien cras massa lectus lorem placerat. Quam dolor commodo fermentum bibendum dictumst. Risus pretium eget at viverra eget. Sit neque adipiscing malesuada blandit justo, quam.</p>
+                  <p class="fs-sm text-body mb-0"><?PHP echo $software_integration;?></p>
                 </div>
               </a>
             </div>
@@ -336,7 +336,7 @@
                     Mobile App Development
                     <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
                   </h2>
-                  <p class="fs-sm text-body mb-0">Nunc, justo, diam orci, dictum purus convallis risus. Suscipit hendrerit at egestas id id blandit interdum est. Integer fames placerat turpis pretium quis hac leo lacus. Orci, dictum nunc mus quis semper eu bibendum enim, morbi.</p>
+                  <p class="fs-sm text-body mb-0"><?PHP echo $mobile_app_development;?></p>
                 </div>
               </a>
             </div>
@@ -352,7 +352,7 @@
                     Business Analytics
                     <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
                   </h2>
-                  <p class="fs-sm text-body mb-0">Gravida eget euismod tempus diam dignissim quam. Dignissim magnis blandit faucibus convallis augue nisl, etiam. Feugiat ut molestie non arcu senectus sed. Diam pellentesque sit mattis nec amet varius nunc a sed.</p>
+                  <p class="fs-sm text-body mb-0"><?PHP echo $business_analytics;?></p>
                 </div>
               </a>
             </div>
@@ -368,7 +368,7 @@
                     Software Testing
                     <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
                   </h2>
-                  <p class="fs-sm text-body mb-0">Quis rhoncus quam venenatis facilisi. Risus dis libero nisl condimentum quis. Tincidunt ultricies vulputate ornare nunc rhoncus in. Ultrices dolor eu natoque volutpat praesent curabitur ultricies.</p>
+                  <p class="fs-sm text-body mb-0"><?PHP echo $software_testing;?></p>
                 </div>
               </a>
             </div>
@@ -384,7 +384,7 @@
                     Project Management
                     <i class="bx bx-right-arrow-circle text-primary fs-3 ms-2"></i>
                   </h2>
-                  <p class="fs-sm text-body mb-0">Massa dis morbi sagittis, tellus sit gravida. Id ut non ut in faucibus eu, ac. Tempus feugiat enim id pellentesque a sagittis vitae, convallis. Nunc, arcu enim orci ullamcorper aenean. Scelerisque eget a nibh bibendum commodo.</p>
+                  <p class="fs-sm text-body mb-0"><?PHP echo $project_management;?></p>
                 </div>
               </a>
             </div>
@@ -937,7 +937,7 @@
               <img src="assets/img/logo.svg" width="47" alt="BMoreCoin">
               BMoreCoin
             </div>
-            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">On June 7th 2021 at 8:16:24 PM UTC the TX for <a target="_Blank" href="https://etherscan.io/tx/0xa2ee423223507166dfee2895e3341b48f3bd8ea4d657881ab1ed58b6ec22e955">BMoreToken</a> was confirmed and the <a target="_Blank" href="https://etherscan.io/address/0xbdd4f273c2b0f0b84a51bd733aac617d91159376#code">Contract Source Code Verified</a> on the Ethereum Blockchain. On July 19th Jul 2021 2:34:21 AM EST the First Block of the <a target="_Blank" href="https://www.bmorecoin.com/blockchain_explorer.php?block=ebe509d6ccf39f9b25112ea94daedca66f46547fedd7228ef9a42ad166948ae2">BMoreCoin</a> Blockchain was mined.</p>
+            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4"><?PHP echo $lower_paragraph;?></p>
             <form class="needs-validation" novalidate>
               <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
               <div class="input-group">
@@ -974,10 +974,7 @@
                 </h6>
                 <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="https://www.facebook.com/BMoreToken" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
-                    <li class="nav-item"><a href="https://www.linkedin.com/company/bmoretoken" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
-                    <li class="nav-item"><a href="https://twitter.com/bmorecoin" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
-                    <li class="nav-item"><a href="https://www.instagram.com/bmoretoken/" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                    <?PHP echo $lower_social_menu;?>
                   </ul>
                 </div>
               </div>
