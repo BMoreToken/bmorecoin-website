@@ -147,6 +147,8 @@
     
     function make_qr_code(){
       return new Promise((resolve,reject) => {
+        let element05 = document.getElementById("qrcode_gen");
+        element05.innerHTML = "";
         var qrcode_gen = new QRCode(document.getElementById("qrcode_gen"), {
                     text: getCookie('address'),
                     width: 500,
