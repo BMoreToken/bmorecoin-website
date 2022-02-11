@@ -549,7 +549,7 @@
                   <span class="fs-sm text-muted">Sep 16, 2021</span>
                 </div>
                 <h3 class="h5 mb-0">
-                  Above is the QR Code for your Public Address
+                  Above is a QR Code of your Public Address for receiving BALTx
                 </h3>
               </div>
               <div class="card-footer py-4">
@@ -570,7 +570,7 @@
                   <i class="bx bx-bookmark"></i>
                 </a>
                 <a id="btn-scan-qr">
-                  <img src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2017/07/1499401426qr_icon.svg">
+                  <button type="button" class="btn btn-success">Access Camera</button>
                 <a/>
               </div>
               <div class="card-body pb-4">
@@ -579,10 +579,8 @@
                   <span class="fs-sm text-muted">Sep 16, 2021</span>
                 </div>
                 <h3 class="h5 mb-0">
-                  Click the QR Code to access camera.
-                  
+                  Click the button above to access the camera to scan a QR code, and enter it in the Send BALTx form above.
                   <canvas hidden="" id="qr-canvas"></canvas>
-
                   <div id="qr-result" hidden="">
                     <b>Address Detected and Entered:</b> <span id="outputData"></span>
                   </div>
