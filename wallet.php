@@ -549,7 +549,7 @@
                   <span class="fs-sm text-muted">Sep 16, 2021</span>
                 </div>
                 <h3 class="h5 mb-0">
-                  Above is a QR Code of your Public Address for receiving BALTx
+                  Above is a QR Code of your Public Address for receiving BALTx.<br>If you have trouble scanning try maximum brightness in light mode.
                 </h3>
               </div>
               <div class="card-footer py-4">
