@@ -143,6 +143,20 @@
       });
     }
     
+    function make_qr_code(){
+      return new Promise((resolve,reject) => {
+        var qrcode_gen = new QRCode(document.getElementById("qrcode_gen"), {
+                    text: getCookie('address'),
+                    width: 500,
+                    height: 250,
+                    colorDark : "#000000",
+                    colorLight : "#ffffff",
+                    correctLevel : QRCode.CorrectLevel.H
+                  });
+        resolve(); 
+      });
+    }
+    
     async function process_one() {
          return new_wallet();
     }
@@ -158,6 +172,10 @@
     async function process_four() {
          return get_address();
     }
+    
+    async function process_five() {
+         return make_qr_code();
+    }
 
     async function run_processes() {
         let res = null;
@@ -167,6 +185,7 @@
             res.push(await process_four());
             res.push(await process_two());
             res.push(await process_three());
+            res.push(await process_five());
             console.log('Success >>', res);
         } catch (err) {
             console.log('Fail >>', res, err);
@@ -439,19 +458,6 @@
                 </div>
                 <h3 class="h5 mb-0">
                   Above is the QR Code for your Public Address
-                  
-                  <script type="text/javascript">
-                  var qrcode_gen = new QRCode(document.getElementById("qrcode_gen"), {
-                    text: getCookie('address'),
-                    width: 250,
-                    height: 250,
-                    colorDark : "#000000",
-                    colorLight : "#ffffff",
-                    correctLevel : QRCode.CorrectLevel.H
-                  });
-                  </script>
-                 
-          
                 </h3>
               </div>
               <div class="card-footer py-4">
