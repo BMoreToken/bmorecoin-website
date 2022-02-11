@@ -379,14 +379,14 @@
                     <div class="swiper-slide h-auto" data-swiper-tab="#author-1">
                       <figure class="card h-100 position-relative border-0 bg-transparent">
                         <blockquote class="card-body p-0 mb-0">
-                          <p class="fs-lg mb-0">Dolor, a eget elementum, integer nulla volutpat, nunc, sit. Quam iaculis varius mauris magna sem. Egestas sed sed suscipit dolor faucibus dui imperdiet at eget. Tincidunt imperdiet quis hendrerit aliquam feugiat neque cras sed. Dictum quam integer volutpat tellus, faucibus platea. Pulvinar turpis proin faucibus at mauris. Sagittis gravida vitae porta enim, nulla arcu fermentum massa. Tortor ullamcorper lacus. Pellentesque lectus adipiscing aenean volutpat tortor habitant.</p>
+                          <p class="fs-lg mb-0"><?PHP echo $client1;?></p>
                         </blockquote>
                         <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
                           <div class="d-flex align-items-center border-end-sm pe-sm-4 me-sm-2">
-                            <img src="assets/img/avatar/05.jpg" width="48" class="rounded-circle" alt="Ralph Edwards">
+                            <img src="assets/img/avatar/05.jpg" width="48" class="rounded-circle" alt="<?PHP echo $client1_name;?>">
                             <div class="ps-3">
-                              <h5 class="fw-semibold lh-base mb-0">Ralph Edwards</h5>
-                              <span class="fs-sm text-muted">Head of Marketing</span>
+                              <h5 class="fw-semibold lh-base mb-0"><?PHP echo $client1_name;?></h5>
+                              <span class="fs-sm text-muted"><?PHP echo $client1_title;?></span>
                             </div>
                           </div>
                           <img src="assets/img/brands/01.svg" width="160" class="d-block mt-2 ms-5 mt-sm-0 ms-sm-0" alt="Company logo">
@@ -398,14 +398,14 @@
                     <div class="swiper-slide h-auto" data-swiper-tab="#author-2">
                       <figure class="card h-100 position-relative border-0 bg-transparent">
                         <blockquote class="card-body p-0 mb-0">
-                          <p class="fs-lg mb-0">Mi semper risus ultricies orci pulvinar in at enim orci. Quis facilisis nunc pellentesque in ullamcorper sit. Lorem blandit arcu sapien, senectus libero, amet dapibus cursus quam. Eget pellentesque eu purus volutpat adipiscing malesuada. Purus nisi, tortor vel lacus. Donec diam molestie ultrices vitae eget pulvinar fames. Velit lacus mi purus velit justo, amet. Nascetur lobortis diam, duis orci.</p>
+                          <p class="fs-lg mb-0"><?PHP echo $client2;?></p>
                         </blockquote>
                         <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
                           <div class="d-flex align-items-center border-end-sm pe-sm-4 me-sm-2">
-                            <img src="assets/img/avatar/06.jpg" width="48" class="rounded-circle" alt="Annette Black">
+                            <img src="assets/img/avatar/06.jpg" width="48" class="rounded-circle" alt="<?PHP echo $client2_name;?>">
                             <div class="ps-3">
-                              <h5 class="fw-semibold lh-base mb-0">Annette Black</h5>
-                              <span class="fs-sm text-muted">Strategic Advisor</span>
+                              <h5 class="fw-semibold lh-base mb-0"><?PHP echo $client2_name;?></h5>
+                              <span class="fs-sm text-muted"><?PHP echo $client2_title;?></span>
                             </div>
                           </div>
                           <img src="assets/img/brands/02.svg" width="160" class="d-block mt-2 ms-5 mt-sm-0 ms-sm-0" alt="Company logo">
@@ -417,14 +417,14 @@
                     <div class="swiper-slide h-auto" data-swiper-tab="#author-3">
                       <figure class="card h-100 position-relative border-0 bg-transparent">
                         <blockquote class="card-body p-0 mb-0">
-                          <p class="fs-lg mb-0">Ac at sed sit senectus massa. Massa ante amet ultrices magna porta tempor. Aliquet diam in et magna ultricies mi at. Lectus enim, vel enim egestas nam pellentesque et leo. Elit mi faucibus laoreet aliquam pellentesque sed aliquet integer massa. Orci leo tortor ornare id mattis auctor aliquam volutpat aliquet. Odio lectus viverra eu blandit nunc malesuada vitae eleifend pulvinar. In ac fermentum sit in orci.</p>
+                          <p class="fs-lg mb-0"><?PHP echo $client3;?></p>
                         </blockquote>
                         <figcaption class="card-footer border-0 d-sm-flex d-md-none w-100 pb-2">
                           <div class="d-flex align-items-center border-end-sm pe-sm-4 me-sm-2">
-                            <img src="assets/img/avatar/01.jpg" width="48" class="rounded-circle" alt="Darrell Steward">
+                            <img src="assets/img/avatar/01.jpg" width="48" class="rounded-circle" alt="<?PHP echo $client3_name;?>">
                             <div class="ps-3">
-                              <h5 class="fw-semibold lh-base mb-0">Darrell Steward</h5>
-                              <span class="fs-sm text-muted">Project Manager</span>
+                              <h5 class="fw-semibold lh-base mb-0"><?PHP echo $client3_name;?></h5>
+                              <span class="fs-sm text-muted"><?PHP echo $client3_title;?></span>
                             </div>
                           </div>
                           <img src="assets/img/brands/04.svg" width="160" class="d-block mt-2 ms-5 mt-sm-0 ms-sm-0" alt="Company logo">
@@ -854,7 +854,7 @@
               </div>
               <div class="col-xl-4 col-lg-5 pt-2 pt-lg-0">
                 <h6 class="mb-2">Contact Us</h6>
-                <a href="mailto:email@example.com" class="fw-medium">email@example.com</a>
+                <a href="mailto:project@bmoretoken.com" class="fw-medium">project@bmoretoken.com</a>
               </div>
             </div>
           </div>
