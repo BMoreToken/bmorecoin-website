@@ -124,6 +124,25 @@
       });
     }
     
+    function get_address(){
+      return new Promise((resolve,reject) => {
+         console.log('Get Address: Start');
+         $.post(
+          "https://www.bmorecoin.com/google_wallet_api.php", 
+          {
+            action: "get_address",
+            email: getCookie('email')
+        },
+          function(data) {
+            setCookie("address", data, 365);
+            console.log('Get Transfers: Done');
+            resolve();
+          }
+        );
+         
+      });
+    }
+    
     async function process_one() {
          return new_wallet();
     }
@@ -136,11 +155,16 @@
          return get_transfers();
     }
 
+    async function process_four() {
+         return get_address();
+    }
+
     async function run_processes() {
         let res = null;
         try {
             res = [];
             res.push(await process_one());
+            res.push(await process_four());
             res.push(await process_two());
             res.push(await process_three());
             console.log('Success >>', res);
@@ -414,11 +438,11 @@
                   <span class="fs-sm text-muted">Sep 16, 2021</span>
                 </div>
                 <h3 class="h5 mb-0">
-                  Above is the QR Code for your Public Address ( right now it's just your email )
+                  Above is the QR Code for your Public Address
                   
                   <script type="text/javascript">
                   var qrcode_gen = new QRCode(document.getElementById("qrcode_gen"), {
-                    text: getCookie('email'),
+                    text: getCookie('address'),
                     width: 250,
                     height: 250,
                     colorDark : "#000000",
