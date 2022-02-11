@@ -446,29 +446,6 @@
           
           
           
-                  <!-- Item -->
-          <div class="col pb-3">
-            <article class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <div id="qrcode_gen"></div>
-              </div>
-              <div class="card-body pb-4">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Public Address</a>
-                  <span class="fs-sm text-muted">Sep 16, 2021</span>
-                </div>
-                <h3 class="h5 mb-0">
-                  Above is the QR Code for your Public Address
-                </h3>
-              </div>
-              <div class="card-footer py-4">
-                  <div id="login_google" name="login_box" style="display:block;">
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                  </div>
-              </div>
-            </article>
-          </div>
-          
           
           
           
@@ -613,6 +590,31 @@
           </div>
           
           
+          
+          
+          
+                  <!-- Item -->
+          <div class="col pb-3">
+            <article class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <div id="qrcode_gen"></div>
+              </div>
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Public Address</a>
+                  <span class="fs-sm text-muted">Sep 16, 2021</span>
+                </div>
+                <h3 class="h5 mb-0">
+                  Above is the QR Code for your Public Address
+                </h3>
+              </div>
+              <div class="card-footer py-4">
+                  <div id="login_google" name="login_box" style="display:block;">
+                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                  </div>
+              </div>
+            </article>
+          </div>
   
           
           
