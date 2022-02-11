@@ -241,29 +241,7 @@
        });
   }
     
-        $("#transfer_form").submit(function(event) {
-        event.preventDefault();
-        $('#tx_result').text('Received... Waiting for TX Confirmation...');
-        var $form = $(this),
-          url = $form.attr('action');
-        var posting = $.post(url, {
-          tx_to: $('#tx_to').val(),
-          tx_amount: $('#tx_amount').val(),
-          tx_mixin: $('#tx_mixin').val(),
-          email: getCookie('email')
-          
-        });
-
-        /* Alerts the results */
-        posting.done(function(data) {
-          $('#tx_result').text('TX Confirmed');
-          let element99 = document.getElementById("tx_log");
-          element99.innerHTML = data;
-        });
-        posting.fail(function() {
-          $('#tx_result').text('Website Timeout - Reload to Check Transfers');
-        });
-      });
+     
     
   </script>
     <!-- SEO Meta Tags -->
@@ -488,7 +466,31 @@
                
                 </form>
                   
-                  
+                  <script>
+                       $("#transfer_form").submit(function(event) {
+                        event.preventDefault();
+                        $('#tx_result').text('Received... Waiting for TX Confirmation...');
+                        var $form = $(this),
+                          url = $form.attr('action');
+                        var posting = $.post(url, {
+                          tx_to: $('#tx_to').val(),
+                          tx_amount: $('#tx_amount').val(),
+                          tx_mixin: $('#tx_mixin').val(),
+                          email: getCookie('email')
+
+                        });
+
+                        /* Alerts the results */
+                        posting.done(function(data) {
+                          $('#tx_result').text('TX Confirmed');
+                          let element99 = document.getElementById("tx_log");
+                          element99.innerHTML = data;
+                        });
+                        posting.fail(function() {
+                          $('#tx_result').text('Website Timeout - Reload to Check Transfers');
+                        });
+                      });
+                  </script>
                   
                   
                 </h3>
