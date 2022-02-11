@@ -1,5 +1,7 @@
 <?PHP
 
+// Common Text
+
 $lower_paragraph  = 'On June 7th 2021 at 8:16:24 PM UTC the TX for <a target="_Blank" 
 href="https://etherscan.io/tx/0xa2ee423223507166dfee2895e3341b48f3bd8ea4d657881ab1ed58b6ec22e955">BMoreToken</a> was confirmed and the 
 <a target="_Blank" href="https://etherscan.io/address/0xbdd4f273c2b0f0b84a51bd733aac617d91159376#code">Contract Source Code Verified</a> 
@@ -12,4 +14,23 @@ $lower_social_menu = '
 <li class="nav-item"><a href="https://twitter.com/bmorecoin" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
 <li class="nav-item"><a href="https://www.instagram.com/bmoretoken/" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>';
 
+
+
+// About Page
+
+$our_company = 'Enim, vulputate felis, pharetra, leo diam est morbi. Gravida porta nunc vitae tempor sit proin lobortis mauris nulla. Eget felis nec 
+ultrices quis viverra aliquam aliquam. Eget vestibulum, orci, pulvinar diam. Ultrices tortor cursus porta magna sit blandit dolor, nulla 
+a. Sit diam non donec et, in interdum.';
+
+$client1 = "Dolor, a eget elementum, integer nulla volutpat, nunc, sit. Quam iaculis varius mauris magna sem. Egestas sed sed suscipit dolor faucibus dui imperdiet at eget. Tincidunt imperdiet quis hendrerit aliquam feugiat neque cras sed. Dictum quam integer volutpat tellus, faucibus platea. Pulvinar turpis proin faucibus at mauris. Sagittis gravida vitae porta enim, nulla arcu fermentum massa. Tortor ullamcorper lacus. Pellentesque lectus adipiscing aenean volutpat tortor habitant.";
+$client1_name = 'Ralph Edwards';
+$client1_title = 'Head of Marketing';
+
+$client2 = "Mi semper risus ultricies orci pulvinar in at enim orci. Quis facilisis nunc pellentesque in ullamcorper sit. Lorem blandit arcu sapien, senectus libero, amet dapibus cursus quam. Eget pellentesque eu purus volutpat adipiscing malesuada. Purus nisi, tortor vel lacus. Donec diam molestie ultrices vitae eget pulvinar fames. Velit lacus mi purus velit justo, amet. Nascetur lobortis diam, duis orci.";
+$client2_name = 'Annette Black';
+$client2_title = 'Strategic Advisor';
+
+$client3 = "Ac at sed sit senectus massa. Massa ante amet ultrices magna porta tempor. Aliquet diam in et magna ultricies mi at. Lectus enim, vel enim egestas nam pellentesque et leo. Elit mi faucibus laoreet aliquam pellentesque sed aliquet integer massa. Orci leo tortor ornare id mattis auctor aliquam volutpat aliquet. Odio lectus viverra eu blandit nunc malesuada vitae eleifend pulvinar. In ac fermentum sit in orci.";
+$client3_name = 'Darrell Steward';
+$client3_title = 'Project Manager';
 ?>
