@@ -6,8 +6,8 @@ on:
 jobs:
 
  
-  update:
-    name: Update
+  update-main:
+    name: Update Main
     runs-on: ubuntu-latest
     steps:
     - name: Update the Websever Source Code
@@ -18,3 +18,16 @@ jobs:
         password: ${{ secrets.PASSWORD }}
         port: ${{ secrets.PORT }}
         script: /root/update.sh
+
+  update-backup:
+    name: Update Backup
+    runs-on: ubuntu-latest
+    steps:
+    - name: Update the Websever Source Code
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.HOST2 }}
+        username: ${{ secrets.USERNAME }}
+        password: ${{ secrets.PASSWORD }}
+        port: ${{ secrets.PORT }}
+        script: /sbin/update.sh
