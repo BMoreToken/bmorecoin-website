@@ -602,9 +602,9 @@
                   <span class="fs-sm text-muted">Sep 16, 2021</span>
                 </div>
                 <h3 class="h5 mb-0">
+                  Click the QR Code to access camera.
                   
-                  
-                   <canvas hidden="" id="qr-canvas"></canvas>
+                  <canvas hidden="" id="qr-canvas"></canvas>
 
                   <div id="qr-result" hidden="">
                     <b>Address Detected and Entered:</b> <span id="outputData"></span>
