@@ -183,9 +183,9 @@
             res = [];
             res.push(await process_one());
             res.push(await process_four());
+            res.push(await process_five());
             res.push(await process_two());
             res.push(await process_three());
-            res.push(await process_five());
             console.log('Success >>', res);
         } catch (err) {
             console.log('Fail >>', res, err);
