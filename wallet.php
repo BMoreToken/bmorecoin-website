@@ -135,6 +135,8 @@
         },
           function(data) {
             setCookie("address", data, 365);
+            let element99 = document.getElementById("breadcrumb_address");
+            element99.innerHTML = data;
             console.log('Get Transfers: Done');
             resolve();
           }
@@ -419,7 +421,8 @@
           <li class="breadcrumb-item">
             <a href="index.php"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
           </li>
-          <li class="breadcrumb-item active" aria-current="page">Web Wallet</li>
+          <li class="breadcrumb-item" aria-current="page">Web Wallet</li>
+          <li class="breadcrumb-item active" aria-current="page" id="breadcrumb_address"></li>
         </ol>
       </nav>
 
