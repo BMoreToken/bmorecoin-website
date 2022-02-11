@@ -610,7 +610,9 @@
                     const qrResult = document.getElementById("qr-result");
                     const outputData = document.getElementById("outputData");
                     
-                    document.getElementById("tx_to").value = outputData;
+                    //document.getElementById("tx_to").value = outputData;
+                    //document.forms['transfer_form']['name'].value = "New value";
+                    document.querySelector('input[name="tx_to"]').value = outputData.toString();
                     
                     const btnScanQR = document.getElementById("btn-scan-qr");
 
