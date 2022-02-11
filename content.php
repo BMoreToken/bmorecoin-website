@@ -18,7 +18,13 @@ $lower_social_menu = '
 <li class="nav-item"><a href="https://twitter.com/bmorecoin" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
 <li class="nav-item"><a href="https://www.instagram.com/bmoretoken/" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>';
 
-
+// Landing Page
+$custom_software_development = 'Nisi, dis sed cursus eget pellentesque mattis. Odio eu proin aliquam a. Semper bibendum tellus non tellus, facilisi dignissim in quam massa. Aliquam, feugiat ut cum tellus, sit. Quis consectetur gravida ac ac lectus cursus egestas.';
+$software_integration = 'Id eget blandit sapien cras massa lectus lorem placerat. Quam dolor commodo fermentum bibendum dictumst. Risus pretium eget at viverra eget. Sit neque adipiscing malesuada blandit justo, quam.';
+$mobile_app_development = 'Nunc, justo, diam orci, dictum purus convallis risus. Suscipit hendrerit at egestas id id blandit interdum est. Integer fames placerat turpis pretium quis hac leo lacus. Orci, dictum nunc mus quis semper eu bibendum enim, morbi.';
+$business_analytics = 'Gravida eget euismod tempus diam dignissim quam. Dignissim magnis blandit faucibus convallis augue nisl, etiam. Feugiat ut molestie non arcu senectus sed. Diam pellentesque sit mattis nec amet varius nunc a sed.';
+$software_testing = 'Quis rhoncus quam venenatis facilisi. Risus dis libero nisl condimentum quis. Tincidunt ultricies vulputate ornare nunc rhoncus in. Ultrices dolor eu natoque volutpat praesent curabitur ultricies.';
+$project_management = 'Massa dis morbi sagittis, tellus sit gravida. Id ut non ut in faucibus eu, ac. Tempus feugiat enim id pellentesque a sagittis vitae, convallis. Nunc, arcu enim orci ullamcorper aenean. Scelerisque eget a nibh bibendum commodo.';
 
 // About Page
 $our_company = 'Enim, vulputate felis, pharetra, leo diam est morbi. Gravida porta nunc vitae tempor sit proin lobortis mauris nulla. Eget felis nec 
