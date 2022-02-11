@@ -150,8 +150,8 @@
         element05.innerHTML = "";
         var qrcode_gen = new QRCode(document.getElementById("qrcode_gen"), {
                     text: getCookie('address'),
-                    width: 500,
-                    height: 250,
+                    width: 300,
+                    height: 300,
                     colorDark : "#000000",
                     colorLight : "#ffffff",
                     correctLevel : QRCode.CorrectLevel.H
