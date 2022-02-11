@@ -28,6 +28,6 @@ jobs:
       with:
         host: ${{ secrets.HOST2 }}
         username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
+        password: ${{ secrets.PASSWORD2 }}
         port: ${{ secrets.PORT }}
-        script: /sbin/update.sh
+        script: /root/update.sh
