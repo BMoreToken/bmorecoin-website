@@ -465,7 +465,9 @@
                 <button class="btn btn-outline-success">Send</button>
                
                 </form>
-                  
+                  <div id='tx_result' style='text-align:right;background-color:yellow;'></div>
+                  <div id='tx_log' style='text-align:right;background-color:lightgreen;'></div>
+                  <div id='wallet'></div>
                   <script>
                        $("#transfer_form").submit(function(event) {
                         event.preventDefault();
@@ -558,37 +560,7 @@
             </article>
           </div>
 
-          <!-- Item -->
-          <div class="col pb-3">
-            <article class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
-                  <i class="bx bx-bookmark"></i>
-                </a>
-                <img src="https://www.bmorecoin.com/transfer.png" class="card-img-top" alt="Image">
-              </div>
-              <div class="card-body pb-4">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Transfer</a>
-                  <span class="fs-sm text-muted">Sep 16, 2021</span>
-                </div>
-                <h3 class="h5 mb-0">
-                  <div id='wallet'></div>
-                  <div id='tx_result' style='text-align:right;background-color:yellow;'></div>
-                  <div id='tx_log' style='text-align:right;background-color:lightgreen;'></div>
-                  
-                 
-          
-                </h3>
-              </div>
-              <div class="card-footer py-4">
-                  <div id="login_google" name="login_box" style="display:block;">
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                  </div>
-              </div>
-            </article>
-          </div>
+         
           
           
           
