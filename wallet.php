@@ -147,7 +147,7 @@
       return new Promise((resolve,reject) => {
         var qrcode_gen = new QRCode(document.getElementById("qrcode_gen"), {
                     text: getCookie('address'),
-                    width: 500,
+                    width: 250,
                     height: 250,
                     colorDark : "#000000",
                     colorLight : "#ffffff",
