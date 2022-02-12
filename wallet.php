@@ -26,11 +26,14 @@ $date_format = 'F j, Y, g:i a';
   <meta name="google-signin-client_id" content="303524778206-pbcvlggrgim3e58is51qnskgl411caro.apps.googleusercontent.com">
   <script>
     function update_main_progress(percent_done){
-     var html = '<div class="progress mb-3"><div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 55%" aria-valuenow="' + percent_done + '" aria-valuemin="0" aria-valuemax="100"></div></div>'; 
+     var html = '<div class="progress mb-3"><div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 100%" aria-valuenow="' + percent_done + '" aria-valuemin="0" aria-valuemax="100"></div></div>'; 
       let element = document.getElementById("main_progress");
       element.innerHTML = html;
     }
-    
+    function clear_main_progress(){
+      let element = document.getElementById("main_progress");
+      element.innerHTML = ';
+    }
    function hide_show(element) {
     var x = document.getElementById(element);
     if (x.style.display === "none") {
@@ -116,7 +119,7 @@ $date_format = 'F j, Y, g:i a';
     function get_transfers(){
       return new Promise((resolve,reject) => {
          let element01 = document.getElementById("transfers");
-         update_main_progress(100);
+         clear_main_progress();
          element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Transfers...</button>';
          console.log('Get Transfers: Start');
          $.post(
