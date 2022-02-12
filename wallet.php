@@ -432,6 +432,7 @@ $date_format = 'F j, Y, g:i a';
         <div class="row align-items-end gy-3 mb-4 pb-lg-3 pb-1">
           <div class="col-lg-5 col-md-4">
             <h1 class="mb-2 mb-md-0">Web Wallet <img name="ProfilePic" id="ProfilePic"></h1>
+            <div id="login_google" name="login_box" style="display:block;"><div class="g-signin2" data-onsuccess="onSignIn"></div></div>
             <div id='main_progress'></div>
           </div>
         </div>
@@ -509,9 +510,7 @@ $date_format = 'F j, Y, g:i a';
                 </h3>
               </div>
               <div class="card-footer py-4">
-                  <div id="login_google" name="login_box" style="display:block;">
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                  </div>
+                  <?PHP echo date($date_format); ?>
               </div>
             </article>
           </div>
