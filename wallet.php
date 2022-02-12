@@ -692,14 +692,14 @@
          
           
           
-          
+          <div id='transfers'></div>
           
           
           
         </nav>
       </section>
         
-      
+      <!--
       <section class="py-5 bg-secondary">
         <div class="container py-md-3 py-lg-5">
           <div class="row justify-content-center">
@@ -709,7 +709,7 @@
           </div>
         </div>
       </section>
-        
+        -->
         
       <!-- Subscription CTA -->
       <section class="py-5 bg-secondary">
