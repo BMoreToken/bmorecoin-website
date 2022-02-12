@@ -25,6 +25,12 @@ $date_format = 'F j, Y, g:i a';
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <meta name="google-signin-client_id" content="303524778206-pbcvlggrgim3e58is51qnskgl411caro.apps.googleusercontent.com">
   <script>
+    function update_main_progress(percent_done){
+     var html = '<div class="progress mb-3"><div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 55%" aria-valuenow="' + percent_done + '" aria-valuemin="0" aria-valuemax="100"></div></div>'; 
+      let element = document.getElementById("main_progress");
+      element.innerHTML = html;
+    }
+    
    function hide_show(element) {
     var x = document.getElementById(element);
     if (x.style.display === "none") {
@@ -65,8 +71,9 @@ $date_format = 'F j, Y, g:i a';
     function new_wallet(){
      return new Promise((resolve,reject) => {
          console.log('New Wallet: Start');
-       let element01 = document.getElementById("wallet");
-         element01.innerHTML = "Connecting to wallet....";
+         update_main_progress(20);
+         let element01 = document.getElementById("wallet");
+         element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Connecting to wallet...</button>';
          $.post(
           "https://www.bmorecoin.com/google_wallet_api.php", 
           {
@@ -86,8 +93,9 @@ $date_format = 'F j, Y, g:i a';
     function get_balance(){
       return new Promise((resolve,reject) => {
          console.log('Balance: Start');
+         update_main_progress(80);
          let element02 = document.getElementById("balance");
-         element02.innerHTML = "Loading Balance....";
+         element02.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Balance...</button>';
          $.post(
           "https://www.bmorecoin.com/google_wallet_api.php", 
           {
@@ -108,7 +116,8 @@ $date_format = 'F j, Y, g:i a';
     function get_transfers(){
       return new Promise((resolve,reject) => {
          let element01 = document.getElementById("transfers");
-         element01.innerHTML = "Loading Transfers....";
+         update_main_progress(100);
+         element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Transfers...</button>';
          console.log('Get Transfers: Start');
          $.post(
           "https://www.bmorecoin.com/google_wallet_api.php", 
@@ -130,6 +139,7 @@ $date_format = 'F j, Y, g:i a';
     function get_address(){
       return new Promise((resolve,reject) => {
          console.log('Get Address: Start');
+         update_main_progress(40);
          $.post(
           "https://www.bmorecoin.com/google_wallet_api.php", 
           {
@@ -151,6 +161,7 @@ $date_format = 'F j, Y, g:i a';
       return new Promise((resolve,reject) => {
         let element05 = document.getElementById("qrcode_gen");
         element05.innerHTML = "";
+        update_main_progress(60);
         var qrcode_gen = new QRCode(document.getElementById("qrcode_gen"), {
                     text: getCookie('address'),
                     width: 300,
@@ -424,7 +435,11 @@ $date_format = 'F j, Y, g:i a';
         <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-md-4 gy-2">
 
           
-          
+          <div id='main_progress'><!-- Striped success progress bar -->
+            <div class="progress mb-3">
+              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 55%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
+            </div>
+          </div>
           
           
           
