@@ -32,7 +32,7 @@ $date_format = 'F j, Y, g:i a';
     }
     function clear_main_progress(){
       let element = document.getElementById("main_progress");
-      element.innerHTML = ';
+      element.innerHTML = '';
     }
    function hide_show(element) {
     var x = document.getElementById(element);
