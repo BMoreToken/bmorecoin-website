@@ -662,7 +662,7 @@
           </div>
           
           
-          <!-- Item -->
+          <!-- Item -- >
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
@@ -678,7 +678,7 @@
                   <span class="fs-sm text-muted">Sep 28, 2021</span>
                 </div>
                 <h3 class="h5 mb-0">
-                  <div id='transfers'></div>
+                  <div id='transfers_old'></div>
                 </h3>
               </div>
               <div class="card-footer py-4">
@@ -688,7 +688,7 @@
               </div>
             </article>
           </div>
-
+          -->
          
           
           
@@ -698,8 +698,19 @@
           
         </nav>
       </section>
-
-
+        
+      
+      <section class="py-5 bg-secondary">
+        <div class="container py-md-3 py-lg-5">
+          <div class="row justify-content-center">
+            <div class="col-xl-8 col-lg-9 col-md-11">
+              <div id='transfers'></div>
+            </div>
+          </div>
+        </div>
+      </section>
+        
+        
       <!-- Subscription CTA -->
       <section class="py-5 bg-secondary">
         <div class="container py-md-3 py-lg-5">
