@@ -1,6 +1,6 @@
 <?PHP
 if ($_SERVER['QUERY_STRING'] != ''){ header('Location: https://beta.bmorecoin.com/wallet.php'); die(); }
-$date_format = 'F j, Y, g:i a';
+$date_format = 'F j, Y, g:i a T';
 ?>
 <!DOCTYPE html>
 <html lang="en">
