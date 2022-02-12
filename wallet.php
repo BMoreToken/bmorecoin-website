@@ -6,6 +6,7 @@ $date_format = 'F j, Y, g:i a T';
 <html lang="en">
   <head>
     <meta charset="utf-8">
+    <meta property="og:image" content="https://www.bmorecoin.com/wallet.png"/>
     <title>BMoreCoin | Web Wallet</title>
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
