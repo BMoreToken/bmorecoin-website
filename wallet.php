@@ -9,6 +9,7 @@ $date_format = 'F j, Y, g:i a T';
     <title>BMoreCoin | Web Wallet</title>
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
+     <?PHP include_once('content.php'); ?>
   <!-- jQuery 3.6.0 -->
   <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
     <!-- QR Generator -->
@@ -263,10 +264,10 @@ $date_format = 'F j, Y, g:i a T';
      
     
   </script>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="BMoreCoin - Multipurpose Cryptocurrency">
-    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="BMoreCoin">
+   <!-- SEO Meta Tags -->
+    <meta name="description" content="<?PHP echo $SEO_description;?>">
+    <meta name="keywords" content="<?PHP echo $SEO_keywords;?>">
+    <meta name="author" content="<?PHP echo $SEO_author;?>">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -779,7 +780,7 @@ $date_format = 'F j, Y, g:i a T';
               <img src="assets/img/logo.svg" width="47" alt="Silicon">
               Silicon
             </div>
-            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
+            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4"><?PHP echo $lower_paragraph;?></p>
             <form class="needs-validation" novalidate>
               <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
               <div class="input-group">
@@ -816,10 +817,7 @@ $date_format = 'F j, Y, g:i a T';
                 </h6>
                 <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                    <?PHP echo $lower_social_menu; ?>
                   </ul>
                 </div>
               </div>
