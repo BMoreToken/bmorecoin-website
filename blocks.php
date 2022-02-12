@@ -5,7 +5,7 @@
     <title>BMoreCoin | Block List</title>
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
-    
+    <?PHP include_once('content.php'); ?>
 
     <!-- SEO Meta Tags -->
     <meta name="description" content="BMoreCoin - Multipurpose Cryptocurrency">
@@ -600,16 +600,8 @@
               <img src="assets/img/logo.svg" width="47" alt="Silicon">
               Silicon
             </div>
-            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4">Proin ipsum pharetra, senectus eget scelerisque varius pretium platea velit. Lacus, eget eu vitae nullam proin turpis etiam mi sit. Non feugiat feugiat egestas nulla nec. Arcu tempus, eget elementum dolor ullamcorper sodales ultrices eros.</p>
-            <form class="needs-validation" novalidate>
-              <label for="subscr-email" class="form-label">Subscribe to our newsletter</label>
-              <div class="input-group">
-                <input type="email" id="subscr-email" class="form-control rounded-start ps-5" placeholder="Your email" required>
-                <i class="bx bx-envelope fs-lg text-muted position-absolute top-50 start-0 translate-middle-y ms-3 zindex-5"></i>
-                <div class="invalid-tooltip position-absolute top-100 start-0">Please provide a valid email address.</div>
-                <button type="submit" class="btn btn-primary">Subscribe</button>
-              </div>
-            </form>
+            <p class="fs-sm text-light opacity-70 pb-lg-3 mb-4"><?PHP echo $lower_paragraph;?></p>
+            <?PHP include_once('subscribe_small.php'); ?>
           </div>
           <div class="col-xl-6 col-lg-7 col-md-5 offset-xl-2 offset-md-1 pt-4 pt-md-1 pt-lg-0">
             <div id="footer-links" class="row">
@@ -637,10 +629,7 @@
                 </h6>
                 <div id="social-links" class="collapse d-lg-block" data-bs-parent="#footer-links">
                   <ul class="nav flex-column mb-2 mb-lg-0">
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Facebook</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">LinkedIn</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Twitter</a></li>
-                    <li class="nav-item"><a href="#" class="nav-link d-inline-block px-0 pt-1 pb-2">Instagram</a></li>
+                    <?PHP echo $lower_social_menu; ?>
                   </ul>
                 </div>
               </div>
