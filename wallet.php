@@ -692,13 +692,17 @@
          
           
           
-          <div id='transfers'></div>
-          
+                    
           
           
         </nav>
       </section>
         
+        
+        <section class="container mt-4 mb-lg-5 pt-lg-2 pb-5">
+          <div id='transfers'></div>
+        </section>
+
       <!--
       <section class="py-5 bg-secondary">
         <div class="container py-md-3 py-lg-5">
