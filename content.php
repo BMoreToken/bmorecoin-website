@@ -4,7 +4,7 @@ $SEO_description  = 'BMoreCoin - Multipurpose Cryptocurrency';
 $SEO_keywords     = 'bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative';
 $SEO_author       = 'BMoreCoin Team';
 
-
+$project_email = 'project@bmoretoken.com';
 
 // Common Text
 $lower_paragraph  = 'On June 7th 2021 at 8:16:24 PM UTC the TX for <a target="_Blank" 
