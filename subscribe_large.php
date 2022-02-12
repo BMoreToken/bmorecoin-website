@@ -1,10 +1,6 @@
 <!-- Begin Mailchimp Signup Form -->
 <link href="//cdn-images.mailchimp.com/embedcode/classic-10_7_dtp.css" rel="stylesheet" type="text/css">
-<style type="text/css">
-	#mc_embed_signup{clear:left; font:14px Helvetica,Arial,sans-serif; }
-	/* Add your own Mailchimp form style overrides in your site stylesheet or in this style block.
-	   We recommend moving this block and the preceding CSS link to the HEAD of your HTML file. */
-</style>
+
 <div id="mc_embed_signup">
 <form action="https://BMoreToken.us14.list-manage.com/subscribe/post?u=daff4232598a1a5d3f812b4a7&amp;id=7b92525312" method="post" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
     <div id="mc_embed_signup_scroll">
