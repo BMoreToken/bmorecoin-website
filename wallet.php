@@ -557,11 +557,11 @@ $date_format = 'F j, Y, g:i a';
                   <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
                 </div>
                 <h3 class="h5 mb-0">
-                  Above is a QR Code of your Public Address for receiving BALTx.<br>If you have trouble scanning try maximum brightness in light mode.
+                  QR Code of Your Address for Receiving BALTx
                 </h3>
               </div>
               <div class="card-footer py-4">
-                  <?PHP echo date($date_format); ?>
+                  If you have trouble scanning try maximum brightness in light mode
               </div>
             </article>
           </div>
