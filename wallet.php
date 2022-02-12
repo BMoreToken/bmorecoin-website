@@ -1,4 +1,7 @@
-<?PHP if ($_SERVER['QUERY_STRING'] != ''){ header('Location: https://beta.bmorecoin.com/wallet.php'); die(); } ?>
+<?PHP
+if ($_SERVER['QUERY_STRING'] != ''){ header('Location: https://beta.bmorecoin.com/wallet.php'); die(); }
+$date_format = 'F j, Y, g:i a';
+?>
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -222,7 +225,7 @@
     console.log('STARTING FIRST RUN');
     run_processes();
     var interval = setInterval(function () { console.log('STARTING NEXT RUN'); run_processes(); }, 60000);
-    console.log('Login Starup Completed, updating ever 120 seconds');
+    console.log('Login Starup Completed, updating ever 60 seconds');
   }
     
   function signOut() {
@@ -442,7 +445,7 @@
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                   <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Send BALTx</a>
-                  <span class="fs-sm text-muted">May 19, 2021</span>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
                 </div>
                 <h3 class="h5 mb-0">
                   
@@ -520,16 +523,14 @@
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                   <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Wallet Balance</a>
-                  <span class="fs-sm text-muted">May 19, 2021</span>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
                 </div>
                 <h3 class="h5 mb-0">
                   <div id='balance'></div>
                 </h3>
               </div>
               <div class="card-footer py-4">
-                  <div id="login_google" name="login_box" style="display:block;">
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                  </div>
+                  <?PHP echo date($date_format); ?>
               </div>
             </article>
           </div>
@@ -547,16 +548,14 @@
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                   <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Public Address</a>
-                  <span class="fs-sm text-muted">Sep 16, 2021</span>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
                 </div>
                 <h3 class="h5 mb-0">
                   Above is a QR Code of your Public Address for receiving BALTx.<br>If you have trouble scanning try maximum brightness in light mode.
                 </h3>
               </div>
               <div class="card-footer py-4">
-                  <div id="login_google" name="login_box" style="display:block;">
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                  </div>
+                  <?PHP echo date($date_format); ?>
               </div>
             </article>
           </div>
@@ -577,7 +576,7 @@
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                   <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">QR Code Reader</a>
-                  <span class="fs-sm text-muted">Sep 16, 2021</span>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
                 </div>
                 <h3 class="h5 mb-0">
                   Click the button above to access the camera to scan a QR code, and enter it in the Send BALTx form above.
@@ -655,9 +654,7 @@
                 </h3>
               </div>
               <div class="card-footer py-4">
-                  <div id="login_google" name="login_box" style="display:block;">
-                    <div class="g-signin2" data-onsuccess="onSignIn"></div>
-                  </div>
+                 <?PHP echo date($date_format); ?>
               </div>
             </article>
           </div>
