@@ -219,8 +219,9 @@
     setCookie("user_picture", profile.getImageUrl(), 365);
     setCookie("user_id", profile.getId(), 365);
     document.getElementById("ProfilePic").src = profile.getImageUrl();
+    console.log('STARTING FIRST RUN');
     run_processes();
-    var interval = setInterval(function () { run_processes(); }, 300000);
+    var interval = setInterval(function () { console.log('STARTING NEXT RUN'); run_processes(); }, 60000);
     console.log('Login Starup Completed, updating ever 120 seconds');
   }
     
