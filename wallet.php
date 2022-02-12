@@ -441,6 +441,34 @@ $date_format = 'F j, Y, g:i a T';
         <!-- Blog grid -->
         <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-md-4 gy-2">
           
+          
+          
+          <!-- Item -->
+          <div class="col pb-3">
+            <article class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
+                  <i class="bx bx-bookmark"></i>
+                </a>
+                <img src="https://www.bmorecoin.com/wallet.png" class="card-img-top" alt="Current Circulation">
+              </div>
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Wallet Balance</a>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
+                </div>
+                <h3 class="h5 mb-0">
+                  <div id='balance'></div>
+                </h3>
+              </div>
+              <div class="card-footer py-4">
+                  <?PHP echo date($date_format); ?>
+              </div>
+            </article>
+          </div>
+
+          
            <!-- Item -->
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
@@ -515,34 +543,6 @@ $date_format = 'F j, Y, g:i a T';
               </div>
             </article>
           </div>
-          
-          
-          <!-- Item -->
-          <div class="col pb-3">
-            <article class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
-                  <i class="bx bx-bookmark"></i>
-                </a>
-                <img src="https://www.bmorecoin.com/wallet.png" class="card-img-top" alt="Current Circulation">
-              </div>
-              <div class="card-body pb-4">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Wallet Balance</a>
-                  <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
-                </div>
-                <h3 class="h5 mb-0">
-                  <div id='balance'></div>
-                </h3>
-              </div>
-              <div class="card-footer py-4">
-                  <?PHP echo date($date_format); ?>
-              </div>
-            </article>
-          </div>
-
-          
           
           
           
