@@ -26,7 +26,8 @@ $date_format = 'F j, Y, g:i a';
   <meta name="google-signin-client_id" content="303524778206-pbcvlggrgim3e58is51qnskgl411caro.apps.googleusercontent.com">
   <script>
     function update_main_progress(percent_done){
-     var html = '<div class="progress mb-3"><div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 100%" aria-valuenow="' + percent_done + '" aria-valuemin="0" aria-valuemax="100"></div></div>'; 
+     var html = '<div class="progress mb-3"><div class="progress-bar bg-gradient-primary" role="progressbar" style="width: ' + percent_done + '%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">' + percent_done + '%</div>';
+</div>'; 
       let element = document.getElementById("main_progress");
       element.innerHTML = html;
     }
