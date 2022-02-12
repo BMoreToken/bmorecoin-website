@@ -74,7 +74,7 @@ $date_format = 'F j, Y, g:i a';
     function new_wallet(){
      return new Promise((resolve,reject) => {
          console.log('New Wallet: Start');
-         update_main_progress(20);
+         update_main_progress(0);
          let element01 = document.getElementById("wallet");
          element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Connecting to wallet...</button>';
          $.post(
@@ -96,7 +96,7 @@ $date_format = 'F j, Y, g:i a';
     function get_balance(){
       return new Promise((resolve,reject) => {
          console.log('Balance: Start');
-         update_main_progress(80);
+         update_main_progress(60);
          let element02 = document.getElementById("balance");
          element02.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Balance...</button>';
          $.post(
@@ -119,7 +119,7 @@ $date_format = 'F j, Y, g:i a';
     function get_transfers(){
       return new Promise((resolve,reject) => {
          let element01 = document.getElementById("transfers");
-         clear_main_progress();
+         update_main_progress(80);
          element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Transfers...</button>';
          console.log('Get Transfers: Start');
          $.post(
@@ -142,7 +142,7 @@ $date_format = 'F j, Y, g:i a';
     function get_address(){
       return new Promise((resolve,reject) => {
          console.log('Get Address: Start');
-         update_main_progress(40);
+         update_main_progress(20);
          $.post(
           "https://www.bmorecoin.com/google_wallet_api.php", 
           {
@@ -164,7 +164,7 @@ $date_format = 'F j, Y, g:i a';
       return new Promise((resolve,reject) => {
         let element05 = document.getElementById("qrcode_gen");
         element05.innerHTML = "";
-        update_main_progress(60);
+        update_main_progress(40);
         var qrcode_gen = new QRCode(document.getElementById("qrcode_gen"), {
                     text: getCookie('address'),
                     width: 300,
@@ -207,6 +207,7 @@ $date_format = 'F j, Y, g:i a';
             res.push(await process_two());
             res.push(await process_three());
             console.log('Success >>', res);
+            clear_main_progress();
         } catch (err) {
             console.log('Fail >>', res, err);
         }
@@ -431,24 +432,12 @@ $date_format = 'F j, Y, g:i a';
         <div class="row align-items-end gy-3 mb-4 pb-lg-3 pb-1">
           <div class="col-lg-5 col-md-4">
             <h1 class="mb-2 mb-md-0">Web Wallet <img name="ProfilePic" id="ProfilePic"></h1>
+            <div id='main_progress'></div>
           </div>
         </div>
 
         <!-- Blog grid -->
         <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-md-4 gy-2">
-
-          
-          <div id='main_progress'><!-- Striped success progress bar -->
-            <div class="progress mb-3">
-              <div class="progress-bar progress-bar-striped progress-bar-animated bg-success" role="progressbar" style="width: 55%" aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
-            </div>
-          </div>
-          
-          
-          
-          
-          
-          
           
            <!-- Item -->
           <div class="col pb-3">
