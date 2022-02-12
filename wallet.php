@@ -239,8 +239,8 @@ $date_format = 'F j, Y, g:i a';
     document.getElementById("ProfilePic").src = profile.getImageUrl();
     console.log('STARTING FIRST RUN');
     run_processes();
-    var interval = setInterval(function () { console.log('STARTING NEXT RUN'); run_processes(); }, 60000);
-    console.log('Login Starup Completed, updating ever 60 seconds');
+    var interval = setInterval(function () { console.log('STARTING NEXT RUN'); run_processes(); }, 120000);
+    console.log('Login Starup Completed, updating every 2 minutes.');
   }
     
   function signOut() {
