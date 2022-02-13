@@ -563,9 +563,9 @@ $date_format = 'F j, Y, g:i a T';
                   <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Public Address</a>
                   <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
                 </div>
-                <h3 class="h5 mb-0">
+                <h3 onClick="qr2clip()" class="h5 mb-0">
                   QR Code of Your Address for Receiving BALTx<br>
-                  Click the QR code to copy to clipboard
+                  ( Click to copy )
                 </h3>
               </div>
               <div class="card-footer py-4">
