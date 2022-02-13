@@ -169,6 +169,7 @@ $date_format = 'F j, Y, g:i a T';
     
     function make_qr_code(){
       return new Promise((resolve,reject) => {
+        just_show('qr_code_container');
         let element05 = document.getElementById("qrcode_gen");
         element05.innerHTML = "";
         update_main_progress(40);
@@ -180,6 +181,9 @@ $date_format = 'F j, Y, g:i a T';
                     colorLight : "#ffffff",
                     correctLevel : QRCode.CorrectLevel.H
                   });
+        just_show('faucet_container');
+        just_show('qr_reader_container');
+        just_show('transfers_container');
         resolve(); 
       });
     }
@@ -476,7 +480,7 @@ $date_format = 'F j, Y, g:i a T';
 
           
            <!-- Item -->
-          <div class="col pb-3">
+          <div class="col pb-3" id="transfers_container" style="display:none;">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
                 <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
@@ -553,7 +557,7 @@ $date_format = 'F j, Y, g:i a T';
           
           
           <!-- Item -->
-          <div class="col pb-3">
+          <div class="col pb-3" style="display:none" id="qr_code_container">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
                 <div onClick="qr2clip()" id="qrcode_gen"></div>
@@ -577,7 +581,7 @@ $date_format = 'F j, Y, g:i a T';
           
           
             <!-- Item -->
-          <div class="col pb-3">
+          <div class="col pb-3" style="display:none" id="qr_reader_container">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
                   <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
@@ -675,7 +679,7 @@ $date_format = 'F j, Y, g:i a T';
           
           
           <!-- Item -->
-          <div class="col pb-3">
+          <div class="col pb-3" style='display:none;' id='faucet_container'>
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
                 <img src="faucet.png" class="card-img-top" alt="BALTx Faucet">
