@@ -414,6 +414,8 @@ $date_format = 'F j, Y, g:i a T';
       </div>
     </div>
 
+    <!-- API loading bar -->
+    <div id='main_progress'></div>
 
     <!-- Page wrapper for sticky footer -->
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
@@ -444,7 +446,6 @@ $date_format = 'F j, Y, g:i a T';
           <div class="col-lg-5 col-md-4">
             <h1 class="mb-2 mb-md-0">Web Wallet <img name="ProfilePic" id="ProfilePic"></h1>
             <div class="g-signin2" data-onsuccess="onSignIn"></div>
-            <div id='main_progress'></div>
           </div>
         </div>
 
