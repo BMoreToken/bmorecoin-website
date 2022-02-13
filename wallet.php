@@ -674,7 +674,27 @@ $date_format = 'F j, Y, g:i a T';
           </div>
           
           
-        
+          <!-- Item -->
+          <div class="col pb-3">
+            <article class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <img src="https://www.bmorecoin.com/faucet.png" class="card-img-top" alt="Current Circulation">
+              </div>
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">BALTx Faucet</a>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
+                </div>
+                <h3 class="h5 mb-0">
+                 Get 10 BALTx 
+                </h3>
+              </div>
+              <div class="card-footer py-4">
+                  Free BALTx Faucet provides 10 Bx once a day. 
+              </div>
+            </article>
+          </div>
+  
           
           
                     
