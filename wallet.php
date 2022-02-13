@@ -11,13 +11,13 @@ $date_format = 'F j, Y, g:i a T';
     <title>BMoreCoin | Web Wallet</title>
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
-     <?PHP include_once('content.php'); ?>
-  <!-- jQuery 3.6.0 -->
-  <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+    <?PHP include_once('content.php'); ?>
+    <!-- jQuery 3.6.0 -->
+    <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
     <!-- QR Generator -->
     <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
     <!-- QR Reader -->
-<script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
+    <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
     <script>
       $.ajaxSetup({
         url: "https://www.bmorecoin.com/google_wallet_api.php",
@@ -28,6 +28,10 @@ $date_format = 'F j, Y, g:i a T';
   <script src="https://apis.google.com/js/platform.js" async defer></script>
   <meta name="google-signin-client_id" content="303524778206-pbcvlggrgim3e58is51qnskgl411caro.apps.googleusercontent.com">
   <script>
+    function qr2clip(){
+      navigator.clipboard.writeText(getCookie('address'));
+      alert("Copied your address: " + getCookie('address'));
+     }
     function update_main_progress(percent_done){
      var html = '<div class="progress mb-3"><div class="progress-bar bg-gradient-primary" role="progressbar" style="width: ' + percent_done + '%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Loading ' + percent_done + '% Done</div></div>'; 
       let element = document.getElementById("main_progress");
@@ -552,7 +556,7 @@ $date_format = 'F j, Y, g:i a T';
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
-                <div id="qrcode_gen"></div>
+                <div onClick"qr2clip()" id="qrcode_gen"></div>
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
@@ -560,11 +564,12 @@ $date_format = 'F j, Y, g:i a T';
                   <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
                 </div>
                 <h3 class="h5 mb-0">
-                  QR Code of Your Address for Receiving BALTx
+                  QR Code of Your Address for Receiving BALTx<br>
+                  Click the QR code to copy to clipboard
                 </h3>
               </div>
               <div class="card-footer py-4">
-                  If you have trouble scanning try maximum brightness in light mode
+                  If you have trouble scanning try maximum brightness in light mode.
               </div>
             </article>
           </div>
