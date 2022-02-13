@@ -556,7 +556,7 @@ $date_format = 'F j, Y, g:i a T';
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
-                <div onClick"qr2clip()" id="qrcode_gen"></div>
+                <div onClick="qr2clip()" id="qrcode_gen"></div>
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
