@@ -414,8 +414,7 @@ $date_format = 'F j, Y, g:i a T';
       </div>
     </div>
 
-    <!-- API loading bar -->
-    <div id='main_progress'></div>
+    
 
     <!-- Page wrapper for sticky footer -->
     <!-- Wraps everything except footer to push footer to the bottom of the page if there is little content -->
