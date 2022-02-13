@@ -487,7 +487,7 @@ $date_format = 'F j, Y, g:i a T';
                 <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
                   <i class="bx bx-bookmark"></i>
                 </a>
-                <img src="https://www.bmorecoin.com/transfers.png" class="card-img-top" alt="Send BALTx">
+                <img src="send.png" class="card-img-top" alt="Send BALTx">
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
