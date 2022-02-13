@@ -33,7 +33,7 @@ $date_format = 'F j, Y, g:i a T';
       alert("Copied your address: " + getCookie('address'));
      }
     function update_main_progress(percent_done){
-     var html = '<div class="progress mb-3"><div class="progress-bar bg-gradient-primary" role="progressbar" style="width: ' + percent_done + '%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Loading ' + percent_done + '% Done</div></div>'; 
+     var html = '<div class="progress mb-3"><div class="progress-bar bg-gradient-primary" role="progressbar" style="width: ' + percent_done + '%" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">Loading ' + percent_done + '%</div></div>'; 
       let element = document.getElementById("main_progress");
       element.innerHTML = html;
     }
