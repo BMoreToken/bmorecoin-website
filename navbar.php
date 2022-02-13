@@ -4,7 +4,7 @@
         <div class="container px-3">
           <!-- API loading bar -->
           <div id='main_progress'></div>
-          <a href="index.html" class="navbar-brand pe-3">
+          <a href="index.php" class="navbar-brand pe-3">
             <img src="assets/img/logo.svg" width="47" alt="BMoreCoin">
             BMoreCoin
           </a>
