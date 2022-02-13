@@ -552,7 +552,7 @@ $date_format = 'F j, Y, g:i a T';
           
           
           
-                  <!-- Item -->
+          <!-- Item -->
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
@@ -678,7 +678,7 @@ $date_format = 'F j, Y, g:i a T';
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
-                <img src="https://www.bmorecoin.com/faucet.png" class="card-img-top" alt="Current Circulation">
+                <img src="faucet.png" class="card-img-top" alt="BALTx Faucet">
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
@@ -686,11 +686,41 @@ $date_format = 'F j, Y, g:i a T';
                   <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
                 </div>
                 <h3 class="h5 mb-0">
-                 Get 10 BALTx 
+                 
+                  <form action='https://www.bmorecoin.com/google_wallet_api.php' id='faucet_form' name='faucet_form' class="d-flex">
+                   <button class="btn btn-outline-success">Claim 10 BALTx</button>
+                  </form>
+                  
+                  <div id='faucet'></div>
+                  
+                  <script>
+                       $("#faucet_form").submit(function(event) {
+                        event.preventDefault();
+                        $('#faucet').text('Received... Waiting for TX Confirmation...');
+                        var $form = $(this),
+                          url = $form.attr('action');
+                        var posting = $.post(url, {
+                          address: getCookie('address'),
+                          action: 'faucet',
+                          email: getCookie('email')
+
+                        });
+
+                        /* Alerts the results */
+                        posting.done(function(data) {
+                          $('#faucet').text('TX Confirmed');
+                          let element99 = document.getElementById("faucet");
+                          element99.innerHTML = data;
+                        });
+                        posting.fail(function() {
+                          $('#faucet').text('Website Timeout - Reload to See Transfer');
+                        });
+                      });
+                  </script>
                 </h3>
               </div>
               <div class="card-footer py-4">
-                  Free BALTx Faucet provides 10 Bx once a day. 
+                  Faucet provides 10 BALTx once a day. 
               </div>
             </article>
           </div>
