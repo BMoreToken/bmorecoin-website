@@ -1,5 +1,5 @@
 <?PHP
-if ($_SERVER['QUERY_STRING'] != ''){ header('Location: https://beta.bmorecoin.com/wallet.php'); die(); }
+if ($_SERVER['QUERY_STRING'] != ''){ header('Location: https://www.bmorecoin.com/wallet.php'); die(); }
 $date_format = 'F j, Y, g:i a T';
 ?>
 <!DOCTYPE html>
@@ -20,7 +20,7 @@ $date_format = 'F j, Y, g:i a T';
     <script src="https://rawgit.com/sitepoint-editors/jsqrcode/master/src/qr_packed.js"></script>
     <script>
       $.ajaxSetup({
-        url: "https://www.bmorecoin.com/google_wallet_api.php",
+        url: "https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php",
         timeout: 120000
       });
     </script>
@@ -85,7 +85,7 @@ $date_format = 'F j, Y, g:i a T';
          let element01 = document.getElementById("wallet");
          element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Connecting to wallet...</button>';
          $.post(
-          "https://www.bmorecoin.com/google_wallet_api.php", 
+          "https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php", 
           {
             action: "new_wallet",
             email: getCookie('email')
@@ -107,7 +107,7 @@ $date_format = 'F j, Y, g:i a T';
          let element02 = document.getElementById("balance");
          element02.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Balance...</button>';
          $.post(
-          "https://www.bmorecoin.com/google_wallet_api.php", 
+          "https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php", 
           {
             action: "get_balance",
             email: getCookie('email')
@@ -130,7 +130,7 @@ $date_format = 'F j, Y, g:i a T';
          element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Transfers...</button>';
          console.log('Get Transfers: Start');
          $.post(
-          "https://www.bmorecoin.com/google_wallet_api.php", 
+          "https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php", 
           {
             action: "get_transfers",
             email: getCookie('email')
@@ -151,7 +151,7 @@ $date_format = 'F j, Y, g:i a T';
          console.log('Get Address: Start');
          update_main_progress(20);
          $.post(
-          "https://www.bmorecoin.com/google_wallet_api.php", 
+          "https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php", 
           {
             action: "get_address",
             email: getCookie('email')
@@ -497,7 +497,7 @@ $date_format = 'F j, Y, g:i a T';
                 <h3 class="h5 mb-0">
                   
                   
-              <form action='https://www.bmorecoin.com/google_wallet_api.php' id='transfer_form' name='transfer_form' class="d-flex">
+              <form action='https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php' id='transfer_form' name='transfer_form' class="d-flex">
                 <div class="mb-3">
                   <span class="input-group-text" id="basic-addon3">Address Sending To</span>
                   <input type="text" class="form-control" id="tx_to" name="tx_to" aria-label="tx_to">
@@ -568,7 +568,7 @@ $date_format = 'F j, Y, g:i a T';
                 </div>
                 <h3 class="h5 mb-0">
                  
-                  <form action='https://www.bmorecoin.com/google_wallet_api.php' id='faucet_form' name='faucet_form' class="d-flex">
+                  <form action='https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php' id='faucet_form' name='faucet_form' class="d-flex">
                    <button class="btn btn-outline-success">Claim 10 BALTx</button>
                   </form>
                   
