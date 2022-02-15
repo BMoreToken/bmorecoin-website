@@ -6,8 +6,8 @@
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
     <?PHP include_once('content.php'); ?>
-
-     <!-- SEO Meta Tags -->
+    <?PHP include_once('analytics.php'); ?>
+    <!-- SEO Meta Tags -->
     <meta name="description" content="<?PHP echo $SEO_description;?>">
     <meta name="keywords" content="<?PHP echo $SEO_keywords;?>">
     <meta name="author" content="<?PHP echo $SEO_author;?>">
