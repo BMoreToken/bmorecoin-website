@@ -12,6 +12,7 @@ $date_format = 'F j, Y, g:i a T';
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
     <?PHP include_once('content.php'); ?>
+    <?PHP include_once('analytics.php'); ?>
     <!-- jQuery 3.6.0 -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
     <!-- QR Generator -->
