@@ -5,6 +5,8 @@
     <title>BMoreCoin | Block Explorer</title>
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
+    <?PHP include_once('content.php'); ?>
+    <?PHP include_once('analytics.php'); ?>
     
 
 
