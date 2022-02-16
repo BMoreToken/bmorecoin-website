@@ -651,6 +651,58 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
             </article>
           </div>
           
+             <!-- Item -->
+          <div class="col pb-3" style='display:none;' id='faucet_container'>
+            <article class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <img src="event.png" class="card-img-top" alt="BALTx Event Rewards">
+              </div>
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">BALTx Event Rewards</a>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
+                </div>
+                <h3 class="h5 mb-0">
+                 
+                  <form action='https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php' id='event_form' name='event_form' class="d-flex">
+                    <input type="text" class="form-control" id='event_code' name='event_code' aria-label="tx_mixin">
+                   <button class="btn btn-outline-success">Use Event Code</button>
+                  </form>
+                  
+                  <div id='event'></div>
+                  
+                  <script>
+                       $("#event_form").submit(function(event) {
+                        event.preventDefault();
+                        $('#event').text('Received... Waiting for TX Confirmation...');
+                        var $form = $(this),
+                          url = $form.attr('action');
+                        var posting = $.post(url, {
+                          address: getCookie('address'),
+                          action: 'event',
+                          event_code: $('#event_code').val(),
+                          email: getCookie('email')
+
+                        });
+
+                        /* Alerts the results */
+                        posting.done(function(data) {
+                          $('#event').text('TX Confirmed');
+                          let element99 = document.getElementById("event");
+                          element99.innerHTML = data;
+                        });
+                        posting.fail(function() {
+                          $('#event').text('Website Timeout - Reload to See Event Transfer');
+                        });
+                      });
+                  </script>
+                </h3>
+              </div>
+              <div class="card-footer py-4">
+                  Faucet provides 10 BALTx once a day. 
+              </div>
+            </article>
+          </div>
           
           <!-- Item -->
           <div class="col pb-3" style="display:none" id="qr_code_container">
