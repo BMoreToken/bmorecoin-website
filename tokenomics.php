@@ -144,16 +144,23 @@
   <script>
   console.log('Pulling Tokenomics');
   $.get( "https://www.mdwestserve.com/BMoreCoin/tokenomics.php", function( data ) {
-    console.log(data);
+    //console.log(data);
     const json = JSON.parse(data);
     for (var key in json) {
        if (json.hasOwnProperty(key)) {
-          console.log(json[key].name);
-          console.log(json[key].value);
+         if (json[key].name == 'current_circulation'){
+           var html = "Current Circulation: " + json[key].value;
+           let element1 = document.getElementById("current_circulation");
+           element1.innerHTML = html;
+         }
+         
+         
+         console.log(json[key].name);
+         console.log(json[key].value);
        }
     }
   });
-  console.log('Done Tokenomics');
+  //console.log('Done Tokenomics');
   </script>
   </head>
 
@@ -218,9 +225,9 @@
                   <span class="fs-sm text-muted"><?PHP echo date($date_format,strtotime('-5 days'));?></span>
                 </div>
                 <h3 class="h5 mb-0">
-                  <a href="blog-single.html">Debug pulling in the data</a>
+                  <a href="#">Current Circulation</a>
                 </h3>
-                <div id="debug" name="debug"></div>
+                <div id="current_circulation" name="current_circulation"></div>
               </div>
               <div class="card-footer py-4">
                 <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
