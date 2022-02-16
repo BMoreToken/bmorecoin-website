@@ -3,6 +3,8 @@
   <head>
     <meta charset="utf-8">
     <title>BMoreCoin | Tokenomics</title>
+    <meta property="og:image" content="https://www.bmorecoin.com/ready.png"/>
+    <!-- Still Missing og:url, og:type, og:title, og:description, fb:app_id -->
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
     <?PHP 
