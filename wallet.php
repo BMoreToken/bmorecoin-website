@@ -87,8 +87,11 @@ $date_format = 'F j, Y, g:i a T';
          update_main_progress(0);
          let element01 = document.getElementById("wallet");
          element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Connecting to wallet...</button>';
-       var ga = typeof ga === "undefined" && typeof __gaTracker !== "undefined" ? __gaTracker : ga;  
-       ga('send', 'event', 'Web Wallet', 'load', 'Open Wallet', {
+       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
+       analytics('send', 'event', 'Web Wallet', 'load', 'Open Wallet', {
             nonInteraction: true
           });
          $.post(
@@ -113,8 +116,11 @@ $date_format = 'F j, Y, g:i a T';
          update_main_progress(60);
          let element02 = document.getElementById("balance");
          element02.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Balance...</button>';
-         var ga = typeof ga === "undefined" && typeof __gaTracker !== "undefined" ? __gaTracker : ga;
-        ga('send', 'event', 'Web Wallet', 'load', 'Get Balance', {
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
+        analytics('send', 'event', 'Web Wallet', 'load', 'Get Balance', {
             nonInteraction: true
           });
          $.post(
@@ -140,8 +146,11 @@ $date_format = 'F j, Y, g:i a T';
          update_main_progress(80);
          element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Transfers...</button>';
          console.log('Get Transfers: Start');
-         var ga = typeof ga === "undefined" && typeof __gaTracker !== "undefined" ? __gaTracker : ga;
-        ga('send', 'event', 'Web Wallet', 'load', 'Load Transfer History', {
+         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
+        analytics('send', 'event', 'Web Wallet', 'load', 'Load Transfer History', {
             nonInteraction: true
           });
          $.post(
@@ -165,8 +174,11 @@ $date_format = 'F j, Y, g:i a T';
       return new Promise((resolve,reject) => {
          console.log('Get Address: Start');
          update_main_progress(20);
-        var ga = typeof ga === "undefined" && typeof __gaTracker !== "undefined" ? __gaTracker : ga;
-        ga('send', 'event', 'Web Wallet', 'load', 'Get Address', {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
+        analytics('send', 'event', 'Web Wallet', 'load', 'Get Address', {
             nonInteraction: true
           });
          $.post(
@@ -192,8 +204,11 @@ $date_format = 'F j, Y, g:i a T';
         let element05 = document.getElementById("qrcode_gen");
         element05.innerHTML = "";
         update_main_progress(40);
-        var ga = typeof ga === "undefined" && typeof __gaTracker !== "undefined" ? __gaTracker : ga;
-        ga('send', 'event', 'Web Wallet', 'load', 'Make QR Code', {
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
+        analytics('send', 'event', 'Web Wallet', 'load', 'Make QR Code', {
             nonInteraction: true
           });
         var qrcode_gen = new QRCode(document.getElementById("qrcode_gen"), {
@@ -292,8 +307,11 @@ $date_format = 'F j, Y, g:i a T';
       auth2.signOut().then(function () {
         console.log('User signed out.');
        });
-      var ga = typeof ga === "undefined" && typeof __gaTracker !== "undefined" ? __gaTracker : ga;
-    ga('send', 'event', 'Web Wallet', 'load', 'Close Wallet', {
+      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+})(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
+    analytics('send', 'event', 'Web Wallet', 'load', 'Close Wallet', {
         nonInteraction: true
       });
   }
