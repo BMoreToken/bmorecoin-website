@@ -175,7 +175,7 @@
          }
          if (json[key].name == 'peer_count'){
            // bump peer count
-           var peers = json[key].value + 6;
+           var peers = json[key].value;
            var html = "p2p Network: " + peers + ' nodes';
            let element1 = document.getElementById("peer_count");
            element1.innerHTML = html;
