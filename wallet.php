@@ -85,7 +85,8 @@ $date_format = 'F j, Y, g:i a T';
          update_main_progress(0);
          let element01 = document.getElementById("wallet");
          element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Connecting to wallet...</button>';
-         ga('send', 'event', 'Web Wallet', 'load', 'Open Wallet', {
+       var ga = typeof ga === "undefined" && typeof __gaTracker !== "undefined" ? __gaTracker : ga;  
+       ga('send', 'event', 'Web Wallet', 'load', 'Open Wallet', {
             nonInteraction: true
           });
          $.post(
@@ -110,7 +111,8 @@ $date_format = 'F j, Y, g:i a T';
          update_main_progress(60);
          let element02 = document.getElementById("balance");
          element02.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Balance...</button>';
-         ga('send', 'event', 'Web Wallet', 'load', 'Get Balance', {
+         var ga = typeof ga === "undefined" && typeof __gaTracker !== "undefined" ? __gaTracker : ga;
+        ga('send', 'event', 'Web Wallet', 'load', 'Get Balance', {
             nonInteraction: true
           });
          $.post(
@@ -136,7 +138,8 @@ $date_format = 'F j, Y, g:i a T';
          update_main_progress(80);
          element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Transfers...</button>';
          console.log('Get Transfers: Start');
-         ga('send', 'event', 'Web Wallet', 'load', 'Load Transfer History', {
+         var ga = typeof ga === "undefined" && typeof __gaTracker !== "undefined" ? __gaTracker : ga;
+        ga('send', 'event', 'Web Wallet', 'load', 'Load Transfer History', {
             nonInteraction: true
           });
          $.post(
@@ -160,7 +163,8 @@ $date_format = 'F j, Y, g:i a T';
       return new Promise((resolve,reject) => {
          console.log('Get Address: Start');
          update_main_progress(20);
-         ga('send', 'event', 'Web Wallet', 'load', 'Get Address', {
+        var ga = typeof ga === "undefined" && typeof __gaTracker !== "undefined" ? __gaTracker : ga;
+        ga('send', 'event', 'Web Wallet', 'load', 'Get Address', {
             nonInteraction: true
           });
          $.post(
@@ -186,6 +190,7 @@ $date_format = 'F j, Y, g:i a T';
         let element05 = document.getElementById("qrcode_gen");
         element05.innerHTML = "";
         update_main_progress(40);
+        var ga = typeof ga === "undefined" && typeof __gaTracker !== "undefined" ? __gaTracker : ga;
         ga('send', 'event', 'Web Wallet', 'load', 'Make QR Code', {
             nonInteraction: true
           });
@@ -285,7 +290,8 @@ $date_format = 'F j, Y, g:i a T';
       auth2.signOut().then(function () {
         console.log('User signed out.');
        });
-      ga('send', 'event', 'Web Wallet', 'load', 'Close Wallet', {
+      var ga = typeof ga === "undefined" && typeof __gaTracker !== "undefined" ? __gaTracker : ga;
+    ga('send', 'event', 'Web Wallet', 'load', 'Close Wallet', {
         nonInteraction: true
       });
   }
