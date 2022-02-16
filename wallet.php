@@ -220,6 +220,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                     correctLevel : QRCode.CorrectLevel.H
                   });
         just_show('faucet_container');
+        just_show('event_container');
         just_show('qr_reader_container');
         just_show('transfers_container');
         resolve(); 
@@ -652,7 +653,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
           </div>
           
              <!-- Item -->
-          <div class="col pb-3" style='display:none;' id='faucet_container'>
+          <div class="col pb-3" style='display:none;' id='event_container'>
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
                 <img src="event.png" class="card-img-top" alt="BALTx Event Rewards">
