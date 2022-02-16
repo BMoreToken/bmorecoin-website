@@ -5,11 +5,13 @@
     <title>BMoreCoin | 404 Not Found</title>
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
-    <?PHP include_once('analytics.php'); ?>
-    <!-- SEO Meta Tags -->
-    <meta name="description" content="BMoreCoin - Multipurpose Cryptocurrency">
-    <meta name="keywords" content="bootstrap, business, creative agency, mobile app showcase, saas, fintech, finance, online courses, software, medical, conference landing, services, e-commerce, shopping cart, multipurpose, shop, ui kit, marketing, seo, landing, blog, portfolio, html5, css3, javascript, gallery, slider, touch, creative">
-    <meta name="author" content="BMoreCoin">
+    <?PHP 
+    include_once('analytics.php');
+    include_once('content.php'); 
+    ?>
+    <meta name="description" content="<?PHP echo $SEO_description;?>">
+    <meta name="keywords" content="<?PHP echo $SEO_keywords;?>">
+    <meta name="author" content="<?PHP echo $SEO_author;?>">
 
     <!-- Viewport -->
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -181,16 +183,7 @@
 
 
     <!-- Footer -->
-    <footer class="container text-md-start text-center py-lg-5 py-4" style="transform: translateY(-100%);">
-      <div class="row">
-        <div class="col-xl-11 offset-xl-1">
-          <p class="fs-sm text-center text-md-start mb-0">
-            &copy; All rights reserved. Made by 
-            <a class="nav-link d-inline-block p-0" href="https://createx.studio/" target="_blank" rel="noopener">BMoreCoin</a>
-          </p>
-        </div>
-      </div>
-    </footer>
+    <?PHP include_once('footer.php'); ?>
 
     <!-- Vendor Scripts -->
     <script src="assets/vendor/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
