@@ -144,13 +144,14 @@
   <script>
   console.log('Pulling Tokenomics');
   $.get( "https://www.mdwestserve.com/BMoreCoin/tokenomics.php", function( data ) {
-  $( ".debug" ).html( data );
-    for (var key in data) {
-        if (data.hasOwnProperty(key)) {
-          console.log(data[key].name);
-          console.log(data[key].value);
-        }
-     }
+    console.log(data);
+  //$( ".debug" ).html( data );
+    //for (var key in data) {
+    //   if (data.hasOwnProperty(key)) {
+    //      console.log(data[key].name);
+    //      console.log(data[key].value);
+    //    }
+    // }
   });
   console.log('Done Tokenomics');
   </script>
