@@ -153,6 +153,11 @@
            let element1 = document.getElementById("current_circulation");
            element1.innerHTML = html;
          }
+         if (json[key].name == 'future_circulation'){
+           var html = "Future Circulation: " + new Intl.NumberFormat().format(json[key].value);
+           let element1 = document.getElementById("future_circulation");
+           element1.innerHTML = html;
+         }
          
          
          console.log(json[key].name);
@@ -213,11 +218,11 @@
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
-                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
                 <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
                   <i class="bx bx-bookmark"></i>
                 </a>
-                <img src="assets/img/done.png" class="card-img-top" alt="Current Circulation">
+                <img src="done.png" class="card-img-top" alt="Current Circulation">
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
@@ -230,273 +235,39 @@
                 <div id="current_circulation" name="current_circulation"></div>
               </div>
               <div class="card-footer py-4">
-                <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-                  <img src="assets/img/avatar/01.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-                  Jerome Bell
-                </a>
+                The number of BALTx mined and in circulation.
               </div>
             </article>
           </div>
-
-          <!-- Item -->
+          
+          
+            <!-- Item -->
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
-                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
+                <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
                 <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
                   <i class="bx bx-bookmark"></i>
                 </a>
-                <img src="assets/img/blog/02.jpg" class="card-img-top" alt="Image">
+                <img src="ready.png" class="card-img-top" alt="Ready to Mine">
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                   <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Future Circulation</a>
-                  <span class="fs-sm text-muted">Sep 28, 2021</span>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format,strtotime('-5 days'));?></span>
                 </div>
                 <h3 class="h5 mb-0">
-                  <a href="blog-single.html">Why UX Design Matters and How it Affects Ranking</a>
+                  <a href="#">Future Circulation</a>
                 </h3>
+                <div id="current_circulation" name="future_circulation"></div>
               </div>
               <div class="card-footer py-4">
-                <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-                  <img src="assets/img/avatar/01.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-                  Jerome Bell
-                </a>
+                The number of BALTx not yet mined.
               </div>
             </article>
           </div>
 
-          <!-- Item -->
-          <div class="col pb-3">
-            <article class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
-                  <i class="bx bx-bookmark"></i>
-                </a>
-                <img src="assets/img/blog/03.jpg" class="card-img-top" alt="Image">
-              </div>
-              <div class="card-body pb-4">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Business</a>
-                  <span class="fs-sm text-muted">Sep 16, 2021</span>
-                </div>
-                <h3 class="h5 mb-0">
-                  <a href="blog-single.html">This Week in Search: New Limits and Exciting Features</a>
-                </h3>
-              </div>
-              <div class="card-footer py-4">
-                <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-                  <img src="assets/img/avatar/02.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-                  Ralph Edwards
-                </a>
-              </div>
-            </article>
-          </div>
-
-          <!-- Item -->
-          <div class="col pb-3">
-            <article class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
-                  <i class="bx bx-bookmark"></i>
-                </a>
-                <img src="assets/img/blog/04.jpg" class="card-img-top" alt="Image">
-              </div>
-              <div class="card-body pb-4">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Processes &amp; Tools</a>
-                  <span class="fs-sm text-muted">12 hours ago</span>
-                </div>
-                <h3 class="h5 mb-0">
-                  <a href="blog-single.html">Five Effective Lead Generation Techniques For Your Business</a>
-                </h3>
-              </div>
-              <div class="card-footer py-4">
-                <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-                  <img src="assets/img/avatar/03.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-                  Esther Howard
-                </a>
-              </div>
-            </article>
-          </div>
-
-          <!-- Item -->
-          <div class="col pb-3">
-            <article class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
-                  <i class="bx bx-bookmark"></i>
-                </a>
-                <img src="assets/img/blog/05.jpg" class="card-img-top" alt="Image">
-              </div>
-              <div class="card-body pb-4">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Digital</a>
-                  <span class="fs-sm text-muted">Oct 9, 2021</span>
-                </div>
-                <h3 class="h5 mb-0">
-                  <a href="blog-single.html">Inclusive Marketing: Why and How Does it Work?</a>
-                </h3>
-              </div>
-              <div class="card-footer py-4">
-                <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-                  <img src="assets/img/avatar/04.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-                  Jane Cooper
-                </a>
-              </div>
-            </article>
-          </div>
-
-          <!-- Item -->
-          <div class="col pb-3">
-            <article class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
-                  <i class="bx bx-bookmark"></i>
-                </a>
-                <img src="assets/img/blog/06.jpg" class="card-img-top" alt="Image">
-              </div>
-              <div class="card-body pb-4">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Marketing</a>
-                  <span class="fs-sm text-muted">Apr 2, 2021</span>
-                </div>
-                <h3 class="h5 mb-0">
-                  <a href="blog-single.html">How Agile is Your Forecasting Process?</a>
-                </h3>
-              </div>
-              <div class="card-footer py-4">
-                <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-                  <img src="assets/img/avatar/05.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-                  Albert Flores
-                </a>
-              </div>
-            </article>
-          </div>
-
-          <!-- Item -->
-          <div class="col pb-3">
-            <article class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
-                  <i class="bx bx-bookmark"></i>
-                </a>
-                <img src="assets/img/blog/07.jpg" class="card-img-top" alt="Image">
-              </div>
-              <div class="card-body pb-4">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Processes &amp; Tools</a>
-                  <span class="fs-sm text-muted">Sep 3, 2021</span>
-                </div>
-                <h3 class="h5 mb-0">
-                  <a href="blog-single.html">Your Guide to Optimising A JavaScript-enabled Website</a>
-                </h3>
-              </div>
-              <div class="card-footer py-4">
-                <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-                  <img src="assets/img/avatar/02.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-                  Ralph Edwards
-                </a>
-              </div>
-            </article>
-          </div>
-
-          <!-- Item -->
-          <div class="col pb-3">
-            <article class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
-                  <i class="bx bx-bookmark"></i>
-                </a>
-                <img src="assets/img/blog/08.jpg" class="card-img-top" alt="Image">
-              </div>
-              <div class="card-body pb-4">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Processes &amp; Tools</a>
-                  <span class="fs-sm text-muted">Sep 10, 2021</span>
-                </div>
-                <h3 class="h5 mb-0">
-                  <a href="blog-single.html">A Study on Smartwatch Design Qualities and People’s Preferences</a>
-                </h3>
-              </div>
-              <div class="card-footer py-4">
-                <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-                  <img src="assets/img/avatar/03.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-                  Esther Howard
-                </a>
-              </div>
-            </article>
-          </div>
-
-          <!-- Item -->
-          <div class="col pb-3">
-            <article class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <a href="blog-single.html" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
-                  <i class="bx bx-bookmark"></i>
-                </a>
-                <img src="assets/img/blog/09.jpg" class="card-img-top" alt="Image">
-              </div>
-              <div class="card-body pb-4">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Strategy</a>
-                  <span class="fs-sm text-muted">Sep 16, 2021</span>
-                </div>
-                <h3 class="h5 mb-0">
-                  <a href="blog-single.html">This Long-Awaited Technology May Finally Change the World</a>
-                </h3>
-              </div>
-              <div class="card-footer py-4">
-                <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
-                  <img src="assets/img/avatar/02.jpg" class="rounded-circle me-3" width="48" alt="Avatar">
-                  Ralph Edwards
-                </a>
-              </div>
-            </article>
-          </div>
-        </div>
-
-        <!-- Pagination -->
-        <nav aria-label="Page navigation example">
-          <ul class="pagination justify-content-center pt-md-4 pt-2">
-            <li class="page-item">
-              <a href="#" class="page-link">
-                <i class="bx bx-chevron-left mx-n1"></i>
-              </a>
-            </li>
-            <li class="page-item disabled d-sm-none">
-              <span class="page-link text-body">2 / 4</span>
-            </li>
-            <li class="page-item d-none d-sm-block">
-              <a href="#" class="page-link">1</a>
-            </li>
-            <li class="page-item active d-none d-sm-block" aria-current="page">
-              <span class="page-link">
-                2
-                <span class="visually-hidden">(current)</span>
-              </span>
-            </li>
-            <li class="page-item d-none d-sm-block">
-              <a href="#" class="page-link">3</a>
-            </li>
-            <li class="page-item d-none d-sm-block">
-              <a href="#" class="page-link">4</a>
-            </li>
-            <li class="page-item">
-              <a href="#" class="page-link">
-                <i class="bx bx-chevron-right mx-n1"></i>
-              </a>
-            </li>
-          </ul>
-        </nav>
-      </section>
+         </section>
 
 
       <!-- Subscription CTA -->
