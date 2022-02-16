@@ -5,8 +5,11 @@
     <title>BMoreCoin | Tokenomics</title>
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
-    <?PHP include_once('content.php'); ?>
-    <?PHP include_once('analytics.php'); ?>
+    <?PHP 
+     include_once('content.php'); 
+     include_once('analytics.php');
+     $date_format = 'F j, Y';
+    ?>
     <!-- jQuery 3.6.0 -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script>
     <!-- SEO Meta Tags -->
@@ -185,36 +188,6 @@
           <div class="col-lg-5 col-md-4">
             <h1 class="mb-2 mb-md-0">Tokenomics</h1>
           </div>
-          <div class="col-lg-7 col-md-8">
-            <form class="row gy-2">
-              <div class="col-lg-5 col-sm-6">
-                <div class="d-flex align-items-center">
-                  <div class="d-flex align-items-center me-sm-4 me-3">
-                    <a href="blog-list-no-sidebar.html" class="nav-link me-2 p-0">
-                      <i class="bx bx-list-ul fs-4"></i>
-                    </a>
-                    <a href="blog-grid-no-sidebar.html" class="nav-link p-0 active">
-                      <i class="bx bx-grid-alt fs-4"></i>
-                    </a>
-                  </div>
-                  <select class="form-select">
-                    <option>All categories</option>
-                    <option value="processes-and-tools">Processes &amp; Tools</option>
-                    <option value="startups">Startups</option>
-                    <option value="digital">Digital</option>
-                    <option value="strategy">Strategy</option>
-                    <option value="business">Business</option>
-                  </select>
-                </div>
-              </div>
-              <div class="col-lg-7 col-sm-6">
-                <div class="input-group">
-                  <input type="text" class="form-control pe-5 rounded" placeholder="Search the blog...">
-                  <i class="bx bx-search position-absolute top-50 end-0 translate-middle-y me-3 zindex-5 fs-lg"></i>
-                </div>
-              </div>
-            </form>
-          </div>
         </div>
 
         <!-- Blog grid -->
@@ -232,8 +205,8 @@
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Business</a>
-                  <span class="fs-sm text-muted">May 19, 2021</span>
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Current Circulation</a>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format,'-5 days');?></span>
                 </div>
                 <h3 class="h5 mb-0">
                   <a href="blog-single.html">Debug pulling in the data</a>
@@ -261,7 +234,7 @@
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Digital</a>
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Future Circulation</a>
                   <span class="fs-sm text-muted">Sep 28, 2021</span>
                 </div>
                 <h3 class="h5 mb-0">
