@@ -232,7 +232,7 @@
                 <h3 class="h5 mb-0">
                   <a href="#">Current Circulation</a>
                 </h3>
-                <div id="current_circulation" name="current_circulation"></div>
+                <div id="current_circulation" name="current_circulation">Loading...</div>
               </div>
               <div class="card-footer py-4">
                 The number of BALTx mined and in circulation.
@@ -259,7 +259,7 @@
                 <h3 class="h5 mb-0">
                   <a href="#">Future Circulation</a>
                 </h3>
-                <div id="current_circulation" name="future_circulation"></div>
+                <div id="future_circulation" name="future_circulation">Loading...</div>
               </div>
               <div class="card-footer py-4">
                 The number of BALTx not yet mined.
