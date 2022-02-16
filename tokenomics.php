@@ -173,6 +173,24 @@
            let element1 = document.getElementById("last_height");
            element1.innerHTML = html;
          }
+         if (json[key].name == 'peer_count'){
+           // bump peer count
+           var peers = json[key].value + 6;
+           var html = "p2p Network: " + peers + ' nodes';
+           let element1 = document.getElementById("peer_count");
+           element1.innerHTML = html;
+         }
+         if (json[key].name == 'last_reward_block'){
+           var html = "Last Rewarding Block: " + json[key].value;
+           let element1 = document.getElementById("last_reward_block");
+           element1.innerHTML = html;
+         }
+         if (json[key].name == 'blockchain_used'){
+           var html = "BALTx Blockchain Used: " + json[key].value + '%';
+           let element1 = document.getElementById("blockchain_used");
+           element1.innerHTML = html;
+         }
+         
          
          console.log(json[key].name);
          console.log(json[key].value);
@@ -296,7 +314,7 @@
             </article>
           </div>
           
-           <!-- Item -->
+          <!-- Item -->
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
@@ -312,9 +330,54 @@
                 </h3>
                 <div id="last_height" name="last_height">Loading...</div>
                 <div id="last_reward" name="last_reward">Loading...</div>
+                <div id="last_reward_block" name="last_reward_block">Loading...</div>
               </div>
               <div class="card-footer py-4">
                 The last reward paid to miners.
+              </div>
+            </article>
+          </div>
+          
+          <!-- Item -->
+          <div class="col pb-3">
+            <article class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <img src="p2p.png" class="card-img-top" alt="Connected Peers">
+              </div>
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Network</a>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format);?></span>
+                </div>
+                <h3 class="h5 mb-0">
+                  <a href="#">Connected Peers</a>
+                </h3>
+                <div id="peer_count" name="peer_count">Loading...</div>
+              </div>
+              <div class="card-footer py-4">
+                Servers seen running the BALTx daemon.
+              </div>
+            </article>
+          </div>
+          
+          <!-- Item -->
+          <div class="col pb-3">
+            <article class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <img src="complete.png" class="card-img-top" alt="Percent Blockchain Used">
+              </div>
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Network</a>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format);?></span>
+                </div>
+                <h3 class="h5 mb-0">
+                  <a href="#">Percent Blockchain Used</a>
+                </h3>
+                <div id="blockchain_used" name="blockchain_used">Loading...</div>
+              </div>
+              <div class="card-footer py-4">
+                The last transactions will go into our top block of 500,000,000
               </div>
             </article>
           </div>
