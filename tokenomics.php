@@ -147,8 +147,8 @@
       // JSON result in `data` variable
       for (var key in data) {
       if (json.hasOwnProperty(key)) {
-        console.log(json[key].id);
-        console.log(json[key].msg);
+        console.log(json[key].name);
+        console.log(json[key].value);
       }
       }
       let element99 = document.getElementById("debug");
