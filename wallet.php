@@ -700,7 +700,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                 </h3>
               </div>
               <div class="card-footer py-4">
-                  Faucet provides 10 BALTx once a day. 
+                  Event Codes Range in Amount
               </div>
             </article>
           </div>
