@@ -203,6 +203,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         just_show('qr_code_container');
         let element05 = document.getElementById("qrcode_gen");
         element05.innerHTML = "";
+        
         update_main_progress(40);
         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -222,6 +223,8 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         just_show('faucet_container');
         just_show('event_container');
         just_show('qr_reader_container');
+        let element06 = document.getElementById("just_address");
+        element06.innerHTML = getCookie('address');
         just_show('transfers_container');
         resolve(); 
       });
@@ -839,6 +842,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         
         
         <section class="container mt-4 mb-lg-5 pt-lg-2 pb-5">
+          <div id='just_address'></div>
           <div id='transfers'></div>
         </section>
 
