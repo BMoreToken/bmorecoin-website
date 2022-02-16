@@ -146,9 +146,9 @@
   $.get( "https://www.mdwestserve.com/BMoreCoin/tokenomics.php", function( data ) {
   $( ".debug" ).html( data );
     for (var key in data) {
-        if (json.hasOwnProperty(key)) {
-          console.log(json[key].name);
-          console.log(json[key].value);
+        if (data.hasOwnProperty(key)) {
+          console.log(data[key].name);
+          console.log(data[key].value);
         }
      }
   });
