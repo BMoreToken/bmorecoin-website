@@ -163,7 +163,16 @@
            let element1 = document.getElementById("percent_mined");
            element1.innerHTML = html;
          }
-         
+         if (json[key].name == 'last_reward'){
+           var html = "Latest Mining Reward: " + json[key].value + ' BALTx';
+           let element1 = document.getElementById("last_reward");
+           element1.innerHTML = html;
+         }
+         if (json[key].name == 'last_height'){
+           var html = "Latest Block: " + json[key].value;
+           let element1 = document.getElementById("last_height");
+           element1.innerHTML = html;
+         }
          
          console.log(json[key].name);
          console.log(json[key].value);
@@ -227,7 +236,7 @@
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Current Circulation</a>
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Circulation</a>
                   <span class="fs-sm text-muted"><?PHP echo date($date_format);?></span>
                 </div>
                 <h3 class="h5 mb-0">
@@ -250,7 +259,7 @@
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Future Circulation</a>
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Circulation</a>
                   <span class="fs-sm text-muted"><?PHP echo date($date_format);?></span>
                 </div>
                 <h3 class="h5 mb-0">
@@ -273,7 +282,7 @@
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Mining Completed</a>
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Mining</a>
                   <span class="fs-sm text-muted"><?PHP echo date($date_format);?></span>
                 </div>
                 <h3 class="h5 mb-0">
@@ -283,6 +292,29 @@
               </div>
               <div class="card-footer py-4">
                 The percentage of blocks mined rewarding miners.
+              </div>
+            </article>
+          </div>
+          
+           <!-- Item -->
+          <div class="col pb-3">
+            <article class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <img src="complete.png" class="card-img-top" alt="Last Mining Reward">
+              </div>
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Mining</a>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format);?></span>
+                </div>
+                <h3 class="h5 mb-0">
+                  <a href="#">Last Mining Reward</a>
+                </h3>
+                <div id="last_height" name="last_height">Loading...</div>
+                <div id="last_reward" name="last_reward">Loading...</div>
+              </div>
+              <div class="card-footer py-4">
+                The last reward paid to miners.
               </div>
             </article>
           </div>
