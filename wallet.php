@@ -700,7 +700,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                 </h3>
               </div>
               <div class="card-footer py-4">
-                  Event Codes Range in Amount
+                  Event Codes Range in Amount of BALTx Rewarded
               </div>
             </article>
           </div>
