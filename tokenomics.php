@@ -149,13 +149,18 @@
     for (var key in json) {
        if (json.hasOwnProperty(key)) {
          if (json[key].name == 'current_circulation'){
-           var html = "Current Circulation: " + new Intl.NumberFormat().format(json[key].value);
+           var html = "Current Circulation: " + new Intl.NumberFormat().format(json[key].value) + ' BALTx';
            let element1 = document.getElementById("current_circulation");
            element1.innerHTML = html;
          }
          if (json[key].name == 'future_circulation'){
-           var html = "Future Circulation: " + new Intl.NumberFormat().format(json[key].value);
+           var html = "Future Circulation: " + new Intl.NumberFormat().format(json[key].value) + ' BALTx';
            let element1 = document.getElementById("future_circulation");
+           element1.innerHTML = html;
+         }
+         if (json[key].name == 'percent_mined'){
+           var html = "Mining Complete: " + json[key].value + '%';
+           let element1 = document.getElementById("percent_mined");
            element1.innerHTML = html;
          }
          
@@ -218,16 +223,12 @@
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
-                <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
-                  <i class="bx bx-bookmark"></i>
-                </a>
                 <img src="done.png" class="card-img-top" alt="Current Circulation">
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                   <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Current Circulation</a>
-                  <span class="fs-sm text-muted"><?PHP echo date($date_format,strtotime('-5 days'));?></span>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format);?></span>
                 </div>
                 <h3 class="h5 mb-0">
                   <a href="#">Current Circulation</a>
@@ -241,20 +242,16 @@
           </div>
           
           
-            <!-- Item -->
+          <!-- Item -->
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
-                <a href="#" class="position-absolute top-0 start-0 w-100 h-100" aria-label="Read more"></a>
-                <a href="#" class="btn btn-icon btn-light bg-white border-white btn-sm rounded-circle position-absolute top-0 end-0 zindex-5 me-3 mt-3" data-bs-toggle="tooltip" data-bs-placement="left" title="Read later">
-                  <i class="bx bx-bookmark"></i>
-                </a>
                 <img src="ready.png" class="card-img-top" alt="Ready to Mine">
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                   <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Future Circulation</a>
-                  <span class="fs-sm text-muted"><?PHP echo date($date_format,strtotime('-5 days'));?></span>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format);?></span>
                 </div>
                 <h3 class="h5 mb-0">
                   <a href="#">Future Circulation</a>
@@ -267,6 +264,30 @@
             </article>
           </div>
 
+          
+          <!-- Item -->
+          <div class="col pb-3">
+            <article class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <img src="complete.png" class="card-img-top" alt="Mining Completed">
+              </div>
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Mining Completed</a>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format);?></span>
+                </div>
+                <h3 class="h5 mb-0">
+                  <a href="#">Mining Completed</a>
+                </h3>
+                <div id="percent_mined" name="percent_mined">Loading...</div>
+              </div>
+              <div class="card-footer py-4">
+                The percentage of blocks mined rewarding miners.
+              </div>
+            </article>
+          </div>
+          
+          
          </section>
 
 
