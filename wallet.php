@@ -11,6 +11,8 @@ $date_format = 'F j, Y, g:i a T';
     <title>BMoreCoin | Web Wallet</title>
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
+    <script type="text/javascript" src="https://www.google-analytics.com/analytics.js"></script>
+    
     <?PHP include_once('content.php'); ?>
     <?PHP include_once('analytics.php'); ?>
     <!-- jQuery 3.6.0 -->
