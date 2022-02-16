@@ -145,7 +145,7 @@
   console.log('Pulling Tokenomics');
   $.get( "https://www.mdwestserve.com/BMoreCoin/tokenomics.php", function( data ) {
     console.log(data);
-    var json = data;
+    const json = JSON.parse(data);
     for (var key in json) {
        if (json.hasOwnProperty(key)) {
           console.log(json[key].name);
