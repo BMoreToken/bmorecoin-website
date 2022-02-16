@@ -141,7 +141,7 @@
     </script>
     
     
-<script>
+  <script>
   console.log('Pulling Tokenomics');
   $.get( "https://www.mdwestserve.com/BMoreCoin/tokenomics.php", function( data ) {
   $( ".debug" ).html( data );
@@ -151,8 +151,9 @@
           console.log(json[key].value);
         }
      }
-    console.log('Done Tokenomics');
-    </script>
+  });
+  console.log('Done Tokenomics');
+  </script>
   </head>
 
 
