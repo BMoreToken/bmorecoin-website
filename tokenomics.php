@@ -139,10 +139,12 @@
         };
       })();
     </script>
+    
+    
 <script>
   $.getJSON('https://www.mdwestserve.com/BMoreCoin/tokenomics.php', function(data) {
       // JSON result in `data` variable
-      for (var key in json) {
+      for (var key in data) {
       if (json.hasOwnProperty(key)) {
         console.log(json[key].id);
         console.log(json[key].msg);
