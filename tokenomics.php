@@ -135,6 +135,13 @@
         };
       })();
     </script>
+<script>
+  $.getJSON('https://www.mdwestserve.com/BMoreCoin/tokenomics.php', function(data) {
+      // JSON result in `data` variable
+      let element99 = document.getElementById("debug");
+      element99.innerHTML = data;
+  });
+    </script>
   </head>
 
 
@@ -228,8 +235,9 @@
                   <span class="fs-sm text-muted">May 19, 2021</span>
                 </div>
                 <h3 class="h5 mb-0">
-                  <a href="blog-single.html">5 Bad Landing Page Examples &amp; How We Would Fix Them</a>
+                  <a href="blog-single.html">Debug pulling in the data</a>
                 </h3>
+                <div id="debug" name="debug"></div>
               </div>
               <div class="card-footer py-4">
                 <a href="#" class="d-flex align-items-center fw-bold text-dark text-decoration-none">
