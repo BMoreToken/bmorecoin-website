@@ -149,7 +149,7 @@
     for (var key in json) {
        if (json.hasOwnProperty(key)) {
          if (json[key].name == 'current_circulation'){
-           var html = "Current Circulation: " + json[key].value;
+           var html = "Current Circulation: " + new Intl.NumberFormat().format(json[key].value);
            let element1 = document.getElementById("current_circulation");
            element1.innerHTML = html;
          }
