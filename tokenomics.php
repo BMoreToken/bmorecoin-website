@@ -142,6 +142,7 @@
     
     
 <script>
+  console.log('Pulling Tokenomics');
   $.getJSON('https://www.mdwestserve.com/BMoreCoin/tokenomics.php', function(data) {
       // JSON result in `data` variable
       for (var key in data) {
@@ -153,6 +154,7 @@
       let element99 = document.getElementById("debug");
       element99.innerHTML = data;
   });
+  console.log('Done Tokenomics');
     </script>
   </head>
 
