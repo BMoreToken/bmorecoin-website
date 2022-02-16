@@ -142,6 +142,12 @@
 <script>
   $.getJSON('https://www.mdwestserve.com/BMoreCoin/tokenomics.php', function(data) {
       // JSON result in `data` variable
+      for (var key in json) {
+      if (json.hasOwnProperty(key)) {
+        console.log(json[key].id);
+        console.log(json[key].msg);
+      }
+      }
       let element99 = document.getElementById("debug");
       element99.innerHTML = data;
   });
@@ -206,7 +212,7 @@
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
                   <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Current Circulation</a>
-                  <span class="fs-sm text-muted"><?PHP echo date($date_format,'-5 days');?></span>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format,strtotime('-5 days'));?></span>
                 </div>
                 <h3 class="h5 mb-0">
                   <a href="blog-single.html">Debug pulling in the data</a>
