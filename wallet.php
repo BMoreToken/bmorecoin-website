@@ -666,7 +666,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                 <h3 class="h5 mb-0">
                  
                   <form action='https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php' id='event_form' name='event_form' class="d-flex">
-                    <input type="text" class="form-control" id='event_code' name='event_code' aria-label="tx_mixin">
+                    <input type="text" class="form-control" id='event_code' name='event_code' aria-label="event_code">
                    <button class="btn btn-outline-success">Use Event Code</button>
                   </form>
                   
