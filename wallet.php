@@ -220,6 +220,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                     colorLight : "#ffffff",
                     correctLevel : QRCode.CorrectLevel.H
                   });
+        just_hide('help_container');
         just_show('faucet_container');
         just_show('event_container');
         just_show('qr_reader_container');
@@ -500,6 +501,29 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         <!-- Blog grid -->
         <div class="row row-cols-lg-3 row-cols-sm-2 row-cols-1 gy-md-4 gy-2">
           
+          
+          
+          <!-- Item -->
+          <div class="col pb-3" style="display:block" id="help_container">
+            <article class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <img src="help.png" class="card-img-top" alt="What to do next">
+              </div>
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Instructions</a>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
+                </div>
+                <h3 class="h5 mb-0">
+                 You are logged out. Once logged in you will have a new address linked to your gmail account. Collect free BALTx from the faucet. Use Event Codes to get extra rewards.
+                </h3>
+                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+              </div>
+              <div class="card-footer py-4">
+                  Please click log in above.
+              </div>
+            </article>
+          </div>
           
           
           <!-- Item -->
