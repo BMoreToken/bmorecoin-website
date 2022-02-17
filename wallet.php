@@ -516,7 +516,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                 </div>
                 <h3 class="h5 mb-0">
                  You are signed out.</h3>
-                 <div>Once signed in you will have a new BALTx address linked to your gmail account. Use anywhere the internet goes. Collect free BALTx from the faucet. Use Event Codes to get extra rewards. QR code reader and scanner available.</div>
+                 <div>Once signed in you will have a new BALTx address linked to your gmail account. Use anywhere the internet goes. Collect free BALTx from the faucet. Transfer some to a "friend". Use Event Codes to get extra rewards. QR code reader and scanner available.</div>
                 <div class="g-signin2" data-onsuccess="onSignIn"></div>
               </div>
               <div class="card-footer py-4">
