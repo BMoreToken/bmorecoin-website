@@ -225,7 +225,7 @@
                         <p class="fs-xl text-light opacity-70 pb-2 mb-lg-5">We ensure our applications are supported. Our support is provided by a team of professionals who will assist you 24/7.</p>
                       </div>
                       <div class="scale-up delay-1">
-                        <a href="#" onClick="getSupport()" class="btn btn-primary shadow-primary btn-lg">Chat With Support</a>
+                        <a href="<?PHP echo $discord_link;?>" class="btn btn-primary shadow-primary btn-lg">Chat With Support</a>
                       </div>
                     </div>
                   </div>
