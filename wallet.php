@@ -520,7 +520,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                 <div class="g-signin2" data-onsuccess="onSignIn"></div>
               </div>
               <div class="card-footer py-4">
-                  Please click Sign In above.
+                  Please click "Sign in" above.
               </div>
             </article>
           </div>
@@ -542,7 +542,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                   <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
                 </div>
                 <h3 class="h5 mb-0">
-                  <div id='balance'></div>
+                  <div id='balance'>Please Sign in.</div>
                 </h3>
               </div>
               <div class="card-footer py-4">
