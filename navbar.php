@@ -58,7 +58,7 @@
                       <div class="mega-dropdown-column">
                         <h6 class="px-3 mb-2">Chat</h6>
                         <ul class="list-unstyled mb-3">
-                           <li><a href="https://discord.gg/pJNGdG6UZx" class="dropdown-item py-1">Discord</a></li>
+                           <li><a href="<?PHP echo $discord_link;?>" class="dropdown-item py-1">Discord</a></li>
                           <li><a href="https://t.me/joinchat/GrZyx823mpMWzeqk" class="dropdown-item py-1">Telegram</a></li>    
                         </ul>
                         <h6 class="px-3 mb-2">Mining</h6>
