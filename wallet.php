@@ -91,7 +91,7 @@ $date_format = 'F j, Y, g:i a T';
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
-       analytics('send', 'event', 'Web Wallet', 'load', 'Open Wallet', {
+       analytics('send', 'event', 'web_wallet', 'load', 'Open Wallet', {
             nonInteraction: true
           });
          $.post(
@@ -120,7 +120,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
-        analytics('send', 'event', 'Web Wallet', 'load', 'Get Balance', {
+        analytics('send', 'event', 'web_wallet', 'load', 'Get Balance', {
             nonInteraction: true
           });
          $.post(
@@ -150,7 +150,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
-        analytics('send', 'event', 'Web Wallet', 'load', 'Load Transfer History', {
+        analytics('send', 'event', 'web_wallet', 'load', 'Load Transfer History', {
             nonInteraction: true
           });
          $.post(
@@ -178,7 +178,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
-        analytics('send', 'event', 'Web Wallet', 'load', 'Get Address', {
+        analytics('send', 'event', 'web_wallet', 'load', 'Get Address', {
             nonInteraction: true
           });
          $.post(
@@ -209,7 +209,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
-        analytics('send', 'event', 'Web Wallet', 'load', 'Make QR Code', {
+        analytics('send', 'event', 'web_wallet', 'load', 'Make QR Code', {
             nonInteraction: true
           });
         var qrcode_gen = new QRCode(document.getElementById("qrcode_gen"), {
@@ -316,7 +316,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
 m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
 })(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
-    analytics('send', 'event', 'Web Wallet', 'load', 'Close Wallet', {
+    analytics('send', 'event', 'web_wallet', 'load', 'Close Wallet', {
         nonInteraction: true
       });
   }
