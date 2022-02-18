@@ -88,13 +88,6 @@ $date_format = 'F j, Y, g:i a T';
          update_main_progress(0);
          let element01 = document.getElementById("wallet");
          element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Connecting to wallet...</button>';
-       (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
-       analytics('send', 'event', 'web_wallet', 'load', 'Open Wallet', {
-            nonInteraction: true
-          });
          $.post(
           "https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php", 
           {
@@ -117,13 +110,6 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
          update_main_progress(60);
          let element02 = document.getElementById("balance");
          element02.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Balance...</button>';
-         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
-        analytics('send', 'event', 'web_wallet', 'load', 'Get Balance', {
-            nonInteraction: true
-          });
          $.post(
           "https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php", 
           {
@@ -147,13 +133,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
          update_main_progress(80);
          element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Transfers...</button>';
          console.log('Get Transfers: Start');
-         (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
-        analytics('send', 'event', 'web_wallet', 'load', 'Load Transfer History', {
-            nonInteraction: true
-          });
+         
          $.post(
           "https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php", 
           {
@@ -175,13 +155,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       return new Promise((resolve,reject) => {
          console.log('Get Address: Start');
          update_main_progress(20);
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
-        analytics('send', 'event', 'web_wallet', 'load', 'Get Address', {
-            nonInteraction: true
-          });
+        
          $.post(
           "https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php", 
           {
@@ -206,13 +180,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         element05.innerHTML = "";
         
         update_main_progress(40);
-        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
-        analytics('send', 'event', 'web_wallet', 'load', 'Make QR Code', {
-            nonInteraction: true
-          });
+        
         var qrcode_gen = new QRCode(document.getElementById("qrcode_gen"), {
                     text: getCookie('address'),
                     width: 300,
@@ -313,13 +281,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
       auth2.signOut().then(function () {
         console.log('User signed out.');
        });
-      (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-})(window,document,'script','//www.google-analytics.com/analytics.js','analytics');
-    analytics('send', 'event', 'web_wallet', 'load', 'Close Wallet', {
-        nonInteraction: true
-      });
+      
   }
     
      
@@ -523,7 +485,12 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                 <h3 class="h5 mb-0">
                  You are signed out.</h3>
                  <div>Once signed in you will have a new BALTx address linked to your gmail account. Use anywhere the internet goes. Collect free BALTx from the faucet. Transfer some to a "friend". Use Event Codes to get extra rewards. QR code reader and scanner available.</div>
-                <div class="g-signin2" data-onsuccess="onSignIn"></div>
+                <div id='signin2' class="g-signin2" data-onsuccess="onSignIn"></div>
+                <script>
+              document.getElementById("signin2").addEventListener("click", function () {
+                gtag("event", "login");
+              });
+            </script>
               </div>
               <div class="card-footer py-4">
                   Please click "Sign in" above.
@@ -648,7 +615,15 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
                 <h3 class="h5 mb-0">
                  
                   <form action='https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php' id='faucet_form' name='faucet_form' class="d-flex">
-                   <button class="btn btn-outline-success">Claim 10 BALTx</button>
+                   <button id='faucet_button' class="btn btn-outline-success">Claim 10 BALTx</button>
+                    <script>
+              document.getElementById("faucet_button").addEventListener("click", function () {
+                gtag("event", "earn_virtual_currency", {
+                  virtual_currency_name: "BALTx",
+                  value: 10
+                });
+              });
+            </script>
                   </form>
                   
                   <div id='faucet'></div>
