@@ -15,6 +15,11 @@ $date_format = 'F j, Y, g:i a T';
     
     <?PHP include_once('content.php'); ?>
     <?PHP include_once('analytics.php'); ?>
+    <script>
+      document.getElementById("signin").addEventListener("click", function () {
+        gtag("event", "login");
+      });
+    </script>
     <!-- jQuery 3.6.0 -->
     <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
     <!-- QR Generator -->
@@ -494,7 +499,7 @@ m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
         <div class="row align-items-end gy-3 mb-4 pb-lg-3 pb-1">
           <div class="col-lg-5 col-md-4">
             <h1 class="mb-2 mb-md-0">Web Wallet <img name="ProfilePic" id="ProfilePic"></h1>
-            <div class="g-signin2" data-onsuccess="onSignIn"></div>
+            <div id='signin' class="g-signin2" data-onsuccess="onSignIn"></div>
           </div>
         </div>
 
