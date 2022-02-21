@@ -175,6 +175,29 @@
         </ol> 
       </nav>
 
+      
+       <section class="container mt-4 pt-lg-2 pb-3">
+         <script>
+         //let element01 = document.getElementById("transfers");
+         //update_main_progress(80);
+         //element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Transfers...</button>';
+         console.log('Get Explorer: Start');
+         
+         $.post(
+          "https://www.mdwestserve.com/BMoreCoin/blockchain_explorer.php", 
+          {
+            action: "get_status"
+        },
+          function(data) {
+            let element99 = document.getElementById("explorer_box");
+            element99.innerHTML = data;
+            console.log('Get Explorer: Done');
+            //resolve();
+          }
+        );
+         </script>
+          <div id='explorer_box'></div>
+        </section>
 
       <!-- Post title + Meta  -->
       <section class="container mt-4 pt-lg-2 pb-3">
