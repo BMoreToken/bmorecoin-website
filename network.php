@@ -25,9 +25,7 @@
     <li class="nav-item">
       <span data-tkey="poolSolo">Solo Pool</span>: <strong><span id="g_poolHashrateSolo"><span data-tkey="na">N/A</span></span></strong>&nbsp;&nbsp; 
     </li>
-    <li class="nav-item">
-      <span data-tkey="you">You</span>: <strong><span id="g_userHashrate"><span tkey="na">N/A</span></span></strong>&nbsp;&nbsp; 
-    </li>
+    
     
 
 
@@ -100,10 +98,10 @@ function updateIndex(){
     updateText('g_poolHashrate', getReadableHashRateString(lastStats.pool.hashrate) + '/sec');
     updateText('g_poolHashrateSolo', getReadableHashRateString(lastStats.pool.hashrateSolo) + '/sec');
     if (lastStats.miner && lastStats.miner.hashrate){
-         updateText('g_userHashrate', getReadableHashRateString(lastStats.miner.hashrate) + '/sec');
+         //updateText('g_userHashrate', getReadableHashRateString(lastStats.miner.hashrate) + '/sec');
     }
     else{
-        updateText('g_userHashrate', 'N/A');
+        //updateText('g_userHashrate', 'N/A');
     }
     updateText('poolVersion', lastStats.config.version);
 }
