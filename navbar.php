@@ -56,7 +56,7 @@
 
                    <h6 class="px-3 mb-2">BMoreCoin Wallets</h6>
                   <ul class="list-unstyled mb-3">
-                    <li><a href="https://wallet.bmorecoin.com" class="dropdown-item py-1">Web Wallet</a></li>
+                    <li><a href="https://www.bmorecoin.com/wallet.php" class="dropdown-item py-1">Web Wallet</a></li>
                     <li><a href="https://www.bmorecoin.com/explorer.php" class="dropdown-item py-1">Graphical Wallet</a></li>
                     <li><a href="https://github.com/BMoreToken/bmorecoin/releases" class="dropdown-item py-1">Command Line Wallet and Miner</a></li>
                     <li><a target="_Blank" href="https://xmrig.com/miner" class="dropdown-item py-1">XMRig Mining Software</a></li>
