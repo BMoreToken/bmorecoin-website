@@ -189,7 +189,7 @@
 
       <!-- Post title + Meta  -->
       <section class="container mt-4 pt-lg-2 pb-3">
-        <h1 class="pb-3" style="max-width: 970px;">BMoreCoin Blockchain Explorer</h1>
+        <h1 class="pb-3" style="max-width: 970px;">Blockchain Explorer</h1>
         <div class="d-flex flex-md-row flex-column align-items-md-center justify-content-md-between mb-3">
           <div class="d-flex align-items-center flex-wrap text-muted mb-md-0 mb-4">
             <div class="fs-xs border-end pe-3 me-3 mb-2">
