@@ -126,3 +126,44 @@
               </div>
             </div>
           </div>
+               <!-- Subscription form + Sharing -->
+          <div class="col-lg-3 position-relative">
+            <div class="sticky-top ms-xl-5 ms-lg-4 ps-xxl-4" style="top: 70px !important;">
+              <div class="row gy-lg-5 gy-4 justify-content-center text-lg-start text-center">
+
+                <!-- Subscription form -->
+                <div class="col-lg-12 col-sm-7 col-11">
+                  <h6 class="fs-lg">Enjoy this post? Join our newsletter</h6>
+                  <form class="needs-validation" novalidate>
+                    <div class="input-group mb-3">
+                      <i class="bx bx-envelope position-absolute start-0 top-50 translate-middle-y zindex-5 ms-3 text-muted d-lg-inline-block d-none"></i>
+                      <input type="email" placeholder="Your Email" class="form-control ps-lg-5 rounded text-lg-start text-center" required>
+                    </div>
+                    <button type="submit" class="btn btn-primary w-100">Subscribe</button>
+                  </form>
+                </div>
+
+                <!-- Sharing -->
+                <div class="col-lg-12 col-sm-7 col-11">
+                  <h6 class="fs-lg">Don’t forget to share it</h6>
+                  <div class="mb-4 pb-lg-3">
+                    <a href="#" class="btn btn-icon btn-secondary btn-linkedin me-2 mb-2">
+                      <i class="bx bxl-linkedin"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-facebook me-2 mb-2">
+                      <i class="bx bxl-facebook"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-twitter me-2 mb-2">
+                      <i class="bx bxl-twitter"></i>
+                    </a>
+                    <a href="#" class="btn btn-icon btn-secondary btn-instagram me-2 mb-2">
+                      <i class="bx bxl-instagram"></i>
+                    </a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
