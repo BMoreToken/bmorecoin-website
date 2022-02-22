@@ -17,32 +17,20 @@
 
 
 
-<div id="navbarNav" class="offcanvas offcanvas-end">
-<div class="offcanvas-header border-bottom">
-  <h5 class="offcanvas-title">Menu</h5>
-  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
-</div>
-<div id="top-bar" class="offcanvas-body">
-  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-    <li class="nav-item">
-      <span data-tkey="network">Network</span>: <strong><span id="g_networkHashrate"><span data-tkey="na">N/A</span></span></strong>
-    </li>
-    <li class="nav-item">
-      <span data-tkey="poolProp">Prop Pool</span>: <strong><span id="g_poolHashrate"><span data-tkey="na">N/A</span></span></strong>
-    </li>
-    <li class="nav-item">
-      <span data-tkey="poolSolo">Solo Pool</span>: <strong><span id="g_poolHashrateSolo"><span data-tkey="na">N/A</span></span></strong>
-    </li>
-    <li class="nav-item">
-      <span data-tkey="you">You</span>: <strong><span id="g_userHashrate"><span tkey="na">N/A</span></span></strong>
-    </li>
-    <li class="nav-item">
-      <span id="statsUpdated"><span data-tkey="statsUpdated">Stats Updated</span> &nbsp;</span>
-    </li>
-   </ul>
- </div>   
-</div>
 
+    <li class="nav-item">
+      <span data-tkey="network">Network</span>: <strong><span id="g_networkHashrate"><span data-tkey="na">N/A</span></span></strong>&nbsp;&nbsp; 
+    </li>
+    <li class="nav-item">
+      <span data-tkey="poolProp">Prop Pool</span>: <strong><span id="g_poolHashrate"><span data-tkey="na">N/A</span></span></strong>&nbsp;&nbsp; 
+    </li>
+    <li class="nav-item">
+      <span data-tkey="poolSolo">Solo Pool</span>: <strong><span id="g_poolHashrateSolo"><span data-tkey="na">N/A</span></span></strong>&nbsp;&nbsp; 
+    </li>
+    <li class="nav-item">
+      <span data-tkey="you">You</span>: <strong><span id="g_userHashrate"><span tkey="na">N/A</span></span></strong>&nbsp;&nbsp; 
+    </li>
+    
 
 
 
@@ -83,13 +71,13 @@ function getCurrentAddress(coin) {
 
 // Pulse live update
 function pulseLiveUpdate(){
-    let stats_update = document.getElementById('statsUpdated');
-    stats_update.style.transition = 'opacity 100ms ease-out';
-    stats_update.style.opacity = 1;
-    setTimeout(function(){
-        stats_update.style.transition = 'opacity 7000ms linear';
-        stats_update.style.opacity = 0;
-    }, 500);
+   // let stats_update = document.getElementById('statsUpdated');
+   // stats_update.style.transition = 'opacity 100ms ease-out';
+   // stats_update.style.opacity = 1;
+   // setTimeout(function(){
+   //     stats_update.style.transition = 'opacity 7000ms linear';
+   //     stats_update.style.opacity = 0;
+   // }, 500);
 }
 
 // Update live informations
