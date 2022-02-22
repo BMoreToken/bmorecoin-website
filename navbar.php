@@ -21,30 +21,40 @@
                   <a href="index.php" class="nav-link">Home</a>
                 </li>
                     
-                <li class="nav-item">
-                  <a href="tokenomics.php" class="nav-link">Tokenomics</a>
-                </li>
-                    
-                <li class="nav-item">
-                  <a href="explorer.php" class="nav-link">Explorer</a>
-                </li>    
+               
              
                 <li class="nav-item">
                   <a href="wallet.php" class="nav-link">Web Wallet</a>
                 </li>
                
                 <li class="nav-item">
-                  <a href="about.php" class="nav-link">About</a>
+                  <a href="about.php" class="nav-link"></a>
                 </li>
 
                 <?PHP include_once('network.php'); ?>
                 
                 <li class="nav-item dropdown">
-                  <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Connect</a>
+                  <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Main Menu</a>
                   <div class="dropdown-menu">
                     <div class="d-lg-flex pt-lg-3">
                       <div class="mega-dropdown-column">
                         
+                        <h6 class="px-3 mb-2">BMoreCoin Information</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="https://www.bmorecoin.com/tokenomics.php" class="dropdown-item py-1">Tokenomics</a></li>
+                          <li><a href="https://www.bmorecoin.com/explorer.php" class="dropdown-item py-1">Block Explorer</a></li>
+                          <li><a href="https://www.bmorecoin.com/explorer.php" class="dropdown-item py-1">About The BMoreToken Team</a></li>
+                          
+                        </ul>
+                        
+                         <h6 class="px-3 mb-2">BMoreCoin Wallets</h6>
+                        <ul class="list-unstyled mb-3">
+                          <li><a href="https://wallet.bmorecoin.com" class="dropdown-item py-1">Web Wallet</a></li>
+                          <li><a href="https://www.bmorecoin.com/explorer.php" class="dropdown-item py-1">Graphical Wallet</a></li>
+                          <li><a href="https://github.com/BMoreToken/bmorecoin/releases" class="dropdown-item py-1">Command Line Wallet and Miner</a></li>
+                          <li><a target="_Blank" href="https://xmrig.com/miner" class="dropdown-item py-1">XMRig Mining Software</a></li>
+                        </ul>    
+                            
                         <h6 class="px-3 mb-2">Social Media</h6>
                         <ul class="list-unstyled mb-3">
                           <li><a href="https://www.facebook.com/groups/bmoretoken" class="dropdown-item py-1">Facebook</a></li>
@@ -55,6 +65,7 @@
                           <li><a href="https://www.reddit.com/r/BMoreToken/" class="dropdown-item py-1">Reddit</a></li>
                           <li><a href="https://www.instagram.com/bmoretoken/" class="dropdown-item py-1">Instagram</a></li>
                         </ul>
+                            
                       </div>
                       <div class="mega-dropdown-column">
                         <h6 class="px-3 mb-2">Chat</h6>
