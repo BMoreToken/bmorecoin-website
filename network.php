@@ -15,14 +15,35 @@
 
 
 
-<!-- Top Bar -->
-<div id="top-bar">
-    <div><span data-tkey="network">Network</span>: <strong><span id="g_networkHashrate"><span data-tkey="na">N/A</span></span></strong></div>
-    <div><span data-tkey="poolProp">Prop Pool</span>: <strong><span id="g_poolHashrate"><span data-tkey="na">N/A</span></span></strong></div>
-    <div><span data-tkey="poolSolo">Solo Pool</span>: <strong><span id="g_poolHashrateSolo"><span data-tkey="na">N/A</span></span></strong></div>
-    <div><span data-tkey="you">You</span>: <strong><span id="g_userHashrate"><span tkey="na">N/A</span></span></strong></div>
-    <div><span id="statsUpdated"><span data-tkey="statsUpdated">Stats Updated</span> &nbsp;</span></div>
+
+
+<div id="navbarNav" class="offcanvas offcanvas-end">
+<div class="offcanvas-header border-bottom">
+  <h5 class="offcanvas-title">Menu</h5>
+  <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
 </div>
+<div id="top-bar" class="offcanvas-body">
+  <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+    <li class="nav-item">
+      <span data-tkey="network">Network</span>: <strong><span id="g_networkHashrate"><span data-tkey="na">N/A</span></span></strong>
+    </li>
+    <li class="nav-item">
+      <span data-tkey="poolProp">Prop Pool</span>: <strong><span id="g_poolHashrate"><span data-tkey="na">N/A</span></span></strong>
+    </li>
+    <li class="nav-item">
+      <span data-tkey="poolSolo">Solo Pool</span>: <strong><span id="g_poolHashrateSolo"><span data-tkey="na">N/A</span></span></strong>
+    </li>
+    <li class="nav-item">
+      <span data-tkey="you">You</span>: <strong><span id="g_userHashrate"><span tkey="na">N/A</span></span></strong>
+    </li>
+    <li class="nav-item">
+      <span id="statsUpdated"><span data-tkey="statsUpdated">Stats Updated</span> &nbsp;</span>
+    </li>
+   </ul>
+ </div>   
+</div>
+
+
 
 
 <script>
