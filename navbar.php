@@ -1,11 +1,6 @@
 <!-- Navbar -->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
       <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky">
-            <div class="container px-3">
-                  <?PHP include_once('network.php'); ?>
-            </div>
-      </header>      
-      <header class="header navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-3">
           <!-- API loading bar -->
           <div id='main_progress'></div>
@@ -42,6 +37,7 @@
                   <a href="about.php" class="nav-link">About</a>
                 </li>
 
+                <?PHP include_once('network.php'); ?>
                 
                 <li class="nav-item dropdown">
                   <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Connect</a>
