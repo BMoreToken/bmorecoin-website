@@ -1,6 +1,6 @@
 <!-- Navbar -->
       <!-- Remove "navbar-sticky" class to make navigation bar scrollable with the page -->
-      <header class="header navbar navbar-expand-lg navbar-light bg-light navbar-sticky">
+      <header class="header navbar navbar-expand-lg navbar-light bg-light">
         <div class="container px-3">
           <!-- API loading bar -->
           <div id='main_progress'></div>
@@ -105,5 +105,8 @@
             <i class="bx bx-cart fs-5 lh-1 me-1"></i>
             &nbsp;Download now
           </a>
+        </div>
+        <div class="container px-3">
+            <?PHP include_once('network.php'); ?>
         </div>
       </header>
