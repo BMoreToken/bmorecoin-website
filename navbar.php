@@ -15,24 +15,10 @@
             </div>
             <div class="offcanvas-body">
               <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                
-                        
                 <li class="nav-item">
                   <a href="index.php" class="nav-link">Home</a>
                 </li>
-                    
-               
-             
-                <li class="nav-item">
-                  <a href="wallet.php" class="nav-link">Web Wallet</a>
-                </li>
-               
-                <li class="nav-item">
-                  <a href="about.php" class="nav-link"></a>
-                </li>
-
                 <?PHP include_once('network.php'); ?>
-                
                 <li class="nav-item dropdown">
                   <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Main Menu</a>
                   <div class="dropdown-menu">
