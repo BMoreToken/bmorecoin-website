@@ -224,15 +224,7 @@
       <?PHP include_once('navbar.php'); ?>
 
 
-      <!-- Breadcrumb -->
-      <nav class="container mt-lg-4 pt-5" aria-label="breadcrumb">
-        <ol class="breadcrumb mb-0 pt-5">
-          <li class="breadcrumb-item">
-            <a href="index.php"><i class="bx bx-home-alt fs-lg me-1"></i>Home</a>
-          </li>
-          <li class="breadcrumb-item active" aria-current="page">Tokenomics</li>
-        </ol>
-      </nav>
+ 
 
 
       <!-- Page content -->
