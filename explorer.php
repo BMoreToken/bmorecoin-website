@@ -252,7 +252,8 @@
             <h3 class="h5 mb-4 pb-2 fw-medium">BMoreCoin Blockchain Status</h3>
             <h2 class="h4">Latest Block Data</h2>
             <p id="explorer_box" class="mb-4 pb-2"></p>
-            
+          </div>
+          
           <!-- Sharing -->
           <div class="col-lg-3 position-relative">
             <div class="sticky-top ms-xl-5 ms-lg-4 ps-xxl-4" style="top: 105px !important;">
