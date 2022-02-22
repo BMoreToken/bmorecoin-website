@@ -32,13 +32,13 @@
             <a href="index.php" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-tkey="network">Network: <strong><span id="g_networkHashrate"><span data-tkey="na">N/A</span></span></strong></a> 
+            <a class="nav-link" data-tkey="network">Net: <strong><span id="g_networkHashrate"><span data-tkey="na">N/A</span></span></strong></a> 
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-tkey="poolProp">Prop Pool: <strong><span id="g_poolHashrate"><span data-tkey="na">N/A</span></span></strong></a>
+            <a class="nav-link" data-tkey="poolProp">Prop: <strong><span id="g_poolHashrate"><span data-tkey="na">N/A</span></span></strong></a>
           </li>
           <li class="nav-item">
-            <a class="nav-link" data-tkey="poolSolo">Solo Pool: <strong><span id="g_poolHashrateSolo"><span data-tkey="na">N/A</span></span></strong></a> 
+            <a class="nav-link" data-tkey="poolSolo">Solo: <strong><span id="g_poolHashrateSolo"><span data-tkey="na">N/A</span></span></strong></a> 
           </li>
           <li class="nav-item dropdown">
             <a href="#" class="nav-link dropdown-toggle active" data-bs-toggle="dropdown" aria-current="page">Main Menu</a>
