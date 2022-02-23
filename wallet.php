@@ -262,7 +262,7 @@ $date_format = 'F j, Y, g:i a T';
     document.getElementById("ProfilePic").src = profile.getImageUrl();
     console.log('STARTING FIRST RUN');
     run_processes();
-    var interval = setInterval(function () { console.log('STARTING NEXT RUN'); run_processes(); }, 120000);
+    var interval = setInterval(function () { console.log('STARTING NEXT RUN'); run_processes(); }, 180000);
     console.log('Login Starup Completed, updating every 2 minutes.');
   }
     
