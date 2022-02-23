@@ -7,6 +7,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
 <!-- Pool JS -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!-- $(...).collapse is not a function -->
 <script src="https://pool.bmorecoin.com/config.js?"></script>
 <script src="https://pool.bmorecoin.com/js/common.js"></script>
 
@@ -164,13 +165,13 @@ function getCurrentAddress(coin) {
 
 // Pulse live update
 function pulseLiveUpdate(){
-    let stats_update = document.getElementById('g_networkHashrate');
-    stats_update.style.transition = 'opacity 100ms ease-out';
-    stats_update.style.opacity = 1;
-    setTimeout(function(){
-        stats_update.style.transition = 'opacity 7000ms linear';
-        stats_update.style.opacity = 0;
-    }, 500);
+   // let stats_update = document.getElementById('g_networkHashrate');
+   // stats_update.style.transition = 'opacity 100ms ease-out';
+   // stats_update.style.opacity = 1;
+   // setTimeout(function(){
+   //     stats_update.style.transition = 'opacity 7000ms linear';
+   //     stats_update.style.opacity = 0;
+   // }, 500);
 }
 
 // Update live informations
