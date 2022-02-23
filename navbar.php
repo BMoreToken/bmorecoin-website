@@ -394,11 +394,11 @@ function loadTranslations() {
         translate(langData);
     }
     else if (langs && langs[langCode]) {
-        $.getJSON('lang/'+langCode+'.json', translate);
-        $.getScript('lang/timeago/jquery.timeago.'+langCode+'.js');
+//        $.getJSON('lang/'+langCode+'.json', translate);
+//        $.getScript('lang/timeago/jquery.timeago.'+langCode+'.js');
     } else {
-        $.getJSON('lang/'+defaultLang+'.json', translate);
-        $.getScript('lang/timeago/jquery.timeago.'+defaultLang+'.js');
+//        $.getJSON('lang/'+defaultLang+'.json', translate);
+//        $.getScript('lang/timeago/jquery.timeago.'+defaultLang+'.js');
     }
 }
 
