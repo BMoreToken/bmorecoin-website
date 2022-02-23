@@ -7,8 +7,7 @@
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"></script>
 
 <!-- Pool JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script> <!-- $(...).collapse is not a function -->
-<script src="https://pool.bmorecoin.com/config.js?"></script>
+<script src="https://pool.bmorecoin.com/config.js?"></script><!-- $(...).collapse is not a function -->
 <script src="https://pool.bmorecoin.com/js/common.js"></script>
 
 <!-- Navbar -->
@@ -50,7 +49,7 @@
                   <ul class="list-unstyled mb-3">
                     <li><a href="https://www.bmorecoin.com/tokenomics.php" class="dropdown-item py-1">Tokenomics</a></li>
                     <li><a href="https://www.bmorecoin.com/explorer.php" class="dropdown-item py-1">Block Explorer</a></li>
-                    <li><a href="https://www.bmorecoin.com/explorer.php" class="dropdown-item py-1">About The BMoreToken Team</a></li>
+                    <li><a href="https://www.bmorecoin.com/explorer.php" class="dropdown-item py-1">About The BMoreCoin Team</a></li>
 
                   </ul>
 
