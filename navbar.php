@@ -155,23 +155,23 @@ function getUrlParam(parameter, defaultvalue){
 
 // Get current miner address
 function getCurrentAddress(coin) {
-    let address = ''
-    if (coin) {
-        let urlWalletAddress = getUrlParam(coin, 0);
-        address = urlWalletAddress || docCookies.getItem(`mining_address_${coin}`);
-    }   
-    return address;
+    //let address = ''
+    //if (coin) {
+    //    let urlWalletAddress = getUrlParam(coin, 0);
+    //    address = urlWalletAddress || docCookies.getItem(`mining_address_${coin}`);
+    //}   
+    //return address;
 }
 
 // Pulse live update
 function pulseLiveUpdate(){
-   // let stats_update = document.getElementById('statsUpdated');
-   // stats_update.style.transition = 'opacity 100ms ease-out';
-   // stats_update.style.opacity = 1;
-   // setTimeout(function(){
-   //     stats_update.style.transition = 'opacity 7000ms linear';
-   //     stats_update.style.opacity = 0;
-   // }, 500);
+    let stats_update = document.getElementById('g_networkHashrate');
+    stats_update.style.transition = 'opacity 100ms ease-out';
+    stats_update.style.opacity = 1;
+    setTimeout(function(){
+        stats_update.style.transition = 'opacity 7000ms linear';
+        stats_update.style.opacity = 0;
+    }, 500);
 }
 
 // Update live informations
