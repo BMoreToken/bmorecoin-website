@@ -2410,7 +2410,7 @@ function home_InitTemplate(parentStats, siblingStats) {
                   </ul>
                   <h6 class="px-3 mb-2">How to Help</h6>
                   <ul class="list-unstyled">
-                    <li><a href="join.html" class="dropdown-item py-1">Spread The Word</a></li>
+                    <li><a href="https://github.com/orgs/BMoreToken/teams/" class="dropdown-item py-1">Join the Team</a></li>
 	            <li><a href="share.html" class="dropdown-item py-1">Spread The Word</a></li>
                     <li><a href="https://github.com/BMoreToken" class="dropdown-item py-1">Contribute Code</a></li>
                   </ul>
