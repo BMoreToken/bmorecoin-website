@@ -2333,7 +2333,7 @@ function home_InitTemplate(parentStats, siblingStats) {
   <div class="container px-3">
     <!-- API loading bar -->
     <div id='main_progress'></div>
-    <a href="index.php" class="navbar-brand pe-3">
+    <a href="https://www.bmorecoin.com/index.php" class="navbar-brand pe-3">
       <img src="assets/img/logo.svg" width="47" alt="BMoreCoin">
       BMoreCoin
     </a>
@@ -2345,7 +2345,7 @@ function home_InitTemplate(parentStats, siblingStats) {
       <div class="offcanvas-body">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
           <li class="nav-item">
-            <a href="index.php" class="nav-link">Home</a>
+            <a href="https://www.bmorecoin.com/index.php" class="nav-link">Home</a>
           </li>
           <li class="nav-item">
             <a class="nav-link" data-tkey="network">Net: <strong><span id="g_networkHashrate"><span data-tkey="na">N/A</span></span></strong></a> 
@@ -2365,15 +2365,15 @@ function home_InitTemplate(parentStats, siblingStats) {
                   <h6 class="px-3 mb-2">BMoreCoin Information</h6>
                   <ul class="list-unstyled mb-3">
                     <li><a href="https://www.bmorecoin.com/tokenomics.php" class="dropdown-item py-1">Tokenomics</a></li>
-                    <li><a href="https://www.bmorecoin.com/explorer.php" class="dropdown-item py-1">Block Explorer</a></li>
-                    <li><a href="https://www.bmorecoin.com/explorer.php" class="dropdown-item py-1">About The BMoreCoin Team</a></li>
+                    <li><a href="https://explorer.bmorecoin.com" class="dropdown-item py-1">Block Explorer</a></li>
+                    <li><a href="https://www.bmorecoin.com/about.php" class="dropdown-item py-1">About The BMoreCoin Team</a></li>
 
                   </ul>
 
                    <h6 class="px-3 mb-2">BMoreCoin Wallets</h6>
                   <ul class="list-unstyled mb-3">
-                    <li><a href="https://www.bmorecoin.com/wallet.php" class="dropdown-item py-1">Web Wallet</a></li>
-                    <li><a href="https://www.bmorecoin.com/explorer.php" class="dropdown-item py-1">Graphical Wallet</a></li>
+                    <li><a href="https://wallet.bmorecoin.com" class="dropdown-item py-1">Web Wallet</a></li>
+                    <li><a href="https://github.com/BMoreToken/bmorecoinwallet/releases" class="dropdown-item py-1">Graphical Wallet</a></li>
                     <li><a href="https://github.com/BMoreToken/bmorecoin/releases" class="dropdown-item py-1">Command Line Wallet and Miner</a></li>
                     <li><a target="_Blank" href="https://xmrig.com/miner" class="dropdown-item py-1">XMRig Mining Software</a></li>
                   </ul>    
@@ -2383,7 +2383,7 @@ function home_InitTemplate(parentStats, siblingStats) {
                     <li><a href="https://www.facebook.com/groups/bmoretoken" class="dropdown-item py-1">Facebook</a></li>
                     <li><a href="https://www.youtube.com/channel/UCqCVh7yCV34dDWF-TfFKc_Q" class="dropdown-item py-1">Youtube</a></li>
                     <li><a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=BMoreToken" class="dropdown-item py-1">BMoreToken Twitter</a></li>
-                    <li><a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=BMoreCoin" class="dropdown-item py-1">BMoreCoin Twitter</a></li>
+                    <li><a href="https://twitter.com/intent/follow?source=followbutton&variant=1.0&screen_name=BMoreCoin" class="dropdown-item py-1">BMoreCoin Pool's Twitter</a></li>
                     <li><a href="https://medium.com/bmoretoken" class="dropdown-item py-1">Medium</a></li>
                     <li><a href="https://www.reddit.com/r/BMoreToken/" class="dropdown-item py-1">Reddit</a></li>
                     <li><a href="https://www.instagram.com/bmoretoken/" class="dropdown-item py-1">Instagram</a></li>
@@ -2398,8 +2398,8 @@ function home_InitTemplate(parentStats, siblingStats) {
                   </ul>
                   <h6 class="px-3 mb-2">Mining</h6>
                   <ul class="list-unstyled mb-3">
-                    <li><a href="services.html" class="dropdown-item py-1">Solo Mining</a></li>
-                    <li><a href="services-single.html" class="dropdown-item py-1">Pool Mining</a></li>
+                    <li><a href="solo.html" class="dropdown-item py-1">Solo Mining</a></li>
+                    <li><a href="https://pool.bmorecoin.com/" class="dropdown-item py-1">Pool Mining</a></li>
                   </ul>
                 </div>
                 <div class="mega-dropdown-column">
@@ -2410,7 +2410,8 @@ function home_InitTemplate(parentStats, siblingStats) {
                   </ul>
                   <h6 class="px-3 mb-2">How to Help</h6>
                   <ul class="list-unstyled">
-                    <li><a href="404-v1.html" class="dropdown-item py-1">Spread The Word</a></li>
+                    <li><a href="join.html" class="dropdown-item py-1">Spread The Word</a></li>
+	            <li><a href="share.html" class="dropdown-item py-1">Spread The Word</a></li>
                     <li><a href="https://github.com/BMoreToken" class="dropdown-item py-1">Contribute Code</a></li>
                   </ul>
                 </div>
