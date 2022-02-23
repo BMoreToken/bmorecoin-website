@@ -68,7 +68,7 @@ var currentPage;
 
 // Handle hash change
 window.onhashchange = function(){
-    routePage();
+    //routePage();
 };
 
 // Route to page
@@ -89,7 +89,7 @@ function routePage(loadedCallback) {
     var page = $link.data('page');
 
     loadTranslations();
-
+/*
     xhrPageLoading = $.ajax({
         url: 'pages/' + page,
         cache: false,
@@ -102,6 +102,7 @@ function routePage(loadedCallback) {
             if (loadedCallback) loadedCallback();
         }
     });
+*/
 }
 
 /**
