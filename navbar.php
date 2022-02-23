@@ -8,7 +8,6 @@
 
 <!-- Pool JS -->
 <script src="https://pool.bmorecoin.com/config.js?"></script>
-<script src="https://pool.bmorecoin.com/lang/languages.js"></script>
 <script src="https://pool.bmorecoin.com/js/common.js"></script>
 
 <!-- Navbar -->
