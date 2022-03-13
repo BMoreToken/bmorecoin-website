@@ -25,8 +25,7 @@ jobs:
       - name: Build
         id: build
         run: |
-          sudo apt-get install -y md5
-          md5 /home/runner/work/bmorecoin-website/bmorecoin-website/paperwallet.html 2>&1 > hashes.txt
+          md5sum /home/runner/work/bmorecoin-website/bmorecoin-website/paperwallet.html 2>&1 > hashes.txt
           
 
         
