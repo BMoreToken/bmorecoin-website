@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Hash all files with md5
+name: Hash paper_wallet.html
 
 # Controls when the workflow will run
 on:
@@ -32,8 +32,26 @@ jobs:
       - uses: MCJack123/ghaction-generate-release-hashes@v1
         with:
           hash-type: md5
-          file-name: hashes.txt
+          file-name: paper_wallet.html
+          
       - uses: actions/upload-artifact@v2
         with:
-          name: Asset Hashes
+          name: md5 Hashes
           path: hashes.txt
+          
+      - name: Build
+        id: build
+        run: |
+          sha256=$(shasum -a 256 "hashes.txt | awk '{print toupper($1)}')
+          release_name=security-hashes
+        
+      - name: Create Release
+        uses: softprops/action-gh-release@v0.1.12
+        with:
+          files: hashes.txt
+          name: md5 Security Hashes
+          body: |
+            [md5 Security Hashes](hashes.txt) **${{ steps.build.outputs.release_name }}**
+            `SHA256 : ${{ steps.hash.outputs.sha256 }}`
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
