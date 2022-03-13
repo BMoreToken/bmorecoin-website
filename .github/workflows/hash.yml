@@ -4,7 +4,7 @@ name: Hash all files with md5
 
 # Controls when the workflow will run
 on:
-  push:
+  release:
     tags:
       - "*"
 
