@@ -5,11 +5,9 @@ name: Hash paper_wallet.html
 # Controls when the workflow will run
 on:
   release:
-    tags:
-      - "*"
+    types: [published]
 
-  # Allows you to run this workflow manually from the Actions tab
-  workflow_dispatch:
+ 
 
 # A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
@@ -23,25 +21,11 @@ jobs:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
 
-      # Command from website
-      - name: Generate Release Hashes
-        uses: MCJack123/ghaction-Generate-Release-Hashes@v2
-
-
-      # Sample Form Website
-      - uses: MCJack123/ghaction-generate-release-hashes@v1
-        with:
-          hash-type: md5
-          file-name: paper_wallet.html
-          
-      - uses: actions/upload-artifact@v2
-        with:
-          name: md5 Hashes
-          path: hashes.txt
-          
+     
       - name: Build
         id: build
         run: |
+          md5 $GITHUB_WORKSPACE/paperwallet.html > hashes.txt
           sha256=$(shasum -a 256 "hashes.txt" | awk '{print toupper($1)}')
           release_name=security-hashes
         
