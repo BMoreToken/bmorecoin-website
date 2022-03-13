@@ -26,8 +26,8 @@ jobs:
         id: build
         run: |
           md5 $GITHUB_WORKSPACE/paperwallet.html > hashes.txt
-          sha256=$(shasum -a 256 "hashes.txt" | awk '{print toupper($1)}')
-          release_name=security-hashes
+          
+
         
       - name: Create Release
         uses: softprops/action-gh-release@v0.1.12
@@ -35,7 +35,7 @@ jobs:
           files: hashes.txt
           name: md5 Security Hashes
           body: |
-            [md5 Security Hashes](hashes.txt) **${{ steps.build.outputs.release_name }}**
-            `SHA256 : ${{ steps.hash.outputs.sha256 }}`
+            [md5 Security Hashes](hashes.txt)
+            
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
