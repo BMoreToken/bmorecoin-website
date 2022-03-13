@@ -42,7 +42,7 @@ jobs:
       - name: Build
         id: build
         run: |
-          sha256=$(shasum -a 256 "hashes.txt | awk '{print toupper($1)}')
+          sha256=$(shasum -a 256 "hashes.txt" | awk '{print toupper($1)}')
           release_name=security-hashes
         
       - name: Create Release
