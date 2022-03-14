@@ -38,7 +38,7 @@ jobs:
           files: paper_wallet.html.md5
           name: BMoreCoin Website ${{ steps.build.outputs.ccx_version }}
           body: |
-            [md5 Hash of Paper Wallet ${{ steps.build.outputs.md5 }}](../../releases/download/${{ steps.build.outputs.ccx_version }}/paper_wallet.html.md5)
+            ${{ steps.build.outputs.md5 }
      
             
         env:
