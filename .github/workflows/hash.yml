@@ -25,7 +25,9 @@ jobs:
       - name: Build
         id: build
         run: |
+          echo "<pre>" >> hashes.html
           md5sum *.html 2>&1 >> hashes.html
+          echo "</pre>" >> hashes.html
           ccx_version=$(echo "$GITHUB_REF" | sed 's|refs/tags/||')
           release_name=bmorecoin-website-v"$ccx_version"
      
@@ -36,9 +38,9 @@ jobs:
         uses: softprops/action-gh-release@v0.1.12
         with:
           files: hashes.html
-          name: BMoreCoin Website ${{ steps.build.outputs.ccx_version }}
+          name: BMoreCoin Website ${{ steps.hash.outputs.ccx_version }}
           body: |
-            [md5 Security Hashes](../../releases/download/${{ steps.build.outputs.ccx_version }}/hashes.html)
+            [md5 Security Hashes of HTML files](../../releases/download/${{ steps.hash.outputs.ccx_version }}/hashes.html)
             
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
