@@ -1,6 +1,6 @@
 # This is a basic workflow to help you get started with Actions
 
-name: Hash paper_wallet.html
+name: Hash website files for security 
 
 # Controls when the workflow will run
 on:
@@ -25,17 +25,23 @@ jobs:
       - name: Build
         id: build
         run: |
-          md5sum /home/runner/work/bmorecoin-website/bmorecoin-website/paper_wallet.html 2>&1 > hashes.txt
+          cp /home/runner/work/bmorecoin-website/bmorecoin-website/*.html ./
+          cp /home/runner/work/bmorecoin-website/bmorecoin-website/*.php ./
+          cp /home/runner/work/bmorecoin-website/bmorecoin-website/*.js ./
+          md5sum * 2>&1 >> hashes.html
+          ccx_version=$(echo "$GITHUB_REF" | sed 's|refs/tags/||')
+          release_name=bmorecoin-website-v"$ccx_version"
+     
           
 
         
       - name: Create Release
         uses: softprops/action-gh-release@v0.1.12
         with:
-          files: hashes.txt
-          name: md5 Security Hashes
+          files: hashes.html
+          name: BMoreCoin Website ${{ steps.build.outputs.ccx_version }}
           body: |
-            [md5 Security Hashes](hashes.txt)
+            [md5 Security Hashes](../../releases/download/${{ steps.build.outputs.ccx_version }}/hashes.html)
             
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
