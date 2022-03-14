@@ -31,7 +31,7 @@ jobs:
           ccx_version=$(echo "$GITHUB_REF" | sed 's|refs/tags/||')
           release_name=bmorecoin-website-v"$ccx_version"
      
-          
+          echo "::set-output name=ccx_version::${ccx_version}"
 
         
       - name: Create Release
