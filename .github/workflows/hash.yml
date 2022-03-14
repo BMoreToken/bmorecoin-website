@@ -44,7 +44,7 @@ jobs:
           files: hashes.html
           name: BMoreCoin Website ${{ steps.build.outputs.ccx_version }}
           body: |
-            [md5 Security Hashes of HTML files](../../releases/download/${{ steps.build.outputs.ccx_version }}/hashes.html)
+            [md5 Security Hashes of Website Files](../../releases/download/${{ steps.build.outputs.ccx_version }}/hashes.html)
             
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
