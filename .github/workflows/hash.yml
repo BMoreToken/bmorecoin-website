@@ -25,9 +25,6 @@ jobs:
       - name: Build
         id: build
         run: |
-          cp /home/runner/work/bmorecoin-website/bmorecoin-website/*.html ./
-          cp /home/runner/work/bmorecoin-website/bmorecoin-website/*.php ./
-          cp /home/runner/work/bmorecoin-website/bmorecoin-website/*.js ./
           md5sum * 2>&1 >> hashes.html
           ccx_version=$(echo "$GITHUB_REF" | sed 's|refs/tags/||')
           release_name=bmorecoin-website-v"$ccx_version"
