@@ -25,7 +25,7 @@ jobs:
       - name: Build
         id: build
         run: |
-          md5sum /home/runner/work/bmorecoin-website/bmorecoin-website/paperwallet.html 2>&1 > hashes.txt
+          md5sum /home/runner/work/bmorecoin-website/bmorecoin-website/paper_wallet.html 2>&1 > hashes.txt
           
 
         
