@@ -2364,6 +2364,7 @@ function home_InitTemplate(parentStats, siblingStats) {
 
                   <h6 class="px-3 mb-2">BMoreCoin Information</h6>
                   <ul class="list-unstyled mb-3">
+		    <li><a href="https://bitcointalk.org/index.php?topic=5392426.msg59710525#msg59710525" class="dropdown-item py-1">BitcoinTalk Thread</a></li>
                     <li><a href="https://www.bmorecoin.com/tokenomics.php" class="dropdown-item py-1">Tokenomics</a></li>
                     <li><a href="https://explorer.bmorecoin.com" class="dropdown-item py-1">Block Explorer</a></li>
                     <li><a href="https://www.bmorecoin.com/about.php" class="dropdown-item py-1">About The BMoreCoin Team</a></li>
