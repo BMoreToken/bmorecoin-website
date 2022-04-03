@@ -35,10 +35,16 @@ $project_management = 'hello world';
 $our_company = 'Enim, vulputate felis, pharetra, leo diam est morbi. Gravida porta nunc vitae tempor sit proin lobortis mauris nulla. Eget felis nec 
 ultrices quis viverra aliquam aliquam. Eget vestibulum, orci, pulvinar diam. Ultrices tortor cursus porta magna sit blandit dolor, nulla 
 a. Sit diam non donec et, in interdum.';
-$client1 = "Dolor, a eget elementum, integer nulla volutpat, nunc, sit. Quam iaculis varius mauris magna sem. Egestas sed sed suscipit dolor faucibus dui imperdiet at eget. Tincidunt imperdiet quis hendrerit aliquam feugiat neque cras sed. Dictum quam integer volutpat tellus, faucibus platea. Pulvinar turpis proin faucibus at mauris. Sagittis gravida vitae porta enim, nulla arcu fermentum massa. Tortor ullamcorper lacus. Pellentesque lectus adipiscing aenean volutpat tortor habitant.";
+$client1 = "Dolor, a eget elementum, integer nulla volutpat, nunc, sit. Quam iaculis varius mauris magna sem. Egestas sed sed 
+suscipit dolor faucibus dui imperdiet at eget. Tincidunt imperdiet quis hendrerit aliquam feugiat neque cras sed. Dictum quam integer 
+volutpat tellus, faucibus platea. Pulvinar turpis proin faucibus at mauris. Sagittis gravida vitae porta enim, nulla arcu fermentum massa. 
+Tortor ullamcorper lacus. Pellentesque lectus adipiscing aenean volutpat tortor habitant.";
 $client1_name = 'Ralph Edwards';
 $client1_title = 'Head of Marketing';
-$client2 = "Mi semper risus ultricies orci pulvinar in at enim orci. Quis facilisis nunc pellentesque in ullamcorper sit. Lorem blandit arcu sapien, senectus libero, amet dapibus cursus quam. Eget pellentesque eu purus volutpat adipiscing malesuada. Purus nisi, tortor vel lacus. Donec diam molestie ultrices vitae eget pulvinar fames. Velit lacus mi purus velit justo, amet. Nascetur lobortis diam, duis orci.";
+$client2 = "Mi semper risus ultricies orci pulvinar in at enim orci.
+Quis facilisis nunc pellentesque in ullamcorper sit. Lorem blandit arcu sapien, senectus libero, amet dapibus cursus quam. 
+Eget pellentesque eu purus volutpat adipiscing malesuada. Purus nisi, tortor vel lacus. Donec diam molestie ultrices vitae eget pulvinar fames.
+Velit lacus mi purus velit justo, amet. Nascetur lobortis diam, duis orci.";
 $client2_name = 'Annette Black';
 $client2_title = 'Strategic Advisor';
 $client3 = "Ac at sed sit senectus massa. Massa ante amet ultrices magna porta tempor. Aliquet diam in et magna ultricies mi at. Lectus enim, vel enim egestas 
