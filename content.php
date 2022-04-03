@@ -24,8 +24,10 @@ $lower_social_menu = '
 // Landing Page
 $custom_software_development = 'hello world';
 $software_integration = 'Hello World';
-$mobile_app_development = 'Nunc, justo, diam orci, dictum purus convallis risus. Suscipit hendrerit at egestas id id blandit interdum est. Integer fames placerat turpis pretium quis hac leo lacus. Orci, dictum nunc mus quis semper eu bibendum enim, morbi.';
-$business_analytics = 'Gravida eget euismod tempus diam dignissim quam. Dignissim magnis blandit faucibus convallis augue nisl, etiam. Feugiat ut molestie non arcu senectus sed. Diam pellentesque sit mattis nec amet varius nunc a sed.';
+$mobile_app_development = 'Nunc, justo, diam orci, dictum purus convallis risus. Suscipit hendrerit at egestas id id
+blandit interdum est. Integer fames placerat turpis pretium quis hac leo lacus. Orci, dictum nunc mus quis semper eu bibendum enim, morbi.';
+$business_analytics = 'Gravida eget euismod tempus diam dignissim quam. Dignissim magnis blandit faucibus
+convallis augue nisl, etiam. Feugiat ut molestie non arcu senectus sed. Diam pellentesque sit mattis nec amet varius nunc a sed.';
 $software_testing = 'We make sure your software is working properly and runs smoothly.';
 $project_management = 'hello world';
 
