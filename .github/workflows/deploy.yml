@@ -24,4 +24,5 @@ jobs:
         DISCORD_WEBHOOK: ${{ secrets.DISCORD_WEBHOOK }}
       uses: Ilshidur/action-discord@master
       with:
-        args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed. Developer Message: {{ github.event.head_commit.message }}'
+        MESSAGE: ${{ github.event.head_commit.message }}
+        args: 'The project {{ EVENT_PAYLOAD.repository.full_name }} has been deployed. Developer Message: $MESSAGE'
