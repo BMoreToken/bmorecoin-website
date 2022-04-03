@@ -603,12 +603,12 @@ $date_format = 'F j, Y, g:i a T';
                 <h3 class="h5 mb-0">
                  
                   <form action='https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php' id='faucet_form' name='faucet_form' class="d-flex">
-                   <button id='faucet_button' class="btn btn-outline-success">Claim 10 BALTx</button>
+                   <button id='faucet_button' class="btn btn-outline-success">Claim 1,000 BALTx</button>
                     <script>
               document.getElementById("faucet_button").addEventListener("click", function () {
                 gtag("event", "earn_virtual_currency", {
                   virtual_currency_name: "BALTx",
-                  value: 10
+                  value: 1000
                 });
               });
             </script>
@@ -643,7 +643,7 @@ $date_format = 'F j, Y, g:i a T';
                 </h3>
               </div>
               <div class="card-footer py-4">
-                  Faucet provides 10 BALTx once a day. 
+                  Faucet provides 1,000 BALTx once a day. 
               </div>
             </article>
           </div>
