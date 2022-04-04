@@ -199,7 +199,18 @@
               <h5 class="modal-title" id="staticBackdropLabel">Checking Twitter...</h5>
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
-            <div class="modal-body"><?PHP
+            <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label">Twitter</label>
+              <input class="form-control" id="exampleFormControlInput1" placeholder="@example">
+            </div>
+            <div class="mb-3">
+              <label for="exampleFormControlTextarea1" class="form-label">BALTx Address</label>
+              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
+            </div>
+            <div class="mb-3">
+              <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
+            </div><?PHP
             require __DIR__ . '/vendor/autoload.php';
             use Coderjerk\BirdElephant\BirdElephant;
                 $credentials = array(
@@ -211,10 +222,8 @@
                 );
             $twitter = new BirdElephant($credentials);
             $followers = $twitter->user('bmorecoin')->followers();
-            $followers = json_decode($followers, true);
             echo "<pre>";
             print_r($followers);
-            echo "</pre><hr>";
             // Custom Code
             function getPage($url){
                 $curl = curl_init();
@@ -229,13 +238,10 @@
                 return $array;
             }
             $tweets = getPage("https://api.twitter.com/2/tweets/search/recent?query=This+is+a+test+of+the+faucet+system");
-            echo "<pre>";
             print_r($tweets);
-            echo "</pre><hr>";
             $tweet = getPage("https://api.twitter.com/2/tweets/1510828042037379076?user.fields=name%2Cprofile_image_url%2Clocation%2Cdescription&tweet.fields=&expansions=author_id&place.fields=geo&media.fields=");
-            echo "<pre>";
             print_r($tweet);
-            echo "</pre><hr>";
+            echo "</pre>";
             ?></div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
