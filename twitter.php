@@ -32,6 +32,6 @@ if (empty($_GET['debug'])){
     //$user = $user->getSingleUserByID('2244994945', null);
 
 }else{
-    echo getenv('consumer_key');
+    echo getenv('consumer_key', true);
 }
 ?>
