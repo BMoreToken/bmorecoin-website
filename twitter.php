@@ -18,7 +18,10 @@ print_r($followers);
 echo "</pre><hr>";
 
 
+$twitter = new BirdElephant($credentials);
+
 $tweets = $twitter->tweets();
+
 $params = [
     'query' => 'limerick has:images ',
     'tweet.fields' => 'attachments,author_id,created_at',
