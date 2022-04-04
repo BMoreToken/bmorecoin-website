@@ -178,7 +178,7 @@
           <div class="col-xl-5 col-md-6 offset-xl-1 order-md-2 text-center text-md-start mb-3 mb-sm-0">
             <h2 class="h4 text-primary mb-2">BALTx Faucet</h2>
             <h1 class="mb-4">Faucet Instructions</h1>
-            <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">1. Follow @bmorecoin 2. Tweet "This is going to be a great message one day, $BALTx #Baltimore #Blockchain" 3. Click ] HERE [ to confirm and claim you 1,000 BALTx for today!</p>
+            <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3"><li>1. Follow @bmorecoin</li><li>2. Tweet "This is going to be a great message one day, $BALTx #Baltimore #Blockchain"</li><li> 3. Click to confirm and claim you 1,000 BALTx for the day!</li></p>
             <a href="wallet.php" class="btn btn-primary shadow-primary btn-lg">Get 1,000 BALTx</a>
           </div>
           <div class="col-md-6 order-md-1">
