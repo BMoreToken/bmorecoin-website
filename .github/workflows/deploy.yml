@@ -15,18 +15,10 @@ jobs:
       with:
         host: ${{ secrets.HOST }}
         username: ${{ secrets.USERNAME }}
-        password: ${{ secrets.PASSWORD }}
-        port: ${{ secrets.PORT }}
-        script: /root/update.sh
-        
-    - name: Update the Beta Websever Source Code
-      uses: appleboy/ssh-action@master
-      with:
-        host: ${{ secrets.BETAHOST }}
-        username: ${{ secrets.USERNAME }}
         password: ${{ secrets.BETAPASS }}
         port: ${{ secrets.PORT }}
         script: /root/update.sh
+        
 
     - name: Discord notification
       env:
