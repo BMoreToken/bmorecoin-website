@@ -2,7 +2,7 @@
 // https://github.com/danieldevine/bird-elephant
 require __DIR__ . '/vendor/autoload.php';
 
-//use Coderjerk/BirdElephant/BirdElephant;
+use Coderjerk/BirdElephant/BirdElephant;
 
 //your credentials, should be passed in via $_ENV or similar, don't hardcode.
 $credentials = array(
