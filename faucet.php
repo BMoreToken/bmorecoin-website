@@ -293,7 +293,7 @@
             echo "
             Checking Recent Tweets...
             ";
-            $tweets = getPage("https://api.twitter.com/2/tweets/search/recent?query=This+is+a+test+of+the+faucet+system");
+            $tweets = getPage("https://api.twitter.com/2/tweets/search/recent?query=#bmorecoin");
             print_r($tweets);
             echo "
             Details of Recent Tweet...
