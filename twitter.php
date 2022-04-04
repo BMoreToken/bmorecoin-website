@@ -15,19 +15,19 @@ use Coderjerk\BirdElephant\BirdElephant;
 $followers = $twitter->user('bmorecoin')->followers();
 echo "<pre>";
 print_r($followers);
-echo "</pre>";
+echo "</pre></hr>";
 
 $params = [
-    'query' => 'This is a test of the faucet system. Tracking Tweet vs Retweet.',
+    'query' => 'limerick has:images ',
     'tweet.fields' => 'attachments,author_id,created_at',
     'expansions'   => 'attachments.media_keys',
     'media.fields' => 'public_metrics,type,url,width',
-    'max_results'  => 1000,
+    'max_results'  => 10,
 ];
 $tweets->search->recent($params);
 
 echo "<pre>";
 print_r($tweets);
-echo "</pre>";
+echo "</pre><hr>";
 
 ?>
