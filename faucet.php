@@ -184,7 +184,7 @@
                         data-size="large">
                       Tweet</a></p>
             <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">3. Click to confirm and claim your 1,000 BALTx for the day!</p>
-            <button type="button" class="btn btn-primary shadow-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
+            <button type="button" class="btn btn-primary shadow-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               All Done - Claim 1,000 BALTx
             </button>
           </div>
@@ -203,7 +203,44 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-                
+                <form action='https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php' id='faucet_form' name='faucet_form' class="d-flex">
+                   <button id='faucet_button' class="btn btn-outline-success">Claim 1,000 BALTx</button>
+                    <script>
+              document.getElementById("faucet_button").addEventListener("click", function () {
+                gtag("event", "earn_virtual_currency", {
+                  virtual_currency_name: "BALTx",
+                  value: 1000
+                });
+              });
+            </script>
+                  </form>
+                  
+                  <div id='faucet'></div>
+                  
+                  <script>
+                       $("#faucet_form").submit(function(event) {
+                        event.preventDefault();
+                        $('#faucet').text('Received... Waiting for TX Confirmation...');
+                        var $form = $(this),
+                          url = $form.attr('action');
+                        var posting = $.post(url, {
+                          address: getCookie('address'),
+                          action: 'faucet',
+                          email: getCookie('email')
+
+                        });
+
+                        /* Alerts the results */
+                        posting.done(function(data) {
+                          $('#faucet').text('TX Confirmed');
+                          let element99 = document.getElementById("faucet");
+                          element99.innerHTML = data;
+                        });
+                        posting.fail(function() {
+                          $('#faucet').text('Website Timeout - Reload to See Transfer');
+                        });
+                      });
+                  </script>
             <?PHP
             require __DIR__ . '/vendor/autoload.php';
             use Coderjerk\BirdElephant\BirdElephant;
@@ -252,40 +289,6 @@
         </div>
       </div>
 
-      <!-- Modal -->
-      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
-        <div class="modal-dialog">
-          <div class="modal-content">
-            <div class="modal-header">
-              <h5 class="modal-title" id="staticBackdropLabel">Checking Twitter...</h5>
-              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                
-            <?PHP
-            $followers = $twitter->user('bmorecoin')->followers();
-            echo "<pre>Checking Followers...
-            ";
-            print_r($followers);
-            echo "
-            Checking Recent Tweets...
-            ";
-            $tweets = getJson("https://api.twitter.com/2/tweets/search/recent?query=bmorecoin%20faucet");
-            print_r($tweets);
-            echo "
-            Details of Recent Tweet...
-            ";  
-            $tweet = getJson("https://api.twitter.com/2/tweets/1510828042037379076?user.fields=name%2Cprofile_image_url%2Clocation%2Cdescription&tweet.fields=&expansions=author_id&place.fields=geo&media.fields=");
-            print_r($tweet);
-            echo "</pre>";
-            ?></div>
-            <div class="modal-footer">
-              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-              <button type="button" class="btn btn-primary">Done</button>
-            </div>
-          </div>
-        </div>
-      </div>
       
       
       <!-- Services -->
