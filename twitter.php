@@ -2,11 +2,6 @@
 require __DIR__ . '/vendor/autoload.php';
 
 use Coderjerk\BirdElephant\BirdElephant;
-
-if (empty($_GET['debug'])){
-    // https://github.com/danieldevine/bird-elephant
-
-    //your credentials, should be passed in via $_ENV or similar, don't hardcode.
     $credentials = array(
         'bearer_token' => getenv('bearer_token'),
         'consumer_key' => getenv('consumer_key'),
@@ -14,27 +9,25 @@ if (empty($_GET['debug'])){
         'token_identifier' => getenv('token_identifier'),
         'token_secret' => getenv('token_secret'),
     );
-
-    //instantiate the object
     $twitter = new BirdElephant($credentials);
 
-    //get a user's followers using the handy helper methods
-    $followers = $twitter->user('bmorecoin')->followers();
 
-    //pass your query params to the methods directly
-   // $following = $twitter->user('coderjerk')->following([
-   //     'max_results' => 20,
-   //     'user.fields' => 'profile_image_url'
-   // ]);
-
-    // You can also use the sub classes / methods directly if you like:
-    //$user = new UserLookup($credentials);
-    //$user = $user->getSingleUserByID('2244994945', null);
+$followers = $twitter->user('bmorecoin')->followers();
 echo "<pre>";
-    print_r($followers);
-    echo "</pre>";
-    
-}else{
-    echo getenv('consumer_key');
-}
+print_r($followers);
+echo "</pre>";
+
+$params = [
+    'query' => 'This is a test of the faucet system. Tracking Tweet vs Retweet.',
+    'tweet.fields' => 'attachments,author_id,created_at',
+    'expansions'   => 'attachments.media_keys',
+    'media.fields' => 'public_metrics,type,url,width',
+    'max_results'  => 1000,
+];
+$tweets->search->recent($params);
+
+echo "<pre>";
+print_r($tweets);
+echo "</pre>";
+
 ?>
