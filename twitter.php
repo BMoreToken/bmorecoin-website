@@ -180,7 +180,7 @@
             <h1 class="mb-4">Faucet Instructions</h1>
             <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">1. Follow @bmorecoin</p>
             <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">2. Tweet "This is going to be a great message one day, $BALTx #Baltimore #Blockchain"</p>
-            <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">3. Click to confirm and claim you 1,000 BALTx for the day!</p>
+            <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">3. Click to confirm and claim your 1,000 BALTx for the day!</p>
             <button type="button" class="btn btn-primary shadow-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
               All Done - Claim 1,000 BALTx
             </button>
@@ -200,6 +200,7 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
+            <form class="row g-3">
             <div class="mb-3">
               <label for="exampleFormControlInput1" class="form-label">Twitter</label>
               <input class="form-control" id="exampleFormControlInput1" placeholder="@example">
@@ -209,8 +210,8 @@
               <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
             </div>
             <div class="mb-3">
-              <button type="submit" class="btn btn-primary mb-3">Confirm identity</button>
-            </div><?PHP
+              <button type="submit" class="btn btn-primary mb-3">Confirm your BALTx Address</button>
+            </div></form><?PHP
             require __DIR__ . '/vendor/autoload.php';
             use Coderjerk\BirdElephant\BirdElephant;
                 $credentials = array(
@@ -297,7 +298,7 @@
                   <ul class="list-unstyled mb-0">
                     <li class="d-flex align-items-center mb-2">
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
-                      Click Here to Follow @BMoreCoin on Twitter
+                      <a href="https://twitter.com/bmorecoin?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-size="large" data-show-count="false">Follow @bmorecoin</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
                     </li>
                     
                   </ul>
