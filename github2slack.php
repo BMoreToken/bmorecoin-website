@@ -30,9 +30,12 @@ function slack_general($msg,$room){
 	}
 	return $html;
 }
+slack_general('GITHUB Activity',"bmorecoin");
 
 // Takes raw json from the post
 $json = file_get_contents('php://input');
+
+slack_general($json,"bmorecoin");
 
 // Converts it into a PHP array
 $array = json_decode($json, true);
@@ -43,8 +46,6 @@ if (is_array($array)){
 	print_r($array);
 	$string = ob_get_clean();
 	slack_general($string,"bmorecoin");
-}else{
-	slack_general('PING',"bmorecoin");
 }
 ?>
 ?>
