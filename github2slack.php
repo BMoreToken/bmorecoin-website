@@ -35,7 +35,7 @@ slack_general('GITHUB Activity',"bmorecoin");
 // Takes raw json from the post
 $json = file_get_contents('php://input');
 
-slack_general($json,"bmorecoin");
+slack_general(strip_tags($json),"bmorecoin");
 
 // Converts it into a PHP array
 $array = json_decode($json, true);
