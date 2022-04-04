@@ -220,7 +220,7 @@
             ";
             print_r($followers);
             // Custom Code
-            function getPage($url){
+            function getJson($url){
                 $curl = curl_init();
                 curl_setopt ($curl, CURLOPT_URL, $url);
                 curl_setopt ($curl, CURLOPT_USERAGENT, sprintf("BMorCoin/%d.0",rand(40,500)));
@@ -235,12 +235,12 @@
             echo "
             Checking Recent Tweets...
             ";
-            $tweets = getPage("https://api.twitter.com/2/tweets/search/recent?query=bmorecoin%20faucet");
+            $tweets = getJson("https://api.twitter.com/2/tweets/search/recent?query=bmorecoin%20faucet");
             print_r($tweets);
             echo "
             Details of Recent Tweet...
             ";  
-            $tweet = getPage("https://api.twitter.com/2/tweets/1510828042037379076?user.fields=name%2Cprofile_image_url%2Clocation%2Cdescription&tweet.fields=&expansions=author_id&place.fields=geo&media.fields=");
+            $tweet = getJson("https://api.twitter.com/2/tweets/1510828042037379076?user.fields=name%2Cprofile_image_url%2Clocation%2Cdescription&tweet.fields=&expansions=author_id&place.fields=geo&media.fields=");
             print_r($tweet);
             echo "</pre>";
             ?></div>
@@ -270,12 +270,12 @@
             echo "
             Checking Recent Tweets...
             ";
-            $tweets = getPage("https://api.twitter.com/2/tweets/search/recent?query=bmorecoin%20faucet");
+            $tweets = getJson("https://api.twitter.com/2/tweets/search/recent?query=bmorecoin%20faucet");
             print_r($tweets);
             echo "
             Details of Recent Tweet...
             ";  
-            $tweet = getPage("https://api.twitter.com/2/tweets/1510828042037379076?user.fields=name%2Cprofile_image_url%2Clocation%2Cdescription&tweet.fields=&expansions=author_id&place.fields=geo&media.fields=");
+            $tweet = getJson("https://api.twitter.com/2/tweets/1510828042037379076?user.fields=name%2Cprofile_image_url%2Clocation%2Cdescription&tweet.fields=&expansions=author_id&place.fields=geo&media.fields=");
             print_r($tweet);
             echo "</pre>";
             ?></div>
