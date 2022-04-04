@@ -192,7 +192,7 @@
       <section class="container pb-5 mb-md-3 mb-lg-5">
         <div class="row justify-content-center text-center">
           <div class="col-xl-6 col-lg-7 col-md-8 col-sm-10">
-            <h2 class="h1 mb-4">Faucet Instruction</h2>
+            <h2 class="h1 mb-4">Detailed Faucet Instruction</h2>
             <p class="text-muted mb-3 mb-lg-4">You are the future, Thanks for Support in BMoreCoin.</p>
           </div>
         </div>
