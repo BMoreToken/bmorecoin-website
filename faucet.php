@@ -184,7 +184,7 @@
                         data-size="large">
                       Tweet</a></p>
             <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">3. Click to confirm and claim your 1,000 BALTx for the day!</p>
-            <button type="button" class="btn btn-primary shadow-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+            <button type="button" class="btn btn-primary shadow-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop2">
               All Done - Claim 1,000 BALTx
             </button>
           </div>
@@ -252,6 +252,65 @@
         </div>
       </div>
 
+      <!-- Modal -->
+      <div class="modal fade" id="staticBackdrop2" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel2" aria-hidden="true">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <h5 class="modal-title" id="staticBackdropLabel">Checking Twitter...</h5>
+              <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                
+            <?PHP
+            require __DIR__ . '/vendor/autoload.php';
+            use Coderjerk\BirdElephant\BirdElephant;
+                $credentials = array(
+                    'bearer_token' => getenv('bearer_token'),
+                    'consumer_key' => getenv('consumer_key'),
+                    'consumer_secret' => getenv('consumer_secret'),
+                    'token_identifier' => getenv('token_identifier'),
+                    'token_secret' => getenv('token_secret'),
+                );
+            $twitter = new BirdElephant($credentials);
+            $followers = $twitter->user('bmorecoin')->followers();
+            echo "<pre>Checking Followers...
+            ";
+            print_r($followers);
+            // Custom Code
+            function getPage($url){
+                $curl = curl_init();
+                curl_setopt ($curl, CURLOPT_URL, $url);
+                curl_setopt ($curl, CURLOPT_USERAGENT, sprintf("BMorCoin/%d.0",rand(40,500)));
+                curl_setopt ($curl, CURLOPT_RETURNTRANSFER, 1);
+                curl_setopt ($curl, CURLOPT_SSL_VERIFYPEER, 0);
+                curl_setopt ($curl, CURLOPT_HTTPHEADER, array('Authorization: Bearer ' . getenv('bearer_token')));
+                $json = curl_exec ($curl);
+                curl_close ($curl);
+                $array = json_decode($json, true);
+                return $array;
+            }
+            echo "
+            Checking Recent Tweets...
+            ";
+            $tweets = getPage("https://api.twitter.com/2/tweets/search/recent?query=This+is+a+test+of+the+faucet+system");
+            print_r($tweets);
+            echo "
+            Details of Recent Tweet...
+            ";  
+            $tweet = getPage("https://api.twitter.com/2/tweets/1510828042037379076?user.fields=name%2Cprofile_image_url%2Clocation%2Cdescription&tweet.fields=&expansions=author_id&place.fields=geo&media.fields=");
+            print_r($tweet);
+            echo "</pre>";
+            ?></div>
+            <div class="modal-footer">
+              <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+              <button type="button" class="btn btn-primary">Done</button>
+            </div>
+          </div>
+        </div>
+      </div>
+      
+      
       <!-- Services -->
       <section class="container pb-5 mb-md-3 mb-lg-5">
         <div class="row justify-content-center text-center">
