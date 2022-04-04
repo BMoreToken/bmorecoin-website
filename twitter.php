@@ -23,11 +23,7 @@ $twitter = new BirdElephant($credentials);
 $tweets = $twitter->tweets();
 
 $params = [
-    'query' => 'limerick has:images ',
-    'tweet.fields' => 'attachments,author_id,created_at',
-    'expansions'   => 'attachments.media_keys',
-    'media.fields' => 'public_metrics,type,url,width',
-    'max_results'  => 10,
+    'query' => 'This is a test of the faucet system'
 ];
 $tweets->search->recent($params);
 
