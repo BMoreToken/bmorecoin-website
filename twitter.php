@@ -178,7 +178,7 @@
           <div class="col-xl-5 col-md-6 offset-xl-1 order-md-2 text-center text-md-start mb-3 mb-sm-0">
             <h2 class="h4 text-primary mb-2">BALTx Faucet</h2>
             <h1 class="mb-4">Faucet Instructions</h1>
-            <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">1. Follow @bmorecoin</p>
+            <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">1. <a href="https://twitter.com/bmorecoin?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @bmorecoin</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
             <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">2. Tweet "This is going to be a great message one day, $BALTx #Baltimore #Blockchain"</p>
             <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">3. Click to confirm and claim your 1,000 BALTx for the day!</p>
             <button type="button" class="btn btn-primary shadow-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
