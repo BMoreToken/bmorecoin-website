@@ -179,8 +179,8 @@
             <h2 class="h4 text-primary mb-2">BALTx Faucet</h2>
             <h1 class="mb-4">Faucet Instructions</h1>
             <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">1. <a href="https://twitter.com/bmorecoin?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @bmorecoin</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-            <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">2. Tweet "This is going to be a great day, $BALTx #Baltimore #Blockchain" <a class="twitter-share-button"
-                        href="https://twitter.com/intent/tweet?text=This%20is%20going%20to%20be%20a%20great%20day,%20$BALTx%20#Baltimore%20#Blockchain%20[ADD%20YOUR%20BALTx%20ADDRESS%20HERE]"
+            <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">2. Tweet "This is going to be a great day, $BALTx #Baltimore #Blockchain #faucet" <a class="twitter-share-button"
+                        href="https://twitter.com/intent/tweet?text=This%20is%20going%20to%20be%20a%20great%20day,%20$BALTx%20#Baltimore%20#Blockchain%20#faucet%20[ADD%20YOUR%20BALTx%20ADDRESS%20HERE]"
                         data-size="large">
                       Tweet</a></p>
             <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">3. Click to confirm and claim your 1,000 BALTx for the day!</p>
@@ -235,7 +235,7 @@
             echo "
             Checking Recent Tweets...
             ";
-            $tweets = getPage("https://api.twitter.com/2/tweets/search/recent?query=bmorecoin");
+            $tweets = getPage("https://api.twitter.com/2/tweets/search/recent?query=bmorecoin faucet");
             print_r($tweets);
             echo "
             Details of Recent Tweet...
@@ -270,7 +270,7 @@
             echo "
             Checking Recent Tweets...
             ";
-            $tweets = getPage("https://api.twitter.com/2/tweets/search/recent?query=#bmorecoin");
+            $tweets = getPage("https://api.twitter.com/2/tweets/search/recent?query=#bmorecoin faucet");
             print_r($tweets);
             echo "
             Details of Recent Tweet...
@@ -360,12 +360,12 @@
                     </li>
                     <li class="d-flex align-items-center mb-2">
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
-                      "This is going to be a great day, $BALTx #Baltimore #Blockchain [ADD YOUR BALTx ADDRESS HERE]"
+                      "This is going to be a great day, $BALTx #Baltimore #Blockchain #faucet [ADD YOUR BALTx ADDRESS HERE]"
                     </li>
                     <li class="d-flex align-items-center mb-2">
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
                       <a class="twitter-share-button"
-                        href="https://twitter.com/intent/tweet?text=This%20is%20going%20to%20be%20a%20great%20day,%20$BALTx%20#Baltimore%20#Blockchain%20[ADD%20YOUR%20BALTx%20ADDRESS%20HERE]"
+                        href="https://twitter.com/intent/tweet?text=This%20is%20going%20to%20be%20a%20great%20day,%20$BALTx%20#Baltimore%20#Blockchain%20#faucet%20[ADD%20YOUR%20BALTx%20ADDRESS%20HERE]"
                         data-size="large">
                       Tweet</a>
                     </li>
