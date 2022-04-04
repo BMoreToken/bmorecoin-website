@@ -15,8 +15,10 @@ use Coderjerk\BirdElephant\BirdElephant;
 $followers = $twitter->user('bmorecoin')->followers();
 echo "<pre>";
 print_r($followers);
-echo "</pre></hr>";
+echo "</pre><hr>";
 
+
+$tweets = $twitter->tweets();
 $params = [
     'query' => 'limerick has:images ',
     'tweet.fields' => 'attachments,author_id,created_at',
