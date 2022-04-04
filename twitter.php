@@ -1,4 +1,5 @@
 <?PHP
+if (empty($_GET['debug'])){
 // https://github.com/danieldevine/bird-elephant
 require __DIR__ . '/vendor/autoload.php';
 
@@ -26,7 +27,10 @@ $following = $twitter->user('coderjerk')->following([
 ]);
 
 // You can also use the sub classes / methods directly if you like:
-$user = new UserLookup($credentials);
-$user = $user->getSingleUserByID('2244994945', null);
+//$user = new UserLookup($credentials);
+//$user = $user->getSingleUserByID('2244994945', null);
 
+}else{
+    echo getenv('consumer_key');
+}
 ?>
