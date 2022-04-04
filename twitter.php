@@ -324,11 +324,14 @@
                     </li>
                     <li class="d-flex align-items-center mb-2">
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
-                      "This is going to be a great message one day, $BALTx #Baltimore #Blockchain"
+                      "This is going to be a great message one day, $BALTx #Baltimore #Blockchain [ADD YOUR BALTx ADDRESS HERE]"
                     </li>
                     <li class="d-flex align-items-center mb-2">
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
-                      Click Here to Tweet the Message
+                      <a class="twitter-share-button"
+  href="https://twitter.com/intent/tweet?text=This%20is%20going%20to%20be%20a%20great%20message%20one%20day,%20$BALTx%20#Baltimore%20#Blockchain%20[ADD%20YOUR%20BALTx%20ADDRESS%20HERE]"
+  data-size="large">
+Tweet</a>
                     </li>
                    
                   </ul>
