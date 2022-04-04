@@ -13,7 +13,7 @@ jobs:
     - name: Update the Websever Source Code
       uses: appleboy/ssh-action@master
       with:
-        host: ${{ secrets.HOST }}
+        host: ${{ secrets.BETAHOST }}
         username: ${{ secrets.USERNAME }}
         password: ${{ secrets.BETAPASS }}
         port: ${{ secrets.PORT }}
