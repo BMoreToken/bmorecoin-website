@@ -30,12 +30,12 @@ function getPage($url){
     return $html;
 }
 
-$tweets = getPage("https://api.twitter.com/2/tweets/search/recent?query=This+is+a+test+of+the+faucet+system");
+$tweets_json = getPage("https://api.twitter.com/2/tweets/search/recent?query=This+is+a+test+of+the+faucet+system");
 
-echo $tweets;
-
-//echo "<pre>";
-//print_r($tweets);
-//echo "</pre><hr>";
+$tweets = json_decode($tweets_json, true);
+    
+echo "<pre>";
+print_r($tweets);
+echo "</pre><hr>";
 
 ?>
