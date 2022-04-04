@@ -19,18 +19,21 @@ if (empty($_GET['debug'])){
     $twitter = new BirdElephant($credentials);
 
     //get a user's followers using the handy helper methods
-    $followers = $twitter->user('coderjerk')->followers();
+    $followers = $twitter->user('bmorecoin')->followers();
 
     //pass your query params to the methods directly
-    $following = $twitter->user('coderjerk')->following([
-        'max_results' => 20,
-        'user.fields' => 'profile_image_url'
-    ]);
+   // $following = $twitter->user('coderjerk')->following([
+   //     'max_results' => 20,
+   //     'user.fields' => 'profile_image_url'
+   // ]);
 
     // You can also use the sub classes / methods directly if you like:
     //$user = new UserLookup($credentials);
     //$user = $user->getSingleUserByID('2244994945', null);
 
+    print_r($followers);
+    
+    
 }else{
     echo getenv('consumer_key');
 }
