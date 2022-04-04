@@ -6,11 +6,11 @@ use Coderjerk/BirdElephant/BirdElephant;
 
 //your credentials, should be passed in via $_ENV or similar, don't hardcode.
 $credentials = array(
-    'bearer_token' => xxxxxx,
-    'consumer_key' => xxxxxx,
-    'consumer_secret' => xxxxxx,
-    'token_identifier' => xxxxxx,
-    'token_secret' => xxxxxx,
+    'bearer_token' => getenv('bearer_token'),
+    'consumer_key' => getenv('consumer_key'),
+    'consumer_secret' => getenv('consumer_secret'),
+    'token_identifier' => getenv('token_identifier'),
+    'token_secret' => getenv('token_secret'),
 );
 
 //instantiate the object
