@@ -38,4 +38,11 @@ echo "<pre>";
 print_r($tweets);
 echo "</pre><hr>";
 
+$tweet = getPage("https://api.twitter.com/2/tweets/1510828042037379076?user.fields=name%2Cprofile_image_url%2Clocation%2Cdescription&tweet.fields=&expansions=author_id&place.fields=geo&media.fields=");
+
+echo "<pre>";
+print_r($tweet);
+echo "</pre><hr>";
+
+
 ?>
