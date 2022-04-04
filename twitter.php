@@ -200,18 +200,8 @@
               <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
             </div>
             <div class="modal-body">
-            <form class="row g-3">
-            <div class="mb-3">
-              <label for="exampleFormControlInput1" class="form-label">Twitter</label>
-              <input class="form-control" id="exampleFormControlInput1" placeholder="@example">
-            </div>
-            <div class="mb-3">
-              <label for="exampleFormControlTextarea1" class="form-label">BALTx Address</label>
-              <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-            </div>
-            <div class="mb-3">
-              <button type="submit" class="btn btn-primary mb-3">Confirm your BALTx Address</button>
-            </div></form><?PHP
+                
+            <?PHP
             require __DIR__ . '/vendor/autoload.php';
             use Coderjerk\BirdElephant\BirdElephant;
                 $credentials = array(
@@ -223,7 +213,8 @@
                 );
             $twitter = new BirdElephant($credentials);
             $followers = $twitter->user('bmorecoin')->followers();
-            echo "<pre>";
+            echo "<pre>Checking Followers...
+            ";
             print_r($followers);
             // Custom Code
             function getPage($url){
@@ -238,8 +229,14 @@
                 $array = json_decode($json, true);
                 return $array;
             }
+            echo "
+            Checking Recent Tweets...
+            ";
             $tweets = getPage("https://api.twitter.com/2/tweets/search/recent?query=This+is+a+test+of+the+faucet+system");
             print_r($tweets);
+            echo "
+            Details of Recent Tweet...
+            ";  
             $tweet = getPage("https://api.twitter.com/2/tweets/1510828042037379076?user.fields=name%2Cprofile_image_url%2Clocation%2Cdescription&tweet.fields=&expansions=author_id&place.fields=geo&media.fields=");
             print_r($tweet);
             echo "</pre>";
@@ -320,18 +317,18 @@
                   <ul class="list-unstyled mb-0">
                     <li class="d-flex align-items-center mb-2">
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
-                      Your going to want to Tweet the following message, once a day.
+                      Your going to want to Tweet the following message, once a day, don't forget to add your address to the tweet.
                     </li>
                     <li class="d-flex align-items-center mb-2">
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
-                      "This is going to be a great message one day, $BALTx #Baltimore #Blockchain [ADD YOUR BALTx ADDRESS HERE]"
+                      "This is going to be a day, https://www.bmorecoin.com $BALTx #Baltimore #Blockchain [ADD YOUR BALTx ADDRESS HERE]"
                     </li>
                     <li class="d-flex align-items-center mb-2">
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
                       <a class="twitter-share-button"
-  href="https://twitter.com/intent/tweet?text=This%20is%20going%20to%20be%20a%20great%20message%20one%20day,%20$BALTx%20#Baltimore%20#Blockchain%20[ADD%20YOUR%20BALTx%20ADDRESS%20HERE]"
-  data-size="large">
-Tweet</a>
+                        href="https://twitter.com/intent/tweet?text=This%20is%20going%20to%20be%20a%20great%20day,%20https://www.bmorecoin.com%20$BALTx%20#Baltimore%20#Blockchain%20[ADD%20YOUR%20BALTx%20ADDRESS%20HERE]"
+                        data-size="large">
+                      Tweet</a>
                     </li>
                    
                   </ul>
@@ -353,19 +350,21 @@ Tweet</a>
                   <ul class="list-unstyled mb-0">
                     <li class="d-flex align-items-center mb-2">
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
-                      Click Here to Confirm following @BMoreCoin and Tweeted Today
+                       You Can Claim 1,000 BALTx in a Web Based Wallet
                     </li>
                     <li class="d-flex align-items-center mb-2">
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
-                       Claim 1,000 BALTx in a Web Based Wallet
+                       You Can Claim 1,000 BALTx in a GUI Wallet
                     </li>
                     <li class="d-flex align-items-center mb-2">
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
-                       Claim 1,000 BALTx in a GUI Wallet
+                       You Can Claim 1,000 BALTx in a CLI Wallet
                     </li>
                     <li class="d-flex align-items-center mb-2">
                       <i class="bx bx-check-circle fs-xl text-muted me-2"></i>
-                       Claim 1,000 BALTx in a CLI Wallet
+                      <button type="button" class="btn btn-primary shadow-primary btn-lg" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+                        All Done - Check and Claim 1,000 BALTx
+                      </button>
                     </li>
                   </ul>
                 </div>
