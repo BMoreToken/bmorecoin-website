@@ -314,11 +314,11 @@
 
       <!-- Customers -->
       <section class="container pb-5 mb-md-4 mb-lg-5">
-        <h2 class="h1 text-center pb-4">Scale from Local to Global</h2>
+        <h2 class="h1 text-center pb-4">Local to Digital</h2>
         <div class="position-relative pt-md-5 mt-md-n5">
           <div class="position-absolute top-50 start-0 w-100 text-center mt-sm-n5">
             <h3 class="h2 mx-auto mt-n5" style="max-width: 572px;">
-              At the heart of it all, we <span class="text-primary">Shop Local</span> with a current demand for digital <span class="text-primary">Rewards</span>. So here we are, the <span class="text-primary">Charm</span> you are lookin
+              At the heart of it all, we <span class="text-primary">Shop Local</span> with a current demand for digital <span class="text-primary">Rewards</span>. So here we are, the <span class="text-primary">Charm</span> you are looking for!
             </h3>
           </div>
           <img src="assets/img/services/single/map.png" alt="Map">
