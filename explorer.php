@@ -187,7 +187,7 @@
          </script>
        <?PHP } ?>
       
-      <?PHP if (isset($_GET['block'])){ $title='Block Explorer: Hash '.$_GET['block']; ?>      
+      <?PHP if (isset($_GET['block'])){ $title='Block Explorer'; ?>      
       
          <script>
          //let element01 = document.getElementById("transfers");
