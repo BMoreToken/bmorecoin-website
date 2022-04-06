@@ -29,7 +29,7 @@ blandit interdum est. Integer fames placerat turpis pretium quis hac leo lacus. 
 $business_analytics = 'Gravida eget euismod tempus diam dignissim quam. Dignissim magnis blandit faucibus
 convallis augue nisl, etiam. Feugiat ut molestie non arcu senectus sed. Diam pellentesque sit mattis nec amet varius nunc a sed.';
 $software_testing = 'We make sure your software is working properly and runs smoothly.';
-$project_management = 'We can manage your projects and We can make sure that everything is running smoothly';
+$project_management = 'We can manage your projects and we can make sure that everything is running smoothly.';
 
 // About Page
 $our_company = 'Enim, vulputate felis, pharetra, leo diam est morbi. Gravida porta nunc vitae tempor sit proin lobortis mauris nulla. Eget felis nec 
