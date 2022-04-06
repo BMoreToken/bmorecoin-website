@@ -164,14 +164,14 @@
 
 
       
-      
+<?PHP if (empty($_GET['block'])){ ?>      
       
          <script>
          //let element01 = document.getElementById("transfers");
          //update_main_progress(80);
          //element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Transfers...</button>';
          console.log('Load Explorer API');
-         
+       
          $.post(
           "https://www.mdwestserve.com/BMoreCoin/blockchain_explorer.php", 
           {
@@ -185,7 +185,30 @@
           }
         );
          </script>
+       <?PHP } ?>
+      
+      <?PHP if (isset($_GET['block'])){ ?>      
+      
+         <script>
+         //let element01 = document.getElementById("transfers");
+         //update_main_progress(80);
+         //element01.innerHTML = '<button type="button" class="btn btn-primary pe-none"><span class="spinner-border spinner-border-sm me-2" role="status" aria-hidden="true"></span>Loading Transfers...</button>';
+         console.log('Load Explorer API');
        
+         $.post(
+          "https://www.mdwestserve.com/BMoreCoin/blockchain_explorer.php?block=<?PHP echo $_GET['block'];?>", 
+          {
+            action: "get_status"
+        },
+          function(data) {
+            let element99 = document.getElementById("explorer_box");
+            element99.innerHTML = data;
+            //console.log('Get Explorer: Done');
+            //resolve();
+          }
+        );
+         </script>
+       <?PHP } ?>
 
       <!-- Post title + Meta  -->
       <section class="container mt-4 pt-lg-2 pb-3">
@@ -222,11 +245,7 @@
       </section>
 
 
-      <!-- Post image (parallax) -->
-      <div class="jarallax mb-lg-5 mb-4" data-jarallax data-speed="0.4" style="height: 36.45vw; min-height: 300px;">
-        <div class="jarallax-img" style="background-image: url(assets/img/blog/single/cover-image.jpg);"></div>
-      </div>
-
+   
 
       
       
@@ -271,6 +290,10 @@
         </div>
       </section>
 
+   <!-- Post image (parallax) -->
+      <div class="jarallax mb-lg-5 mb-4" data-jarallax data-speed="0.4" style="height: 36.45vw; min-height: 300px;">
+        <div class="jarallax-img" style="background-image: url(assets/img/blog/single/cover-image.jpg);"></div>
+      </div>
 
 
       
