@@ -256,8 +256,8 @@
 
           <!-- Content -->
           <div class="col-lg-9">
-            <h3 class="h5 mb-4 pb-2 fw-medium">BMoreCoin Blockchain Status</h3>
-            <h2 class="h4">Latest Block Data</h2>
+            <h3 class="h5 mb-4 pb-2 fw-medium">BMoreCoin Blockchain</h3>
+            <h2 class="h4"><?PHP echo $title;?></h2>
             <p id="explorer_box" class="mb-4 pb-2"></p>
           </div>
           
@@ -290,10 +290,7 @@
         </div>
       </section>
 
-   <!-- Post image (parallax) -->
-      <div class="jarallax mb-lg-5 mb-4" data-jarallax data-speed="0.4" style="height: 36.45vw; min-height: 300px;">
-        <div class="jarallax-img" style="background-image: url(assets/img/blog/single/cover-image.jpg);"></div>
-      </div>
+ 
 
 
       
