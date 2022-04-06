@@ -164,7 +164,7 @@
 
 
       
-<?PHP if (empty($_GET['block'])){ ?>      
+<?PHP if (empty($_GET['block'])){  $title='Latest Blockchain Status'; ?>      
       
          <script>
          //let element01 = document.getElementById("transfers");
@@ -187,7 +187,7 @@
          </script>
        <?PHP } ?>
       
-      <?PHP if (isset($_GET['block'])){ ?>      
+      <?PHP if (isset($_GET['block'])){ $title='Block Explorer: Hash '.$_GET['block']; ?>      
       
          <script>
          //let element01 = document.getElementById("transfers");
