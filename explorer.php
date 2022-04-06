@@ -258,35 +258,10 @@
           <div class="col-lg-9">
             <h3 class="h5 mb-4 pb-2 fw-medium">BMoreCoin Blockchain</h3>
             <h2 class="h4"><?PHP echo $title;?></h2>
-            <p id="explorer_box" class="mb-4 pb-2"></p>
+            <p id="explorer_box" class="mb-4 pb-2">Loading...</p>
           </div>
           
-          <!-- Sharing -->
-          <div class="col-lg-3 position-relative">
-            <div class="sticky-top ms-xl-5 ms-lg-4 ps-xxl-4" style="top: 105px !important;">
-              <span class="d-block mb-3">5 min read</span>
-              <h6>Share this post:</h6>
-              <div class="mb-4 pb-lg-3">
-                <a href="#" class="btn btn-icon btn-secondary btn-linkedin me-2 mb-2">
-                  <i class="bx bxl-linkedin"></i>
-                </a>
-                <a href="#" class="btn btn-icon btn-secondary btn-facebook me-2 mb-2">
-                  <i class="bx bxl-facebook"></i>
-                </a>
-                <a href="#" class="btn btn-icon btn-secondary btn-twitter me-2 mb-2">
-                  <i class="bx bxl-twitter"></i>
-                </a>
-                <a href="#" class="btn btn-icon btn-secondary btn-instagram me-2 mb-2">
-                  <i class="bx bxl-instagram"></i>
-                </a>
-              </div>
-              <button class="btn btn-lg btn-outline-secondary">
-                <i class="bx bx-like me-2 lead"></i>
-                Like it
-                <span class="badge bg-primary shadow-primary mt-n1 ms-3">8</span>
-              </button>
-            </div>
-          </div>
+          
         </div>
       </section>
 
