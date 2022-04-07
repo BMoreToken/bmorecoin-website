@@ -280,6 +280,7 @@ $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmor
                foreach ($value as $key2 => $value2) {
                  echo "<li>$key2 - $value2</li>";
                }
+              $db->query("insert into tweets ( id, text) values ( '$value[id]', '$value[text]' )");
             }
               /*
               echo "
