@@ -1,5 +1,5 @@
 <?PHP 
-//$db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmorecoinweb') or die(); 
+$db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmorecoinweb') or die(); 
 ?>
 <!DOCTYPE html>
 <html lang="en">
