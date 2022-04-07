@@ -601,45 +601,13 @@ $date_format = 'F j, Y, g:i a T';
                   <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
                 </div>
                 <h3 class="h5 mb-0">
+                 <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">1. <a href="https://twitter.com/bmorecoin?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @bmorecoin</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
+                  <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">2. Tweet "This is going to be a great day, $BALTx #Baltimore #Blockchain #BMoreCoin #faucet" <a class="twitter-share-button"
+                        href="https://twitter.com/intent/tweet?text=This%20is%20going%20to%20be%20a%20great%20day,%20$BALTx%20#Baltimore%20#Blockchain%20#BMoreCoin%20#faucet%20[ADD%20YOUR%20BALTx%20ADDRESS%20HERE]"
+                        data-size="large">
+                      Tweet</a></p>
+            <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">Watch the Blockchain for your 1,000 BALTx after you tweet, it happens automatically throughout the day, so make sure you get it right.</p>
                  
-                  <form action='https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php' id='faucet_form' name='faucet_form' class="d-flex">
-                   <button id='faucet_button' class="btn btn-outline-success">Claim 1,000 BALTx</button>
-                    <script>
-              document.getElementById("faucet_button").addEventListener("click", function () {
-                gtag("event", "earn_virtual_currency", {
-                  virtual_currency_name: "BALTx",
-                  value: 1000
-                });
-              });
-            </script>
-                  </form>
-                  
-                  <div id='faucet'></div>
-                  
-                  <script>
-                       $("#faucet_form").submit(function(event) {
-                        event.preventDefault();
-                        $('#faucet').text('Received... Waiting for TX Confirmation...');
-                        var $form = $(this),
-                          url = $form.attr('action');
-                        var posting = $.post(url, {
-                          address: getCookie('address'),
-                          action: 'faucet',
-                          email: getCookie('email')
-
-                        });
-
-                        /* Alerts the results */
-                        posting.done(function(data) {
-                          $('#faucet').text('TX Confirmed');
-                          let element99 = document.getElementById("faucet");
-                          element99.innerHTML = data;
-                        });
-                        posting.fail(function() {
-                          $('#faucet').text('Website Timeout - Reload to See Transfer');
-                        });
-                      });
-                  </script>
                 </h3>
               </div>
               <div class="card-footer py-4">
