@@ -266,7 +266,7 @@ $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmor
             foreach ($follows['data'] as $key => $value) {
               echo "<li><b>Follower #$key</b> $value[username]</li>";
               $db->query("insert into followers ( id, name, username ) values ( '$value[id]', '$value[name]', '$value[username]' )");
-              printf("Error message: %s\n", $db->error);
+              //printf("Error message: %s\n", $db->error);
             }
               
               
