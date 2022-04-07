@@ -255,7 +255,7 @@
                 return $array;
             }
            
-              echo "<pre>
+              echo "
             Checking Followers...
             ";
             $follows = getJson("https://api.twitter.com/2/users/1486503862634749957/followers");
@@ -270,13 +270,20 @@
             Checking Recent Tweets...
             ";
             $tweets = getJson("https://api.twitter.com/2/tweets/search/recent?query=bmorecoin%20faucet");
-            print_r($tweets);
-            echo "
+            //print_r($tweets);
+            foreach ($tweets['data'] as $key => $value) {
+              echo "<li><b>Tweet #$key</b></li>";
+               foreach ($value as $key2 => $value2) {
+                 echo "<li>$key2 - $value2</li>";
+               }
+            }
+              /*
+              echo "
             Details of Recent Tweet...
             ";  
             $tweet = getJson("https://api.twitter.com/2/tweets/1510828042037379076?user.fields=name%2Cprofile_image_url%2Clocation%2Cdescription&tweet.fields=&expansions=author_id&place.fields=geo&media.fields=");
             print_r($tweet);
-            echo "</pre>";
+            echo "</pre>";*/
             ?></div>
             <div class="modal-footer">
               <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
