@@ -157,7 +157,7 @@
          }
          if (json[key].name == 'last_block_today'){
            var html = "Last Block Mined Today: " + json[key].value;
-           let element1 = document.getElementById("rewards_today");
+           let element1 = document.getElementById("last_block_today");
            element1.innerHTML = html;
          }
          if (json[key].name == 'current_circulation'){
@@ -332,11 +332,11 @@
                 <h3 class="h5 mb-0">
                   <a href="#">Last Mining Reward</a>
                 </h3>
-                <div id="last_height" name="last_height">Loading...</div>
-                <div id="last_reward" name="last_reward">Loading...</div>
-                <div id="rewards_today" name="rewards_today">Loading...</div>
-                <div id="last_block_today" name="last_block_today">Loading...</div>
-                <div id="last_reward_block" name="last_reward_block">Loading...</div>
+                <div id="last_height" name="last_height">Loading.1..</div>
+                <div id="last_reward" name="last_reward">Loading.2..</div>
+                <div id="rewards_today" name="rewards_today">Loading.3..</div>
+                <div id="last_block_today" name="last_block_today">Loading.4..</div>
+                <div id="last_reward_block" name="last_reward_block">Loading.5..</div>
               </div>
               <div class="card-footer py-4">
                 The last reward paid to miners.
