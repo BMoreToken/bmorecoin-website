@@ -150,6 +150,11 @@
     const json = JSON.parse(data);
     for (var key in json) {
        if (json.hasOwnProperty(key)) {
+         if (json[key].name == 'rewards_today'){
+           var html = "Mining Rewards Left for Today: " + new Intl.NumberFormat().format(json[key].value) + ' BALTx';
+           let element1 = document.getElementById("rewards_today");
+           element1.innerHTML = html;
+         }
          if (json[key].name == 'current_circulation'){
            var html = "Current Circulation: " + new Intl.NumberFormat().format(json[key].value) + ' BALTx';
            let element1 = document.getElementById("current_circulation");
@@ -372,6 +377,29 @@
               </div>
               <div class="card-footer py-4">
                 The last transactions will go into our top block of 500,000,000
+              </div>
+            </article>
+          </div>
+          
+          
+           <!-- Item -->
+          <div class="col pb-3">
+            <article class="card border-0 shadow-sm h-100">
+              <div class="position-relative">
+                <img src="done.png" class="card-img-top" alt="Mining Stats for Today">
+              </div>
+              <div class="card-body pb-4">
+                <div class="d-flex align-items-center justify-content-between mb-3">
+                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Mining Stats for Today</a>
+                  <span class="fs-sm text-muted"><?PHP echo date($date_format);?></span>
+                </div>
+                <h3 class="h5 mb-0">
+                  <a href="#">Today's Remaining Block Rewards</a>
+                </h3>
+                <div id="rewards_today" name="rewards_today">Loading...</div>
+              </div>
+              <div class="card-footer py-4">
+                Mining Block Rewards Left for Today
               </div>
             </article>
           </div>
