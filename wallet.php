@@ -624,7 +624,7 @@ $date_format = 'F j, Y, g:i a T';
                    </h3>
                 <h3 class="h5 mb-0">
                   <script>
-                   document.write('2. <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=[Enter%20your%20message%20here],%20$BALTx%20#Baltimore%20#Blockchain%20#BMoreCoin%20#faucet%20#crypto%20' + getCookie('address') + '" data-size="large">Tweet</a>' )
+                   document.write('2. <a class="twitter-share-button" href="https://twitter.com/intent/tweet?text=I%20just%20claimed%20my%20daily%201,000%20$BALTx,%20#Baltimore%20#Blockchain%20#BMoreCoin%20#faucet%20#crypto%20' + getCookie('address') + '" data-size="large">Tweet</a>' )
                   </script>
                  
                 
