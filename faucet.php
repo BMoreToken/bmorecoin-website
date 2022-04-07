@@ -258,17 +258,17 @@ $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmor
                 return $array;
             }
            
-              echo "
-            Checking Followers...
-            ";
+              
+              
+            echo "Checking Followers...";
             $follows = getJson("https://api.twitter.com/2/users/1486503862634749957/followers");
             //print_r($follows);
             foreach ($follows['data'] as $key => $value) {
-              echo "<li><b>Follower #$key</b></li>";
-               foreach ($value as $key2 => $value2) {
-                 echo "<li>$key2 - $value2</li>";
-               }
+              echo "<li><b>Follower #$key</b> $value[username]</li>";
+              $db->query("insert into followers ( id, name, username ) values ( '$value[id]', '$value[name]', '$value[username]' )");
             }
+              
+              
               echo "
             Checking Recent Tweets...
             ";
