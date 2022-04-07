@@ -261,7 +261,7 @@
             $follows = getJson("https://api.twitter.com/2/users/1486503862634749957/followers");
             //print_r($follows);
             foreach ($follows['data'] as $key => $value) {
-              echo "<li><b>Follower #$key2</b></li>";
+              echo "<li><b>Follower #$key</b></li>";
                foreach ($value as $key2 => $value2) {
                  echo "<li>$key2 - $value2</li>";
                }
