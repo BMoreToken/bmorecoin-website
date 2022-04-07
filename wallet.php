@@ -608,7 +608,7 @@ $date_format = 'F j, Y, g:i a T';
           
           
                <!-- Item -->
-          <div class="col pb-3" style='display:none;' id='faucet_container'>
+          <div class="col pb-3" style='display:block;' id='faucet_container'>
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
                 <img src="faucet.png" class="card-img-top" alt="BALTx Faucet">
