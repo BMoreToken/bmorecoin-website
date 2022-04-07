@@ -262,8 +262,10 @@
             ";
             //print_r($followers);
             $followers = objectToArray( $followers );
-            foreach($followers as $key => $value){
-              echo "$key => $value";
+            foreach($followers as $value){
+              foreach($value as $key2 => $value2){
+                echo "$key2 => $value2";
+              }
             }
               
               // Custom Code
