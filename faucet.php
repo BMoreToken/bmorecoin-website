@@ -242,6 +242,11 @@
                       });
                   </script>
             <?PHP
+              function objectToArray( $data ) 
+              {
+                  if ( is_object( $data ) ) 
+                      $d = get_object_vars( $data );
+              }
             require __DIR__ . '/vendor/autoload.php';
             use Coderjerk\BirdElephant\BirdElephant;
                 $credentials = array(
@@ -255,8 +260,13 @@
             $followers = $twitter->user('bmorecoin')->followers();
             echo "<pre>Checking Followers...
             ";
-            print_r($followers);
-            // Custom Code
+            //print_r($followers);
+            $followers = objectToArray( $followers );
+            foreach($followers as $key => $value){
+              echo "$key => $value";
+            }
+              
+              // Custom Code
             function getJson($url){
                 $curl = curl_init();
                 curl_setopt ($curl, CURLOPT_URL, $url);
