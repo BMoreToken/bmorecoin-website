@@ -2361,7 +2361,10 @@ function home_InitTemplate(parentStats, siblingStats) {
             <div class="dropdown-menu">
               <div class="d-lg-flex pt-lg-3">
                 <div class="mega-dropdown-column">
-
+                  <h6 class="px-3 mb-2">How to Get BMoreCoin</h6>
+                  <ul class="list-unstyled mb-3">
+		    <li><a href="https://www.bmorecoin.com/faucet.php" class="dropdown-item py-1">Faucet Instructions</a></li>
+		  </ul>
                   <h6 class="px-3 mb-2">BMoreCoin Information</h6>
                   <ul class="list-unstyled mb-3">
 		    <li><a href="https://bitcointalk.org/index.php?topic=5392426.msg59710525#msg59710525" class="dropdown-item py-1">BitcoinTalk Thread</a></li>
