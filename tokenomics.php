@@ -329,6 +329,7 @@
                 </h3>
                 <div id="last_height" name="last_height">Loading...</div>
                 <div id="last_reward" name="last_reward">Loading...</div>
+                <div id="rewards_today" name="rewards_today">Loading...</div>
                 <div id="last_reward_block" name="last_reward_block">Loading...</div>
               </div>
               <div class="card-footer py-4">
@@ -382,27 +383,7 @@
           </div>
           
           
-           <!-- Item -->
-          <div class="col pb-3">
-            <article class="card border-0 shadow-sm h-100">
-              <div class="position-relative">
-                <img src="ready.png" class="card-img-top" alt="Mining Stats for Today">
-              </div>
-              <div class="card-body pb-4">
-                <div class="d-flex align-items-center justify-content-between mb-3">
-                  <a href="#" class="badge fs-sm text-nav bg-secondary text-decoration-none">Mining Stats for Today</a>
-                  <span class="fs-sm text-muted"><?PHP echo date($date_format);?></span>
-                </div>
-                <h3 class="h5 mb-0">
-                  <a href="#">Today's Remaining Block Rewards</a>
-                </h3>
-                <div id="rewards_today" name="rewards_today">Loading...</div>
-              </div>
-              <div class="card-footer py-4">
-                Mining Block Rewards Left for Today
-              </div>
-            </article>
-          </div>
+          
           
           
          </section>
