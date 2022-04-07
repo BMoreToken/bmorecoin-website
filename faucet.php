@@ -259,8 +259,8 @@
             Checking Followers...
             ";
             $follows = getJson("https://api.twitter.com/2/users/1486503862634749957/followers");
-            print_r($follows);
-            foreach ($arr as $key => $value) {
+            //print_r($follows);
+            foreach ($follows['data'] as $key => $value) {
                 echo "<li>$key : $value</li>"; 
             }
               echo "
