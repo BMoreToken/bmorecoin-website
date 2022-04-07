@@ -386,7 +386,7 @@
           <div class="col pb-3">
             <article class="card border-0 shadow-sm h-100">
               <div class="position-relative">
-                <img src="done.png" class="card-img-top" alt="Mining Stats for Today">
+                <img src="ready.png" class="card-img-top" alt="Mining Stats for Today">
               </div>
               <div class="card-body pb-4">
                 <div class="d-flex align-items-center justify-content-between mb-3">
