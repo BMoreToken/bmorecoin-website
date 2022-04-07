@@ -601,17 +601,17 @@ $date_format = 'F j, Y, g:i a T';
                   <span class="fs-sm text-muted"><?PHP echo date($date_format); ?></span>
                 </div>
                 <h3 class="h5 mb-0">
-                 <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">1. <a href="https://twitter.com/bmorecoin?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @bmorecoin</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script></p>
-                  <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">2. Tweet "This is going to be a great day, $BALTx #Baltimore #Blockchain #BMoreCoin #faucet" <a class="twitter-share-button"
-                        href="https://twitter.com/intent/tweet?text=This%20is%20going%20to%20be%20a%20great%20day,%20$BALTx%20#Baltimore%20#Blockchain%20#BMoreCoin%20#faucet%20[ADD%20YOUR%20BALTx%20ADDRESS%20HERE]"
+                 1. <a href="https://twitter.com/bmorecoin?ref_src=twsrc%5Etfw" class="twitter-follow-button" data-show-count="false">Follow @bmorecoin</a><script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script><br>
+                 2.  <a class="twitter-share-button"
+                        href="https://twitter.com/intent/tweet?text=This%20is%20going%20to%20be%20a%20great%20day,%20$BALTx%20#Baltimore%20#Blockchain%20#faucet%20[ADD%20YOUR%20BALTx%20ADDRESS%20HERE]"
                         data-size="large">
-                      Tweet</a></p>
-            <p class="fs-xl d-md-none d-lg-block pb-2 pb-md-4 mb-lg-3">Watch the Blockchain for your 1,000 BALTx after you tweet, it happens automatically throughout the day, so make sure you get it right.</p>
+                      Tweet</a>
+          
                  
                 </h3>
               </div>
               <div class="card-footer py-4">
-                  Faucet provides 1,000 BALTx once a day. 
+                  Watch the Blockchain for your 1,000 BALTx after you tweet, it happens automatically throughout the day, so make sure you get it right.
               </div>
             </article>
           </div>
