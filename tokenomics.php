@@ -155,6 +155,11 @@
            let element1 = document.getElementById("rewards_today");
            element1.innerHTML = html;
          }
+         if (json[key].name == 'last_block_today'){
+           var html = "Last Block Mined Today: " + json[key].value;
+           let element1 = document.getElementById("rewards_today");
+           element1.innerHTML = html;
+         }
          if (json[key].name == 'current_circulation'){
            var html = "Current Circulation: " + new Intl.NumberFormat().format(json[key].value) + ' BALTx';
            let element1 = document.getElementById("current_circulation");
@@ -171,7 +176,7 @@
            element1.innerHTML = html;
          }
          if (json[key].name == 'last_reward'){
-           var html = "Latest Mining Reward: " + json[key].value + ' BALTx';
+           var html = "Latest Mining Reward: " + new Intl.NumberFormat().format(json[key].value) + ' BALTx';
            let element1 = document.getElementById("last_reward");
            element1.innerHTML = html;
          }
@@ -330,6 +335,7 @@
                 <div id="last_height" name="last_height">Loading...</div>
                 <div id="last_reward" name="last_reward">Loading...</div>
                 <div id="rewards_today" name="rewards_today">Loading...</div>
+                <div id="last_block_today" name="last_block_today">Loading...</div>
                 <div id="last_reward_block" name="last_reward_block">Loading...</div>
               </div>
               <div class="card-footer py-4">
