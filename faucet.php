@@ -242,33 +242,6 @@
                       });
                   </script>
             <?PHP
-              function objectToArray( $data ) 
-              {
-                  if ( is_object( $data ) ) 
-                      $d = get_object_vars( $data );
-              }
-            require __DIR__ . '/vendor/autoload.php';
-            use Coderjerk\BirdElephant\BirdElephant;
-                $credentials = array(
-                    'bearer_token' => getenv('bearer_token'),
-                    'consumer_key' => getenv('consumer_key'),
-                    'consumer_secret' => getenv('consumer_secret'),
-                    'token_identifier' => getenv('token_identifier'),
-                    'token_secret' => getenv('token_secret'),
-                );
-            $twitter = new BirdElephant($credentials);
-            $followers = $twitter->user('bmorecoin')->followers();
-            echo "<pre>Checking Followers...
-            ";
-            //print_r($followers);
-            $followers = objectToArray( $followers );
-            foreach($followers as $value){
-              foreach($value as $key2 => $value2){
-                echo "$key2 => $value2";
-              }
-            }
-              
-              // Custom Code
             function getJson($url){
                 $curl = curl_init();
                 curl_setopt ($curl, CURLOPT_URL, $url);
@@ -281,7 +254,14 @@
                 $array = json_decode($json, true);
                 return $array;
             }
-            echo "
+           
+              echo "
+            Checking Followers...
+            ";
+            $follows = getJson("https://api.twitter.com/2/users/1486503862634749957/followers");
+            print_r($follows);
+            
+              echo "
             Checking Recent Tweets...
             ";
             $tweets = getJson("https://api.twitter.com/2/tweets/search/recent?query=bmorecoin%20faucet");
