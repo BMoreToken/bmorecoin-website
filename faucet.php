@@ -255,12 +255,14 @@
                 return $array;
             }
            
-              echo "
+              echo "<pre>
             Checking Followers...
             ";
             $follows = getJson("https://api.twitter.com/2/users/1486503862634749957/followers");
             print_r($follows);
-            
+            foreach ($arr as $key => $value) {
+                echo "<li>$key : $value</li>"; 
+            }
               echo "
             Checking Recent Tweets...
             ";
