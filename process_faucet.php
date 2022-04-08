@@ -7,6 +7,7 @@
       });
     </script>
 <script src="https://apis.google.com/js/platform.js" async defer></script>
+   <?PHP include_once('analytics.php'); ?>
 <?PHP 
 $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmorecoinweb') or die(); 
 $q = "select * from tweets where status = 'approved'";
