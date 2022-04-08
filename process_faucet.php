@@ -1,9 +1,49 @@
+
 <?PHP 
 $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmorecoinweb') or die(); 
 $q = "select * from tweets where status = 'approved'";
 $r = $db->query($q);
 while ($d = mysqli_fetch_array($r,MYSQLI_ASSOC)){
-  echo "<li>SENDING 1,000.00000000 BALTx to $d[address]</li>";
+  echo "<li>SENDING 1,000.00000000 BALTx to $d[address] ($d[id])</li>";
+    ?>
+              <form action='https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php' id='faucet_form<?PHP echo $d['id'];?>' name='faucet_form<?PHP echo $d['id'];?>' class="d-flex">
+                   <button id='faucet_button<?PHP echo $d['id'];?>' class="btn btn-outline-success">SEND 1,000 BALTx to <?PHP echo $d['address'];?></button>
+                    <script>
+              document.getElementById("faucet_button<?PHP echo $d['id'];?>").addEventListener("click", function () {
+                gtag("event", "earn_virtual_currency", {
+                  virtual_currency_name: "BALTx",
+                  value: 1000
+                });
+              });
+            </script>
+                  </form>                 
+                  <div id='faucet<?PHP echo $d['id'];?>'></div>
+                  <script>
+                       $("#faucet_form<?PHP echo $d['id'];?>").submit(function(event) {
+                        event.preventDefault();
+                        $('#faucet').text('Received... Waiting for TX Confirmation...');
+                        var $form = $(this),
+                          url = $form.attr('action');
+                        var posting = $.post(url, {
+                          address: <?PHP echo $d['address'];?>,
+                          action: 'faucet'
+                          
+
+                        });
+
+                        /* Alerts the results */
+                        posting.done(function(data) {
+                          $('#faucet<?PHP echo $d['id'];?>').text('TX Confirmed');
+                          let element99 = document.getElementById("faucet");
+                          element99.innerHTML = data;
+                        });
+                        posting.fail(function() {
+                          $('#faucet<?PHP echo $d['id'];?>').text('Website Timeout - Reload to See Transfer');
+                        });
+                      });
+                  </script>
+<?PHP
+  sleep(30);
 }
 
 ?>
