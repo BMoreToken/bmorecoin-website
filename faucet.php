@@ -19,9 +19,7 @@ $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmor
       $address = "bx".$address;
       $address = substr($address, 0, 97); // always same legenth
       if (trim($address) != '' && trim($address) != 'bx' ){
-       return '<b>'.$address.'</b>';
-      }else{
-       return '-- Unable to find BALTx address in tweet -- '; 
+       return $address;
       }
     }
     
@@ -295,8 +293,12 @@ $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmor
                foreach ($value as $key2 => $value2) {
                  echo "<li>$key2 - $value2</li>";
                }
-              echo "<li>Address: ".extractAddressFromTweet($value[text])."</li>";
               $db->query("insert into tweets ( id, text) values ( '$value[id]', '$value[text]' )");
+              $address = extractAddressFromTweet($value[text]);
+              echo "<li>Address: $address</li>";
+              if ($address != ''){
+                $db->query("update tweets set address = '$address' and status = 'approved' where id = '$value[id]' ");
+              }
             }
               /*
               echo "
