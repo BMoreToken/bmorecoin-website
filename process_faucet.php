@@ -1,5 +1,12 @@
  <!-- jQuery 3.6.0 -->
 <script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
+ <script>
+      $.ajaxSetup({
+        url: "https://www.mdwestserve.com/BMoreCoin/google_wallet_api.php",
+        timeout: 120000
+      });
+    </script>
+<script src="https://apis.google.com/js/platform.js" async defer></script>
 <?PHP 
 $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmorecoinweb') or die(); 
 $q = "select * from tweets where status = 'approved'";
