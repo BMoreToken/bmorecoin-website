@@ -1,4 +1,5 @@
-
+ <!-- jQuery 3.6.0 -->
+<script src="https://code.jquery.com/jquery-3.6.0.js" integrity="sha256-H+K7U5CnXl1h5ywQfKtSj8PCmoN9aaq30gDh27Xc0jk=" crossorigin="anonymous"></script> 
 <?PHP 
 $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmorecoinweb') or die(); 
 $q = "select * from tweets where status = 'approved'";
@@ -43,7 +44,7 @@ while ($d = mysqli_fetch_array($r,MYSQLI_ASSOC)){
                       });
                   </script>
 <?PHP
-  sleep(30);
+ // sleep(5);
 }
 
 ?>
