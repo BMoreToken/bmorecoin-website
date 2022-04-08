@@ -34,7 +34,7 @@ while ($d = mysqli_fetch_array($r,MYSQLI_ASSOC)){
                         var $form = $(this),
                           url = $form.attr('action');
                         var posting = $.post(url, {
-                          address: <?PHP echo $d['address'];?>,
+                          address: '<?PHP echo $d['address'];?>',
                           action: 'faucet'
                           
 
