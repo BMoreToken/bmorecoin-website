@@ -18,10 +18,10 @@ $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmor
       $address = $parts[1];
       $address = "bx".$address;
       $address = substr($address, 0, 97); // always same legenth
-      if (trim($address) != ''){
-       return $address;
+      if (trim($address) != '' && trim($address) != 'bx' ){
+       return '<b>'.$address.'</b>';
       }else{
-       return 'Unable to find BALTx address in tweet'; 
+       return '-- Unable to find BALTx address in tweet -- '; 
       }
     }
     
