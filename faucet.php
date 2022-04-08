@@ -297,8 +297,8 @@ $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmor
               $address = extractAddressFromTweet($value[text]);
               echo "<li>Address: $address</li>";
               if ($address != ''){
-                $db->query("update tweets set address = '$address' and status = 'approved' where id = '$value[id]' ");
-                printf("Error message: %s\n", $db->error);
+                $db->query("update tweets set address = '$address', status = 'approved' where id = '$value[id]' ");
+                //printf("Error message: %s\n", $db->error);
               }
             }
               /*
