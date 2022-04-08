@@ -30,7 +30,7 @@ while ($d = mysqli_fetch_array($r,MYSQLI_ASSOC)){
                   <script>
                        $("#faucet_form<?PHP echo $d['id'];?>").submit(function(event) {
                         event.preventDefault();
-                        $('#faucet').text('Received... Waiting for TX Confirmation...');
+                        $('#faucet<?PHP echo $d['id'];?>').text('Received... Waiting for TX Confirmation...');
                         var $form = $(this),
                           url = $form.attr('action');
                         var posting = $.post(url, {
