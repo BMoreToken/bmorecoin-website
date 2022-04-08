@@ -10,7 +10,22 @@ $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmor
     <!-- Custom Scripts -->
     <script type="text/javascript" src="bmorecoin.js"></script>
     <?PHP include_once('content.php'); ?>
-    <?PHP include_once('analytics.php'); ?>
+    <?PHP include_once('analytics.php'); 
+    
+    function extractAddressFromTweet($str){
+      // Address starts with bx
+      $parts = explode('bx',$str);
+      $address = $parts[1];
+      $address = "bx".$address;
+      $address = substr($address, 0, 97); // always same legenth
+      if (trim($address) != ''){
+       return $address;
+      }else{
+       return 'Unable to find BALTx address in tweet'; 
+      }
+    }
+    
+    ?>
     
     <!-- SEO Meta Tags -->
     <meta name="description" content="<?PHP echo $SEO_description;?>">
@@ -280,6 +295,7 @@ $db = mysqli_connect(getenv('db_host'),getenv('db_user'),getenv('db_pass'),'bmor
                foreach ($value as $key2 => $value2) {
                  echo "<li>$key2 - $value2</li>";
                }
+              echo "<li>Address: ".extractAddressFromTweet($value[text])."</li>";
               $db->query("insert into tweets ( id, text) values ( '$value[id]', '$value[text]' )");
             }
               /*
